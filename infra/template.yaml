@@ -1,0 +1,129 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: DealFeed sample transaction flow — API Gateway, Lambda, DynamoDB, S3, Strands, Akamai AI
+Parameters:
+  FrontendOrigin:
+    Type: String
+    Description: Exact HTTPS frontend origin, without trailing slash
+  AkamaiBaseUrl:
+    Type: String
+    Description: Sponsor-provided OpenAI-compatible base URL, including /v1 if required
+  AkamaiModel:
+    Type: String
+  AkamaiSecretArn:
+    Type: String
+    Description: Secrets Manager secret ARN with apiKey JSON field
+  StrandsModelMode:
+    Type: String
+    Default: direct
+    AllowedValues: [direct, tool]
+  BedrockModelId:
+    Type: String
+    Default: ''
+  BedrockModelArn:
+    Type: String
+    Default: ''
+    Description: Model or inference-profile ARN for fallback orchestration; configure its underlying model ARNs separately for cross-region profiles
+Conditions:
+  UseBedrock: !Equals [!Ref StrandsModelMode, tool]
+Resources:
+  SessionSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Description: DealFeed demo session signing secret
+      GenerateSecretString:
+        PasswordLength: 64
+        ExcludePunctuation: true
+  Records:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - {AttributeName: pk, AttributeType: S}
+        - {AttributeName: kind, AttributeType: S}
+      KeySchema:
+        - {AttributeName: pk, KeyType: HASH}
+      GlobalSecondaryIndexes:
+        - IndexName: kind-index
+          KeySchema:
+            - {AttributeName: kind, KeyType: HASH}
+          Projection: {ProjectionType: ALL}
+      SSESpecification: {SSEEnabled: true}
+      PointInTimeRecoverySpecification: {PointInTimeRecoveryEnabled: true}
+  ProjectFiles:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault: {SSEAlgorithm: AES256}
+      CorsConfiguration:
+        CorsRules:
+          - AllowedOrigins: [!Ref FrontendOrigin]
+            AllowedMethods: [GET, PUT, HEAD]
+            AllowedHeaders: [Content-Type]
+            MaxAge: 300
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins: [!Ref FrontendOrigin]
+        AllowMethods: [GET, POST, OPTIONS]
+        AllowHeaders: [Authorization, Content-Type]
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 20
+        ThrottlingRateLimit: 10
+  DealFeedFunction:
+    Type: AWS::Serverless::Function
+    Metadata: {BuildMethod: makefile}
+    Properties:
+      FunctionName: !Sub '${AWS::StackName}-api'
+      CodeUri: ../backend/
+      Handler: backend.app.handler
+      Runtime: python3.13
+      Architectures: [x86_64]
+      Timeout: 120
+      MemorySize: 768
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref Records
+          BUCKET_NAME: !Ref ProjectFiles
+          ALLOWED_ORIGIN: !Ref FrontendOrigin
+          AI_MODE: live
+          DEMO_AUTH_ENABLED: 'true'
+          SESSION_SECRET: !Sub '{{resolve:secretsmanager:${SessionSecret}:SecretString}}'
+          AKAMAI_BASE_URL: !Ref AkamaiBaseUrl
+          AKAMAI_MODEL: !Ref AkamaiModel
+          AKAMAI_API_KEY: !Sub '{{resolve:secretsmanager:${AkamaiSecretArn}:SecretString:apiKey}}'
+          STRANDS_MODEL_MODE: !Ref StrandsModelMode
+          BEDROCK_MODEL_ID: !Ref BedrockModelId
+      Policies:
+        - DynamoDBCrudPolicy: {TableName: !Ref Records}
+        - S3CrudPolicy: {BucketName: !Ref ProjectFiles}
+        - Statement:
+            - Effect: Allow
+              Action: lambda:InvokeFunction
+              Resource: !Sub 'arn:${AWS::Partition}:lambda:${AWS::Region}:${AWS::AccountId}:function:${AWS::StackName}-api'
+        - !If
+          - UseBedrock
+          - Statement:
+              - Effect: Allow
+                Action: [bedrock:InvokeModel, bedrock:InvokeModelWithResponseStream]
+                Resource: !Ref BedrockModelArn
+          - !Ref AWS::NoValue
+      Events:
+        Root: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Path: /, Method: ANY}}
+        Proxy: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Path: '/{proxy+}', Method: ANY}}
+Outputs:
+  ApiUrl:
+    Value: !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}'
+  TableName: {Value: !Ref Records}
+  ImagesBucket: {Value: !Ref ProjectFiles}

@@ -1,0 +1,9 @@
+export type Business = { id:string; name:string; initials:string; location:string; tagline:string; description:string; services:string[]; email:string; website:string; color:string; sample:boolean };
+export type Project = { id:string; businessId:string; title:string; client:string; description:string; category:string; services:string[]; result:string; resultNote:string; image:string; color:string; featured:boolean; createdAt:string };
+export type BuyerInput = { projectId:string; name:string; email:string; budget:string; location:string; deadline:string; requirements:string };
+export type Brief = { title:string; summary:string; deliverables:string[]; questions:string[]; constraints:string[]; reference:string };
+export type Trace = { tool:string; status:string; detail:string };
+export type Draft = { id:string; projectId:string; businessId:string; buyerId:string; input:BuyerInput; brief:Brief; mode:string; trace:Trace[]; createdAt:string };
+export type Proposal = { id:string; requestId:string; businessId:string; buyerId:string; price:number; currency:string; scope:string; timeline:string; createdAt:string };
+export type Request = Draft & { status:"submitted"|"proposed"; approvedAt:string; proposal?:Proposal };
+export type ProposalInput = { price:number; currency:string; scope:string; timeline:string };

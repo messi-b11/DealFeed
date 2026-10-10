@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+.local/
+*.sqlite*
+*.tsbuildinfo
+test-results/
+playwright-report/
+.aws-sam/
+.DS_Store
