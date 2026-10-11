@@ -24,7 +24,6 @@ jobs:
       NEXT_PUBLIC_API_URL: /api
       AI_MODE: rehearsal
       DEMO_AUTH_ENABLED: "true"
-      DATABASE_PATH: ${{ runner.temp }}/dealfeed-ci.sqlite
     steps:
       - name: Check out source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -54,6 +53,8 @@ jobs:
         run: npm run build
 
       - name: Test backend
+        env:
+          DATABASE_PATH: ${{ runner.temp }}/dealfeed-ci.sqlite
         run: python -m pytest backend/tests -q
 
       - name: Test application gateway
