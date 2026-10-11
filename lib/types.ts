@@ -1,5 +1,11 @@
-export type Business = { id:string; name:string; initials:string; location:string; tagline:string; description:string; services:string[]; email:string; website:string; color:string; sample:boolean; achievements?:{id:string;title:string;projectId:string;description?:string;provenance?:string}[] };
-export type Project = { archived?:boolean; id:string; businessId:string; title:string; client:string; description:string; category:string; services:string[]; result:string; resultNote:string; image:string; imageAlt?:string; imagePosition?:string; imageCredit?:{photographer:string;sourceUrl:string;source:string}; color:string; featured:boolean; createdAt:string };
+export type BusinessProfile = {
+  foundedYear:number; teamSize:string; lead:{name:string;title:string;bio:string}; overview:string;
+  idealClients:string[]; specialties:string[]; process:{title:string;description:string}[]; engagements:string[];
+  languages:string[]; typicalTimeline:string; pricingSummary:string; availabilityNote:string;
+  experience:{title:string;organization:string;period:string;summary:string;projectIds:string[]}[]; boundaries:string[];
+};
+export type Business = { id:string; name:string; initials:string; location:string; tagline:string; description:string; services:string[]; email:string; website:string; color:string; sample:boolean; profile?:BusinessProfile; achievements?:{id:string;title:string;projectId:string;description?:string;provenance?:string}[] };
+export type Project = { archived?:boolean; id:string; businessId:string; title:string; client:string; description:string; category:string; services:string[]; result:string; resultNote:string; image:string; imageAlt?:string; imagePosition?:string; imageCredit?:{photographer:string;sourceUrl:string;source:string}; color:string; featured:boolean; createdAt:string; caseStudy?:{challenge:string;approach:string;deliverables:string[];outcome:string} };
 export type BuyerInput = { projectId:string; name:string; email:string; budget:string; location:string; deadline:string; requirements:string };
 export type Brief = { title:string; summary:string; deliverables:string[]; questions:string[]; constraints:string[]; reference:string };
 export type Trace = { tool:string; status:string; detail:string };

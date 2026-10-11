@@ -140,8 +140,11 @@ def fetch_public_page(url, approved_hosts):
 
 
 def business_hosts(business):
-    website = business.get('website', '')
-    host = urlsplit(website if '://' in website else 'https://' + website).hostname
+    website = business.get('website') or ''
+    try:
+        host = urlsplit(website if '://' in website else 'https://' + website).hostname
+    except ValueError:
+        return set()
     if not host:
         return set()
     # Only the registered hostname and its conventional www alias are permitted.
@@ -200,6 +203,8 @@ async def research_businesses(store, businesses, refresh=False):
     tasks, fixtures = [], []
     for business in businesses[:12]:
         hosts = business_hosts(business)
+        if not hosts:
+            continue
         if any(host.endswith('.example') for host in hosts):
             fixtures.extend(_fixture_records(store, business))
         else:

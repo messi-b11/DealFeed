@@ -2,9 +2,9 @@
   {
     "category": "Catering",
     "image": "/projects/catering.svg",
-    "prompt": "We need a buffet dinner for 60 guests at our Austin venue. Include vegetarian options and food service. We like the seasonal menu in this project. Dietary restrictions and kitchen access: \u2026",
+    "prompt": "We need a buffet dinner for 60 guests at our Austin venue. Include vegetarian options and food service. We like the seasonal menu in this project. Dietary restrictions and kitchen access: …",
     "deliverables": [
-      "A proposed catering menu based on the buyer\u2019s requirements",
+      "A proposed catering menu based on the buyer’s requirements",
       "A food-service plan for provider review",
       "Confirmation of guest count, dietary needs, and venue facilities"
     ]
@@ -12,9 +12,9 @@
   {
     "category": "Event decorations",
     "image": "/projects/decorations.svg",
-    "prompt": "We\u2019re planning a celebration for 80 guests. We need floral installations and table styling in soft pink and green, including setup and takedown. Our venue, table count, and access times are \u2026",
+    "prompt": "We’re planning a celebration for 80 guests. We need floral installations and table styling in soft pink and green, including setup and takedown. Our venue, table count, and access times are …",
     "deliverables": [
-      "An event decoration concept based on the buyer\u2019s requirements",
+      "An event decoration concept based on the buyer’s requirements",
       "A proposed floral and table-styling scope",
       "Confirmation of venue access, setup, and takedown arrangements"
     ]
@@ -22,9 +22,9 @@
   {
     "category": "Website development",
     "image": "/projects/poppy.svg",
-    "prompt": "We\u2019re a restaurant looking for a warm, modern website with a seasonal menu, our story, and a reservation link. We\u2019ll provide copy and photos. We like the feel of Poppy & Salt.",
+    "prompt": "We’re a restaurant looking for a warm, modern website with a seasonal menu, our story, and a reservation link. We’ll provide copy and photos. We like the feel of Poppy & Salt.",
     "deliverables": [
-      "Website design and development scoped to the buyer\u2019s requirements",
+      "Website design and development scoped to the buyer’s requirements",
       "A proposed page and content plan",
       "Confirmation of content, integrations, and handover requirements"
     ]
@@ -32,11 +32,41 @@
   {
     "category": "Keynote speaking",
     "image": "/projects/keynote.svg",
-    "prompt": "We\u2019d like a 45-minute keynote on leading through change for 150 team leaders, followed by 15 minutes of Q&A. The audience, event format, venue, and intended takeaways are \u2026",
+    "prompt": "We’d like a 45-minute keynote on leading through change for 150 team leaders, followed by 15 minutes of Q&A. The audience, event format, venue, and intended takeaways are …",
     "deliverables": [
       "A proposed keynote outline tailored to the audience",
       "An agreed topic, talk duration, and Q&A format",
       "Confirmation of event logistics and presentation requirements"
+    ]
+  },
+  {
+    "category": "Speechwriting",
+    "image": "/projects/photos/governor-campaign.jpg",
+    "prompt": "I need a speechwriter for a legislative election campaign. Please compare completed writing work, especially prior election campaign experience, with government-office announcements and keynote speaking. Scope: a researched 10-minute speech, two revision rounds, and one rehearsal. Timing, budget, and approved source material: …",
+    "deliverables": [
+      "A researched speech draft based on the approved brief",
+      "Two agreed revision rounds and a final delivery copy",
+      "A source review and speaker rehearsal session"
+    ]
+  },
+  {
+    "category": "Presentation design",
+    "image": "/projects/photos/aperture-pitch.jpg",
+    "prompt": "We need a clear presentation for a major business pitch: an editable 20-slide deck, a supporting appendix, and speaker notes. We will provide approved facts, branding, and source material. The meeting, deadline, and presenters are …",
+    "deliverables": [
+      "An agreed narrative and slide outline",
+      "An editable presentation and supporting appendix",
+      "Speaker notes and a scoped rehearsal session"
+    ]
+  },
+  {
+    "category": "Platform development",
+    "image": "/projects/photos/fieldline-operations.jpg",
+    "prompt": "We need an internal operations platform to manage staff tasks, volunteer shifts, and event logistics. Please include role-based access, an agreed review workflow, and team training. Our users, existing tools, budget, and timeline are …",
+    "deliverables": [
+      "A workflow and access plan based on the approved scope",
+      "A tested platform for the agreed operations workflows",
+      "Team training, documentation, and a maintenance handover"
     ]
   }
 ]

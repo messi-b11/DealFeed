@@ -1,90 +1,113 @@
-# Three-minute DealFeed demo
+# Campaign speechwriter demo
+
+The main story is a customer choosing a speechwriter for a legislative election campaign. Three capable providers have different relevant histories: Campaign Voice has completed campaign speechwriting, Civic Script writes the mayor's official announcements, and Maya Bennett Speaking has keynote delivery and speech preparation experience. Comparable completed campaign work should give Campaign Voice an experience advantage. A lower quote or an impressive keynote does not establish the same background.
+
+All businesses, politicians, clients, projects, election results, and response examples are fictional samples. The stock photos illustrate the work; they do not depict the named clients or prove the stated outcomes. The fictional governor won the 2025 election; the demo does not claim that the writer caused the result or can guarantee a future result.
 
 ## Prepare before presenting
 
-Use the private [DealFeed preview](https://dealfeed-work-to-work.jocundbrook.chatgpt.site) after deployment is confirmed in `VERIFICATION.md`. For local development, start the connected stack with `npm run dev:connected`, then open [http://127.0.0.1:3001](http://127.0.0.1:3001). The frontend talks to the API through same-origin `/api`; use one origin and browser throughout so the same buyer identity is recovered.
+Use the private [DealFeed preview](https://dealfeed-work-to-work.jocundbrook.chatgpt.site) after the current deployment is confirmed in [VERIFICATION.md](VERIFICATION.md). For local development, run `npm run dev:connected` and open [http://127.0.0.1:3001](http://127.0.0.1:3001). Use one origin and browser throughout so the same buyer identity is recovered.
 
-Confirm the actual mode before the timer starts. The launcher's `AI_MODE` comes from the loaded environment. The starter environment selects rehearsal; a live demonstration requires it to be set to live with the server-side Akamai configuration. Show **Live AI · Akamai + Strands** only when the returned analysis carries that mode. **Rehearsal analysis · No live AI** means deterministic sample analysis, even though the API, persistence, and invitations work.
+Confirm the actual mode before presenting. **Live AI · Akamai + Strands** requires a returned live analysis and server-side inference configuration. **Rehearsal analysis · No live AI** identifies deterministic analysis; the API, saved deals, invitations, and proposals still work. A missing company website must not block either kind of analysis: owned completed projects, service profiles, and submitted proposals remain usable evidence. A successful analysis does not independently verify sample claims. Unavailable website research remains unavailable, and unproven requirements remain unknown.
 
-Rehearse the full journey once. Live analysis is asynchronous with a 120-second inference deadline; a slow call cannot fit comfortably inside a three-minute pitch. Prepare one completed match and a separate comparison deal before presenting. Show a fresh analysis if it finishes within the slot; otherwise identify the prepared result or use a clearly labeled recording. Never describe a prepared result as a new live run.
+Rehearse the whole journey once, then prepare one completed match and a separate comparison deal before the presentation. Live inference has a 120-second deadline. Label the prepared deal **Prepared sample comparison — legislative speechwriter** and keep it in a second tab. If a fresh run is slow, identify the prepared result honestly; do not present it as a new live result.
 
-Prepare the separate comparison deal in this same browser, using the description prefix **Prepared sample comparison** so it is distinguishable from the new deal. Invite three businesses and submit fictional provider-authored responses through their respective provider workspaces. Do not put automatic or fabricated provider submissions into the new deal.
+For an API rehearsal, run `.venv/bin/python -m scripts.rehearse_campaign --api http://127.0.0.1:3001/api --report .local/campaign-verification.json` against the running connected app. The verifier explicitly creates three fictional provider responses and records a sample preference. For the protected VM, use its API URL and pass `--preview-credentials` with the existing ignored JSON credentials file; credentials and session tokens are never included in the report. The verifier checks that all three providers can be compared using portfolio evidence without website sources.
 
-| Prepared response | Quote and timeline | Deliberate scope difference |
+## Profiles and sample firms
+
+Open **Explore business** from the shortlist or open a business profile from its project. Show the lead practitioner, team, specialties, ideal clients, process, engagement options, timelines, and relevant history alongside completed projects. Profiles are populated for every existing business, including catering, event decoration, design, websites, and keynote speaking.
+
+The three additional digital firms provide distinct examples beyond speechwriting:
+
+| Business | Example service |
+| --- | --- |
+| Signal Deck Studio | Presentation design and narrative structure for major pitches |
+| Civic Stack Digital | Websites and platforms for political clients |
+| Fieldline Labs | Campaign operations software |
+
+The two new writing practices are **Campaign Voice**, led by Adrian Cole, and **Civic Script**, led by Elena Brooks. Their history is deliberately different so the comparison demonstrates relevant experience, rather than choosing a favorite company for every request.
+
+## Three-minute walkthrough
+
+### 0:00–0:30 — Start with comparable work
+
+Open the campaign speechwriter demo from the discovery page, or open Campaign Voice's completed governor campaign project and request similar work. Show the source project and its sample label.
+
+“I need a writer for a legislative campaign. This completed campaign project gives me a useful starting point for the kind of experience I want.”
+
+Review the campaign demo requirements: **Speechwriting**, a **$6,000** budget ceiling, one ten-minute speech, research and source notes, a short event introduction, two revision rounds, and rehearsal support. Campaign experience is a relevant preference, so related writers remain available for comparison.
+
+### 0:30–1:10 — Match and inspect the differences
+
+Confirm the visible preferences and select **Find suitable businesses**. Show Campaign Voice's direct experience alongside Civic Script and Maya Bennett Speaking's related experience. Open the requirement alignment and supporting evidence.
+
+“Both writers are good at their own work. Campaign Voice has done comparable campaign speechwriting. Civic Script's municipal announcements and Maya's keynote work are useful related experience, but they do not establish the same campaign history.”
+
+“The analysis can finish without a website. It uses these completed portfolio records and keeps their provenance visible. A missing website is not a failure, and it is not a verified claim.”
+
+Open one full profile, show its workflow and history, then return to the shortlist. Exploration sends no invitation. Exact scope, availability, and any unsupported requirement still need confirmation.
+
+### 1:10–1:40 — Invite the three providers
+
+Select **Campaign Voice**, **Civic Script**, and **Maya Bennett Speaking**. Choose **Review invitation**, show their names and the shared requirements, tick the approval, and send. Open **My deals** to show the invited, responded, and outstanding counts.
+
+“Each selected provider receives the same brief. I choose who receives it; the AI does not contact people on its own.”
+
+Keep this newly approved deal separate from the prepared comparison deal. Retrying the same approval returns the same invitations rather than creating duplicates.
+
+### 1:40–2:10 — Review a provider-authored response
+
+Switch to a sample **Provider workspace** and open that provider's invitation. For a prepared demo, use **Load sample response** to fill a draft, then review its fit statement, approach, scope, coverage, quote, timeline, and linked completed work before approving and sending it. Repeat for the other two providers when preparing the comparison.
+
+“This is a fictional draft I explicitly review and submit as the provider. Loading it does not send a quote. Each provider can see only its own invitation and response.”
+
+### 2:10–2:45 — Compare experience and offers
+
+Open **Prepared sample comparison — legislative speechwriter** and choose **Analyze responses**, or identify its already completed result. The comparison should include the campaign experience difference even when no company websites are available.
+
+| Prepared provider response | Sample quote | Relevant experience to inspect |
 | --- | --- | --- |
-| Business A | $4,200; six weeks after content is supplied | Includes responsive site and editable menu; explicitly excludes reservation integration in both coverage and scope |
-| Business B | $4,800; six weeks after content is supplied | Includes responsive site, editable menu, and reservation integration |
-| Business C | $5,800; four weeks after content is supplied | Includes all three deliverables but exceeds the $5,000 target |
+| Campaign Voice | $4,800 | Completed speechwriting for a fictional winning 2025 governor campaign |
+| Civic Script | $3,400 | Short official announcements and speechwriting for a fictional mayor's office |
+| Maya Bennett Speaking | $3,900 | Keynote delivery, speech preparation, and speaker coaching |
 
-These are presentation samples, not actual commercial offers. Keep the fit statements, approach, and exclusions consistent with each response. Link each provider's own comparable completed project and achievement when available. Mark omitted details **Not stated** instead of inventing coverage. Keep the prepared deal open in a second tab, ready to run or show its comparison.
+For this comparison, each sample proposal includes all five requested deliverables, so the experience difference remains clear even when stated scope is similar. Campaign Voice is $1,400 above the cheapest response and remains within the $6,000 ceiling. A promise in a proposal is a provider commitment; it does not create a completed campaign record.
 
-## Timed walkthrough
+“The less expensive writer may still be a reasonable choice. For this particular campaign brief, comparable campaign work gives Campaign Voice a stronger experience fit. I can inspect both that evidence and the commercial tradeoff.”
 
-### 0:00–0:20 — Start with work
+Show any actual scope omissions or exclusions if the samples were edited. Omitted terms remain **Not stated**, not automatically excluded or included. Comparison retains all submitted proposals and leaves the customer to decide.
 
-“I’m opening a neighborhood restaurant. I can describe a budget, but it’s much easier to show the standard I want.”
+### 2:45–3:00 — Record the customer's choice
 
-Open Poppy & Salt or Olive & Table in the discovery feed. Identify it as completed sample work. Choose **Request something similar**. One project is enough; saving additional inspiration is optional.
+Select the preferred provider and choose **Confirm my preferred provider**. Refresh the deal to show the preference persists.
 
-### 0:20–0:50 — Make the requirements explicit
+“The analysis helps me understand fit. I make the selection. Recording a preference does not pay anyone or accept a contract.”
 
-Choose **Use restaurant demo requirements**. Show the $5,000 budget target, responsive restaurant website, editable menu, and required reservation integration. Review the desired standard and keywords; edit them if needed. Confirm the visible preferences and select **Find suitable businesses**.
+## Neutral sample response guidance
 
-“My requirements control the match. The style suggestion is editable sample metadata, and explicit edits override it.”
+The sample response button is a convenience for the presentation. Review and explicitly submit every draft. Sample prices are fictional and are not real business quotations. No persuasive campaign speech needs to be written or displayed in this demo.
 
-If inference is still running, explain that the result is asynchronous and move to the clearly identified prepared analysis. Do not imply the pending run has completed.
+A suitable scope description is: “Prepared sample response for one ten-minute speech, source notes, one short event introduction, two revision rounds, and one rehearsal session. Customer supplies approved factual materials and a designated reviewer. Additional speeches and travel are excluded. Timing begins after materials and feedback arrangements are confirmed.”
 
-### 0:50–1:20 — Inspect five businesses and evidence
+Keep each fit statement faithful to the provider's own work:
 
-Show the five distinct candidates. Their ordering can vary with the confirmed requirements and live analysis. Open **Requirement alignment & questions** on one card, then **Supporting sources**.
+- **Campaign Voice:** Refer to the completed governor campaign project and the writing/review process. Do not attribute the election result to the speeches or promise a result.
+- **Civic Script:** Refer to official municipal announcements and clear factual writing. Do not invent electoral campaign experience.
+- **Maya Bennett Speaking:** Refer to keynote preparation, delivery, and coaching. Confirm adaptation to campaign writing rather than claiming a campaign record.
 
-“These are evidence-based suggestions. Supported requirements, partial coverage, and unknowns are separate. The .example website findings are labeled fixtures; live AI does not turn sample business claims into verified facts.”
+Link only the responding provider's own completed project or supported achievement. Confirm every requested deliverable's coverage, commercial assumptions, review timing, and exclusions before sending. Submitted proposals are immutable in this demo.
 
-For a live result, show the **AI inference** excerpt and **Analysis tools & sources** trace. Select **Explore business**, inspect the completed portfolio, then return to the shortlist. Point out **Just exploring. No request is sent.**
+## Show that the ranking follows the work
 
-### 1:20–1:45 — Invite only selected businesses
+For a longer demonstration, create a fresh match for short official announcements for a mayor's office. Civic Script's municipal communications history should become the direct experience fit. For keynote delivery at a leadership conference, Maya's completed speaking work should lead. Changing the brief starts a new analysis and does not rewrite an already approved deal.
 
-Select three recipients and choose **Review invitation**. Show their exact names and the frozen shared requirements. Tick the explicit approval and send the request.
-
-“The customer chooses one, several, or all five. Every selected business receives this same brief, exactly once on a retry.”
-
-Show **My deals** with invited, responded, and outstanding counts. Keep this new deal distinct from the prepared comparison deal.
-
-### 1:45–2:15 — Let a provider explain its fit
-
-Open the selected sample **Provider workspace**. Show that its inbox contains only its own invitations. On the prepared request, review the fit statement, approach, comparable work, deliverable coverage, quote, and timeline. If a response was prefilled before the presentation, review and explicitly send it now; otherwise show its already submitted response as prepared sample data.
-
-“The business authors its own approach and commercial terms. Competitors cannot read this private response.”
-
-### 2:15–2:45 — Compare the offer and the evidence
-
-Open the **Prepared sample comparison** deal. Choose **Analyze responses**, or identify the already completed comparison if timing requires it. Use the provider selector to inspect Business A's excluded reservation integration, Business B's full stated coverage, and Business C's above-budget price.
-
-“The lowest quote leaves out a must-have. The comparison cites the response and portfolio evidence. Price differences are calculated in code; unstated terms remain unknown.”
-
-### 2:45–3:00 — Make the customer decision
-
-Inspect Business B, choose it as the preferred provider, and select **Confirm my preferred provider**. Refresh the deal to show the choice persists.
-
-“AI helps me evaluate the fit and tradeoffs. I make the final decision. This records my preference; it does not pay anyone or accept a contract.”
-
-## Copy for one complete sample provider response
-
-Use this only as explicitly fictional provider-authored demo content, adapting coverage and terms to the intended prepared response:
-
-- **Why we fit:** “Our completed restaurant portfolio demonstrates mobile menus, an editorial visual style, and a reservation journey relevant to this brief. This is a prepared sample response.”
-- **Proposed approach:** “Confirm the content and reservation service, design mobile layouts, build the approved pages, test keyboard and mobile navigation, and hand over editing access.”
-- **Full scope & quote basis:** “A fixed sample quote of $4,800 for a responsive restaurant website, editable menu pages, and integration with the customer's existing reservation service. Includes two design revision rounds and one handover session. Customer supplies copy and photography. Third-party subscription fees are excluded. Taxes are not specified.”
-- **Timeline:** “Six weeks after receiving approved content and access to the reservation service.”
-- **Assumptions:** “Customer supplies copy and photography.”
-- **Clarifications:** “Confirm the reservation platform and account access.”
-
-Mark each requested deliverable **Included** for this full-scope offer and attach relevant evidence from the responding business's own portfolio. Submit with the provider review checkbox. A submitted proposal is immutable in this demo.
+The restaurant example remains available through **Use restaurant demo requirements**. It demonstrates five website providers, editable menus, reservation scope differences, and budget tradeoffs; use it as a separate scenario.
 
 ## If something fails
 
-Requirements and provider drafts are retained locally; approved deals and submitted proposals are persisted by the API. Retry after a recoverable error, or use **Refresh** to recover the current deal. Do not repeatedly approve with altered recipients while a submission is pending. Changing requirements after approval starts a new match and deal.
+Requirements and provider drafts are retained locally; approved deals and submitted proposals are persisted by the API. Retry after a recoverable error or use **Refresh** to recover the current deal. Do not repeatedly approve with altered recipients while a submission is pending.
 
-If using `npm run dev:local`, say explicitly: “This is the connected rehearsal, with deterministic analysis rather than live AI.” Browser-only rehearsal supports the legacy single-provider flow and does not provide five-business matching.
+Missing or unavailable websites should not cause an analysis error. An actual inference failure is different: it should preserve the requirements or responses and offer retry, without silently presenting rehearsal output as live AI. If using `npm run dev:local`, identify it as connected deterministic rehearsal. Browser-only rehearsal does not support the multi-provider matching journey.
 
-Live public-site fetching, cloud deployment, and authentication readiness are separate claims from a local live inference demonstration. Use the exact verification record in [VERIFICATION.md](VERIFICATION.md). Do not describe sample websites as fetched, company claims as independently verified, or the demo identity switch as production authentication.
+Use [VERIFICATION.md](VERIFICATION.md) for claims about what was actually tested or deployed. The selectable demo identities are not production business authentication, and the private preview should remain private.

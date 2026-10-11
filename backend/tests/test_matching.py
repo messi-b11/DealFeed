@@ -66,7 +66,8 @@ def test_archived_incomplete_private_project_cannot_support_recommendation(store
     project = store.get('project', 'ember-dining')
     store.put('project', {**project, **change})
     result = generate_matches(store, criteria())
-    assert len(result['matches']) == 4
+    assert result['matches']  # Additional catalog providers can fill the shortlist.
+    assert all('ember-dining' not in m['comparableProjectIds'] for m in result['matches'])
     assert 'daybreak-design' not in {m['businessId'] for m in result['matches']}
 
 
@@ -75,7 +76,7 @@ def test_missing_completion_metadata_not_treated_as_completed():
 
 
 def test_wrong_service_and_archived_inspiration_rejected(store):
-    other = generate_matches(store, criteria(serviceCategory='Catering', inspirationProjectIds=['harvest-dinner'], mustHaves=[], deliverables=[]))
+    other = generate_matches(store, criteria(serviceCategory='Catering', inspirationProjectIds=['harvest-dinner'], deliveryMode='onsite', location='Austin, TX', mustHaves=[], deliverables=[]))
     assert {m['businessId'] for m in other['matches']} == {'gather-table'}
     with pytest.raises(ValueError):
         generate_matches(store, criteria(inspirationProjectIds=['olive-table']))
@@ -114,7 +115,7 @@ def test_fixture_dates_and_version_invalidation(store):
     before = evidence_fingerprint(store, ids)
     assert before == evidence_fingerprint(store, list(reversed(ids)))
     project = store.get('project', 'poppy-web')
-    store.put('project', {**project, 'evidenceVersion': 3})
+    store.put('project', {**project, 'evidenceVersion': project.get('evidenceVersion', 1) + 1})
     assert evidence_fingerprint(store, ids) != before
 
 

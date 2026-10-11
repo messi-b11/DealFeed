@@ -203,6 +203,96 @@
         "sourceUrl": "https://unsplash.com/photos/assorted-tacos-on-wooden-plate-J04BD4ysoh8",
         "source": "Unsplash"
       }
+    },
+    "governor-campaign": {
+      "image": "/projects/photos/governor-campaign.jpg",
+      "imageAlt": "A black microphone ready for a speech in an empty meeting hall",
+      "imageCredit": {
+        "photographer": "Borta",
+        "sourceUrl": "https://www.pexels.com/photo/black-microphone-in-light-conference-hall-4331578/",
+        "source": "Pexels"
+      }
+    },
+    "mayor-announcements": {
+      "image": "/projects/photos/mayor-announcements.jpg",
+      "imageAlt": "Rows of desks and microphones in an empty council chamber",
+      "imageCredit": {
+        "photographer": "Héctor Berganza",
+        "sourceUrl": "https://www.pexels.com/photo/empty-government-chamber-with-desk-rows-and-microphones-32266781/",
+        "source": "Pexels"
+      }
+    },
+    "aperture-pitch": {
+      "image": "/projects/photos/aperture-pitch.jpg",
+      "imageAlt": "Charts on a laptop and printed notes being reviewed for a business presentation",
+      "imageCredit": {
+        "photographer": "Kampus Production",
+        "sourceUrl": "https://www.pexels.com/photo/laptop-and-papers-of-employees-during-a-meeting-7857566/",
+        "source": "Pexels"
+      }
+    },
+    "harbor-campaign-web": {
+      "image": "/projects/photos/harbor-campaign-web.jpg",
+      "imageAlt": "A laptop showing website code beside a notebook on a wooden desk",
+      "imageCredit": {
+        "photographer": "Lukas Blazek",
+        "sourceUrl": "https://www.pexels.com/photo/turned-on-laptop-computer-574073/",
+        "source": "Pexels"
+      }
+    },
+    "fieldline-operations": {
+      "image": "/projects/photos/fieldline-operations.jpg",
+      "imageAlt": "Two software developers reviewing code on a laptop in an office",
+      "imageCredit": {
+        "photographer": "Mizuno K",
+        "sourceUrl": "https://www.pexels.com/photo/discussion-about-software-development-in-office-12899191/",
+        "source": "Pexels"
+      }
+    },
+    "campaign-speech-workflow": {
+      "image": "/projects/photos/campaign-speech-workflow.jpg",
+      "imageAlt": "A writer taking handwritten notes in an open notebook",
+      "imageCredit": {
+        "photographer": "Artem Podrez",
+        "sourceUrl": "https://www.pexels.com/photo/person-writing-on-a-notebook-with-a-pen-8518990/",
+        "source": "Pexels"
+      }
+    },
+    "city-service-briefings": {
+      "image": "/projects/photos/city-service-briefings.jpg",
+      "imageAlt": "An open notebook filled with handwritten notes and a pen",
+      "imageCredit": {
+        "photographer": "Max Grakov",
+        "sourceUrl": "https://www.pexels.com/photo/open-notebook-with-handwritten-notes-and-pen-34079281/",
+        "source": "Pexels"
+      }
+    },
+    "summit-enterprise-deck": {
+      "image": "/projects/photos/summit-enterprise-deck.jpg",
+      "imageAlt": "Colleagues reviewing a slide presentation on a laptop",
+      "imageCredit": {
+        "photographer": "Mikael Blomkvist",
+        "sourceUrl": "https://www.pexels.com/photo/a-person-creating-marketing-plans-on-a-laptop-6476252/",
+        "source": "Pexels"
+      }
+    },
+    "civic-office-platform": {
+      "image": "/projects/photos/civic-office-platform.jpg",
+      "imageAlt": "A laptop on a light wooden desk in a bright office",
+      "imageCredit": {
+        "photographer": "Polina Zimmerman",
+        "sourceUrl": "https://www.pexels.com/photo/black-laptop-computer-on-table-3747070/",
+        "source": "Pexels"
+      }
+    },
+    "volunteer-shift-hub": {
+      "image": "/projects/photos/volunteer-shift-hub.jpg",
+      "imageAlt": "A laptop on a meeting table in front of a weekly planning whiteboard",
+      "imageCredit": {
+        "photographer": "Walls.io",
+        "sourceUrl": "https://www.pexels.com/photo/laptop-on-conference-table-15505438/",
+        "source": "Pexels"
+      }
     }
   }
 }

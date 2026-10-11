@@ -84,7 +84,7 @@ class Deliverable(StrictModel):
 class MatchCriteria(StrictModel):
     inspirationProjectIds: list[str] = Field(min_length=1, max_length=10)
     description: str = Field(min_length=20, max_length=5000)
-    serviceCategory: str = Field(pattern="^(Catering|Event decorations|Website development|Keynote speaking|Restaurant|E-commerce|Wellness|Professional services)$")
+    serviceCategory: str = Field(pattern="^(Catering|Event decorations|Website development|Keynote speaking|Speechwriting|Presentation design|Platform development|Restaurant|E-commerce|Wellness|Professional services)$")
     budgetCents: int | None = Field(default=None, ge=1, le=100000000, strict=True)
     currency: Literal["USD"] = "USD"
     deliverables: list[Deliverable] = Field(min_length=1, max_length=30)
@@ -144,6 +144,6 @@ class ProjectInput(StrictModel):
     title: str = Field(min_length=5, max_length=180)
     client: str = Field(min_length=2, max_length=120)
     description: str = Field(min_length=20, max_length=3000)
-    category: str = Field(pattern="^(Catering|Event decorations|Website development|Keynote speaking|Restaurant|E-commerce|Wellness|Professional services)$")
+    category: str = Field(pattern="^(Catering|Event decorations|Website development|Keynote speaking|Speechwriting|Presentation design|Platform development|Restaurant|E-commerce|Wellness|Professional services)$")
     result: str = Field(min_length=5, max_length=200)
     image: str = Field(default="/projects/photos/olive-website.jpg", max_length=3000000)

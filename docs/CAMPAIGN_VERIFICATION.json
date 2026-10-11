@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "verifiedAt": "2026-10-11T10:06:38.593174+00:00",
+  "api": "http://127.0.0.1:3010/api",
+  "health": {
+    "status": "ok",
+    "mode": "live",
+    "storage": "sqlite",
+    "akamaiConfigured": true,
+    "strandsMode": "direct",
+    "asyncAnalysis": true
+  },
+  "mode": "akamai+strands",
+  "comparisonMode": "akamai+strands",
+  "businessCount": 3,
+  "proposalCount": 3,
+  "dealId": "7c140286-f8f8-4b9e-b040-fc413947f837",
+  "rankedBusinessIds": [
+    "campaign-voice",
+    "civic-script",
+    "maya-bennett"
+  ],
+  "experienceLevels": {
+    "campaign-voice": "direct",
+    "civic-script": "related",
+    "maya-bennett": "related"
+  },
+  "websiteEvidenceCount": 0,
+  "experienceFindingId": "difference:experience",
+  "checks": [
+    "portfolio-only matching without website evidence",
+    "campaign experience ranks first",
+    "municipal and keynote experience remains related",
+    "full profiles available",
+    "analysis and exploration send no invitations",
+    "atomic idempotent approval",
+    "three independent reviewed sample responses",
+    "cross-buyer and provider isolation",
+    "duplicate proposal rejection",
+    "grounded experience comparison",
+    "comparison persistence",
+    "explicit persisted preference"
+  ],
+  "matchSeconds": 12.06,
+  "comparisonSeconds": 36.23,
+  "elapsedSeconds": 48.37,
+  "verificationEnvironment": "Local connected API with real Akamai + Strands inference; isolated sample database.",
+  "automatedTests": {
+    "backendPassed": 106,
+    "gatewayPassed": 7,
+    "campaignAcceptancePassed": 14,
+    "productionBuild": "passed"
+  },
+  "catalog": {
+    "businessProfiles": 15,
+    "activeProjects": 25,
+    "newPhotos": 10,
+    "allThreeWritersHaveWebsites": false
+  },
+  "browserChecks": [
+    "Desktop campaign preset and three-provider live shortlist",
+    "Reviewed sample responses submitted through each provider workspace",
+    "Browser comparison completed with live grounded campaign advantage",
+    "Full profile rendered at desktop and 390px mobile; no horizontal overflow",
+    "No browser console errors"
+  ],
+  "screenshots": [
+    "docs/screenshots/campaign-demo-desktop.jpg",
+    "docs/screenshots/campaign-profile-desktop.jpg",
+    "docs/screenshots/campaign-profile-mobile.jpg",
+    "docs/screenshots/campaign-live-comparison.jpg"
+  ]
+}

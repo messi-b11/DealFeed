@@ -16,7 +16,136 @@
       "website": "gathertable.example",
       "color": "#f2e6d9",
       "sample": true,
-      "seedVersion": 2
+      "seedVersion": 4,
+      "profile": {
+        "foundedYear": 2017,
+        "teamSize": "6 core team members plus event staff",
+        "lead": {
+          "name": "Sofia Chen",
+          "title": "Founder & executive chef",
+          "bio": "Sofia brings restaurant kitchen discipline to generous, seasonal menus for shared occasions."
+        },
+        "overview": "Gather & Table is a fictional Austin catering team built around seasonal ingredients, thoughtful dietary planning, and calm service. A dedicated event lead takes each gathering from the first menu conversation to the final buffet reset.",
+        "idealClients": [
+          "Company hosts planning 30–150 guests",
+          "Community organizers",
+          "Private celebrations"
+        ],
+        "specialties": [
+          "Seasonal buffet menus",
+          "Vegetarian options",
+          "Family-style service",
+          "Venue coordination"
+        ],
+        "process": [
+          {
+            "title": "Plan the table",
+            "description": "Agree the guest count, menu, dietary needs, budget, and venue facilities."
+          },
+          {
+            "title": "Taste and coordinate",
+            "description": "Refine the menu and confirm staffing, equipment, and the service schedule."
+          },
+          {
+            "title": "Cook and host",
+            "description": "Prepare and serve the meal, replenish the buffet, and clear the catering area."
+          }
+        ],
+        "engagements": [
+          "Single-event catering",
+          "Recurring office meals",
+          "Menu planning and service"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "3–6 weeks for a catered event; larger gatherings need more notice.",
+        "pricingSummary": "Sample event minimum $1,800; final scope depends on guests, menu, staffing, and equipment.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Seasonal company gatherings",
+            "organization": "Harvest House & Terrace Brunch",
+            "period": "2025–2026",
+            "summary": "Coordinated menus and buffet service for two fictional company celebrations.",
+            "projectIds": [
+              "harvest-dinner",
+              "terrace-brunch"
+            ]
+          },
+          {
+            "title": "Community dining",
+            "organization": "Community Supper",
+            "period": "2026",
+            "summary": "Planned a shared meal and an easy-to-follow on-site service plan.",
+            "projectIds": [
+              "community-supper"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Event rentals, venue hire, and bar service require separate confirmation.",
+          "Dietary accommodations depend on ingredient and kitchen review."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "minimumProjectCents": 180000,
+      "deliveryModes": [
+        "onsite"
+      ],
+      "capabilities": [
+        "catering",
+        "menu planning",
+        "buffet service",
+        "dietary accommodations"
+      ],
+      "styleTags": [
+        "warm",
+        "seasonal"
+      ],
+      "unsupportedCapabilities": [
+        "website development",
+        "speechwriting"
+      ],
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [
+        "https://gathertable.example/services",
+        "https://gathertable.example/work"
+      ],
+      "researchFixtures": [
+        {
+          "url": "https://gathertable.example/services",
+          "title": "Gather & Table Catering — sample services",
+          "excerpt": "A sample catering team creating seasonal menus for company dinners, celebrations, and community gatherings. Services include menu planning, buffet catering, and on-site food service. Sample event minimum $1,800; final scope depends on guests, menu, staffing, and equipment.",
+          "capabilities": [
+            "catering",
+            "menu planning",
+            "buffet service",
+            "dietary accommodations"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "gather-table-harvest-dinner-delivery",
+          "title": "A relaxed dinner with a cohesive seasonal menu",
+          "projectId": "harvest-dinner",
+          "sourceUrl": "/project/harvest-dinner",
+          "provenance": "sample",
+          "description": "A seasonal buffet and shared-table dinner for a company celebration, with a coordinated menu and welcoming food service."
+        },
+        {
+          "id": "gather-table-terrace-brunch-delivery",
+          "title": "A welcoming brunch with easy buffet service",
+          "projectId": "terrace-brunch",
+          "sourceUrl": "/project/terrace-brunch",
+          "provenance": "sample",
+          "description": "A relaxed company brunch with seasonal buffet dishes and a menu designed for sharing, brought together with coordinated on-site food service."
+        }
+      ]
     },
     {
       "id": "petal-occasion",
@@ -34,7 +163,134 @@
       "website": "petaloccasion.example",
       "color": "#f3e0dc",
       "sample": true,
-      "seedVersion": 2
+      "seedVersion": 4,
+      "profile": {
+        "foundedYear": 2018,
+        "teamSize": "4 designers plus installation crew",
+        "lead": {
+          "name": "Nadia Laurent",
+          "title": "Founder & floral director",
+          "bio": "Nadia combines floral design with practical venue planning, from room sketches to final placement."
+        },
+        "overview": "Petal & Occasion is a fictional floral and event styling studio. The team creates a consistent visual story across entrances, centerpieces, and tables, with installation and takedown planned around the venue schedule.",
+        "idealClients": [
+          "Celebration hosts",
+          "Company event teams",
+          "Boutique venues"
+        ],
+        "specialties": [
+          "Floral installations",
+          "Tablescape design",
+          "Seasonal palettes",
+          "On-site setup"
+        ],
+        "process": [
+          {
+            "title": "Define the setting",
+            "description": "Review venue photos, guest count, table plan, and references."
+          },
+          {
+            "title": "Build the concept",
+            "description": "Share a palette, floral plan, and itemized decoration scope."
+          },
+          {
+            "title": "Install and finish",
+            "description": "Coordinate access, style the room, and return for agreed takedown."
+          }
+        ],
+        "engagements": [
+          "Full event styling",
+          "Florals and centerpieces",
+          "Venue installation"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "4–8 weeks from concept to event date.",
+        "pricingSummary": "Sample design and installation minimum $2,000; flowers, rentals, and venue access affect the quote.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Seasonal reception styling",
+            "organization": "The Garden Celebration & Amber House",
+            "period": "2025–2026",
+            "summary": "Connected floral entrances and table styling through a coordinated palette.",
+            "projectIds": [
+              "garden-celebration",
+              "amber-evening"
+            ]
+          },
+          {
+            "title": "Evening tablescapes",
+            "organization": "Blue Hour Celebration",
+            "period": "2026",
+            "summary": "Developed a restrained blue and ivory table setting for a formal gathering.",
+            "projectIds": [
+              "blue-hour"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Catering and event management are outside the studio scope.",
+          "Flowers and rental items depend on seasonal availability."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "minimumProjectCents": 200000,
+      "deliveryModes": [
+        "onsite"
+      ],
+      "capabilities": [
+        "floral installations",
+        "table styling",
+        "event decorations"
+      ],
+      "styleTags": [
+        "seasonal",
+        "cohesive"
+      ],
+      "unsupportedCapabilities": [
+        "catering",
+        "speechwriting"
+      ],
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [
+        "https://petaloccasion.example/services",
+        "https://petaloccasion.example/work"
+      ],
+      "researchFixtures": [
+        {
+          "url": "https://petaloccasion.example/services",
+          "title": "Petal & Occasion — sample services",
+          "excerpt": "A sample event decoration studio bringing celebrations to life through floral installations, table styling, and venue decoration. We plan a cohesive look and handle decoration setup and takedown. Sample design and installation minimum $2,000; flowers, rentals, and venue access affect the quote.",
+          "capabilities": [
+            "floral installations",
+            "table styling",
+            "event decorations"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "petal-occasion-garden-celebration-delivery",
+          "title": "One cohesive look from entrance to table",
+          "projectId": "garden-celebration",
+          "sourceUrl": "/project/garden-celebration",
+          "provenance": "sample",
+          "description": "A blank event space transformed with a floral entrance, layered tablescapes, and soft colors carried through every detail."
+        },
+        {
+          "id": "petal-occasion-amber-evening-delivery",
+          "title": "A warm, coordinated setting for the reception",
+          "projectId": "amber-evening",
+          "sourceUrl": "/project/amber-evening",
+          "provenance": "sample",
+          "description": "Warm floral installations and layered table styling give an evening reception a cohesive autumn palette, from the entrance to the last place setting."
+        }
+      ]
     },
     {
       "id": "juniper-digital",
@@ -52,7 +308,7 @@
       "website": "juniperdigital.example",
       "color": "#e5eedc",
       "sample": true,
-      "seedVersion": 2,
+      "seedVersion": 4,
       "deliveryModes": [
         "remote"
       ],
@@ -74,12 +330,12 @@
       ],
       "minimumProjectCents": 250000,
       "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
-      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
       "researchFixtures": [
         {
           "url": "https://juniperdigital.example/services",
           "title": "Juniper Digital — sample services",
-          "excerpt": "Warm, colorful restaurant sites with editable menus and reservation integrations. Sample minimum project budget: $2500. Remote delivery available.",
+          "excerpt": "An independent web studio helping restaurants and neighborhood businesses tell their story online. We design and build responsive websites around clear content and easy-to-find information. Sample projects from $2,500; content production and third-party fees are scoped separately.",
           "capabilities": [
             "responsive website",
             "restaurant menus",
@@ -87,19 +343,81 @@
             "content management"
           ],
           "retrievedAt": null,
-          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
         }
       ],
       "achievements": [
         {
-          "id": "juniper-digital-handover",
+          "id": "juniper-digital-poppy-web-delivery",
           "title": "A simpler path from menu to reservation",
           "projectId": "poppy-web",
           "sourceUrl": "/project/poppy-web",
           "provenance": "sample",
           "description": "A warm, colorful neighborhood bistro website with responsive seasonal menus, an editable content management system, and an integration with an existing reservation service."
         }
-      ]
+      ],
+      "profile": {
+        "foundedYear": 2019,
+        "teamSize": "4 designers and developers",
+        "lead": {
+          "name": "Rowan Ellis",
+          "title": "Founder & design director",
+          "bio": "Rowan designs around the everyday questions a customer asks before visiting a neighborhood business."
+        },
+        "overview": "Juniper Digital is a fictional independent web studio for restaurants and local brands. Warm visual design is paired with editable content, readable menus, and clear booking journeys so owners can keep the site useful after launch.",
+        "idealClients": [
+          "Independent restaurants",
+          "Neighborhood shops",
+          "Owner-led service businesses"
+        ],
+        "specialties": [
+          "Restaurant websites",
+          "Editable seasonal menus",
+          "Reservation integrations",
+          "Warm visual identities"
+        ],
+        "process": [
+          {
+            "title": "Find the story",
+            "description": "Map customer questions, content, and the paths from discovery to a visit."
+          },
+          {
+            "title": "Design and build",
+            "description": "Develop responsive pages and connect the agreed booking and content tools."
+          },
+          {
+            "title": "Hand over clearly",
+            "description": "Test the key journeys and show the owner how to keep information current."
+          }
+        ],
+        "engagements": [
+          "Website launch or refresh",
+          "Restaurant content systems",
+          "Post-launch care"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "4–6 weeks once copy, photos, and booking access are ready.",
+        "pricingSummary": "Sample projects from $2,500; content production and third-party fees are scoped separately.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Bistro website and reservations",
+            "organization": "Poppy & Salt",
+            "period": "2026",
+            "summary": "Delivered responsive menus, an editable content system, and an existing reservation-service integration.",
+            "projectIds": [
+              "poppy-web"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Photography and ongoing menu entry are optional additions.",
+          "Existing reservation providers keep their own fees and terms."
+        ]
+      },
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims."
     },
     {
       "id": "maya-bennett",
@@ -107,17 +425,133 @@
       "initials": "mb",
       "location": "Denver, CO",
       "tagline": "Ideas that stay with the room.",
-      "description": "A sample keynote speaker covering leadership, creative collaboration, and navigating change. Talks are tailored to an event’s audience and can include a moderated question-and-answer session.",
+      "description": "A fictional keynote speaker and speechwriter covering leadership, creative collaboration, and change. Maya researches, writes, revises, and delivers original talks and coaches speakers. Her completed work is for company summits and professional forums; no election campaign experience is claimed.",
       "services": [
         "Keynote speaking",
         "Leadership talks",
-        "Audience Q&A"
+        "Audience Q&A",
+        "Speechwriting",
+        "Speaker coaching"
       ],
       "email": "hello@mayabennett.example",
-      "website": "mayabennett.example",
+      "website": "",
       "color": "#e5e6f4",
       "sample": true,
-      "seedVersion": 2
+      "seedVersion": 5,
+      "profile": {
+        "foundedYear": 2015,
+        "teamSize": "Independent speaker with a production coordinator",
+        "lead": {
+          "name": "Maya Bennett",
+          "title": "Keynote speaker & leadership facilitator",
+          "bio": "Maya develops and delivers original talks on leadership, collaboration, and change, with hands-on rehearsal and speaker coaching."
+        },
+        "overview": "Maya Bennett Speaking is a fictional keynote practice for company summits and professional forums. Maya researches each audience, writes and revises her own scripts, and turns complex workplace themes into clear spoken structure. Her portfolio demonstrates strong stagecraft and transferable speechwriting skills; it contains no election campaign experience.",
+        "idealClients": [
+          "Company leadership teams",
+          "Professional conferences",
+          "Creative organizations"
+        ],
+        "specialties": [
+          "Leadership keynotes",
+          "Original speech structure",
+          "Speaker coaching",
+          "Moderated Q&A"
+        ],
+        "process": [
+          {
+            "title": "Interview the host",
+            "description": "Understand the audience, event goals, timing, and appropriate examples."
+          },
+          {
+            "title": "Shape and rehearse",
+            "description": "Research the topic, draft the keynote, and refine the spoken rhythm in rehearsal."
+          },
+          {
+            "title": "Deliver and discuss",
+            "description": "Present the talk and facilitate an audience Q&A or follow-on conversation."
+          }
+        ],
+        "engagements": [
+          "Keynote and Q&A",
+          "Leadership workshop",
+          "Speech review and rehearsal"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "3–5 weeks for a tailored keynote; review sessions can be scoped separately.",
+        "pricingSummary": "Sample speaking engagements from $3,000; script review and coaching are quoted by scope.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Leadership keynote development",
+            "organization": "Lead Together Summit",
+            "period": "2026",
+            "summary": "Researched, wrote, revised, and delivered an original collaboration keynote with a moderated Q&A.",
+            "projectIds": [
+              "lead-together"
+            ]
+          },
+          {
+            "title": "Creative leadership on stage",
+            "organization": "Creative Futures Forum",
+            "period": "2026",
+            "summary": "Developed an audience-specific script and rehearsal plan for a leadership forum.",
+            "projectIds": [
+              "creative-futures"
+            ]
+          }
+        ],
+        "boundaries": [
+          "No completed election campaign or government-office assignments in this sample portfolio.",
+          "Campaign-specific writing experience would need to be established separately."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "minimumProjectCents": 300000,
+      "deliveryModes": [
+        "remote",
+        "onsite"
+      ],
+      "capabilities": [
+        "speechwriting",
+        "speech research",
+        "speech revisions",
+        "speaker coaching",
+        "keynote delivery"
+      ],
+      "styleTags": [
+        "clear",
+        "conversational"
+      ],
+      "unsupportedCapabilities": [
+        "campaign speechwriting",
+        "election campaign experience",
+        "government communications"
+      ],
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [],
+      "researchFixtures": [],
+      "achievements": [
+        {
+          "id": "maya-bennett-lead-together-delivery",
+          "title": "Shared ideas to take back to the team",
+          "projectId": "lead-together",
+          "sourceUrl": "/project/lead-together",
+          "provenance": "sample",
+          "description": "A keynote on creative collaboration and leading through change, paired with an audience Q&A to connect the ideas to everyday work. Maya researched, wrote, and revised the original speech and rehearsed its delivery. This completed corporate keynote demonstrates speaking and writing craft, with no election campaign assignment."
+        },
+        {
+          "id": "maya-bennett-creative-futures-delivery",
+          "title": "Practical discussion around leading creative teams",
+          "projectId": "creative-futures",
+          "sourceUrl": "/project/creative-futures",
+          "provenance": "sample",
+          "description": "A tailored leadership keynote explores how teams can make room for new ideas during change, followed by an audience Q&A about collaboration at work. Maya researched, wrote, and revised the original speech and rehearsed its delivery. This completed corporate keynote demonstrates speaking and writing craft, with no election campaign assignment."
+        }
+      ]
     },
     {
       "id": "morrow-studio",
@@ -135,7 +569,7 @@
       "website": "morrowstudio.example",
       "color": "#f2e6d9",
       "sample": true,
-      "seedVersion": 2,
+      "seedVersion": 4,
       "deliveryModes": [
         "remote"
       ],
@@ -158,31 +592,93 @@
       ],
       "minimumProjectCents": 300000,
       "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
-      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
       "researchFixtures": [
         {
           "url": "https://morrowstudio.example/services",
           "title": "Morrow Studio — sample services",
-          "excerpt": "Editorial retail storefronts and commerce integrations. Does not offer restaurant reservation integration. Sample minimum project budget: $3000. Remote delivery available.",
+          "excerpt": "A digital studio creating thoughtful storefronts for home, lifestyle, and retail brands. Our work pairs product storytelling with straightforward browsing and shopping experiences. Sample projects from $3,000; platform subscriptions and transaction fees are separate.",
           "capabilities": [
             "responsive website",
             "e-commerce",
             "content management"
           ],
           "retrievedAt": null,
-          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
         }
       ],
       "achievements": [
         {
-          "id": "morrow-studio-handover",
+          "id": "morrow-studio-alder-storefront-delivery",
           "title": "Clearer collections and easier product discovery",
           "projectId": "alder-storefront",
           "sourceUrl": "/project/alder-storefront",
           "provenance": "sample",
           "description": "A homeware storefront with clear collections, detailed product pages, and an editorial layout that gives independent makers room to tell their stories."
         }
-      ]
+      ],
+      "profile": {
+        "foundedYear": 2016,
+        "teamSize": "5 designers and developers",
+        "lead": {
+          "name": "Elliot Park",
+          "title": "Co-founder & creative director",
+          "bio": "Elliot brings an editorial eye to product storytelling and the practical details of online retail."
+        },
+        "overview": "Morrow Studio is a fictional digital practice for independent home, lifestyle, and retail brands. The studio gives collections a clear structure, pairs product detail with considered photography, and builds content systems that a small shop team can maintain.",
+        "idealClients": [
+          "Independent retail brands",
+          "Homeware makers",
+          "Lifestyle shops"
+        ],
+        "specialties": [
+          "Editorial storefronts",
+          "Product collections",
+          "E-commerce",
+          "Content management"
+        ],
+        "process": [
+          {
+            "title": "Organize the collection",
+            "description": "Review inventory, customer questions, product content, and selling requirements."
+          },
+          {
+            "title": "Design the storefront",
+            "description": "Develop collection pages, product detail, and a responsive shopping experience."
+          },
+          {
+            "title": "Prepare the team",
+            "description": "Check the purchase journey and hand over catalog editing guidance."
+          }
+        ],
+        "engagements": [
+          "Storefront design and build",
+          "Collection redesign",
+          "Commerce content systems"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "6–8 weeks for a focused retail site.",
+        "pricingSummary": "Sample projects from $3,000; platform subscriptions and transaction fees are separate.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Independent maker storefront",
+            "organization": "Alder Goods",
+            "period": "2026",
+            "summary": "Built clear collections and editorial product pages that make a homeware range easier to explore.",
+            "projectIds": [
+              "alder-storefront"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Restaurant reservation integration is not offered.",
+          "Product photography and ongoing fulfillment are outside the core scope."
+        ]
+      },
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims."
     },
     {
       "id": "common-ground-web",
@@ -200,7 +696,7 @@
       "website": "commongroundweb.example",
       "color": "#e5e6f4",
       "sample": true,
-      "seedVersion": 2,
+      "seedVersion": 4,
       "deliveryModes": [
         "remote"
       ],
@@ -223,12 +719,12 @@
       ],
       "minimumProjectCents": 220000,
       "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
-      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
       "researchFixtures": [
         {
           "url": "https://commongroundweb.example/services",
           "title": "Common Ground Web — sample services",
-          "excerpt": "Accessible neighborhood restaurant websites with straightforward menus and booking. Sample minimum project budget: $2200. Remote delivery available.",
+          "excerpt": "We build approachable websites for wellness studios and local service businesses, with accessible layouts, clear service information, and a welcoming visual identity. Sample projects from $2,200; formal third-party accessibility audits are separately scoped.",
           "capabilities": [
             "responsive website",
             "restaurant menus",
@@ -237,19 +733,90 @@
             "content management"
           ],
           "retrievedAt": null,
-          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
         }
       ],
       "achievements": [
         {
-          "id": "common-ground-web-handover",
+          "id": "common-ground-web-willow-kitchen-delivery",
           "title": "Keyboard navigation and responsive menus delivered",
           "projectId": "willow-kitchen",
           "sourceUrl": "/project/willow-kitchen",
           "provenance": "sample",
           "description": "A calm restaurant website with keyboard-accessible navigation, responsive menus, an editable menu system, and a reservation service integration."
         }
-      ]
+      ],
+      "profile": {
+        "foundedYear": 2018,
+        "teamSize": "3 designers and developers",
+        "lead": {
+          "name": "Alex Morgan",
+          "title": "Founder & accessibility lead",
+          "bio": "Alex focuses on clear information, keyboard navigation, and websites that welcome more people."
+        },
+        "overview": "Common Ground Web is a fictional Minneapolis studio for neighborhood restaurants, wellness studios, and service businesses. Its calm design approach puts readable content, simple navigation, and accessible customer journeys first.",
+        "idealClients": [
+          "Neighborhood restaurants",
+          "Wellness studios",
+          "Community service businesses"
+        ],
+        "specialties": [
+          "Accessible navigation",
+          "Calm responsive layouts",
+          "Editable menus",
+          "Booking integrations"
+        ],
+        "process": [
+          {
+            "title": "Map everyday tasks",
+            "description": "Identify what visitors need to read, find, and book."
+          },
+          {
+            "title": "Design for clarity",
+            "description": "Create responsive layouts with attention to contrast, keyboard access, and content hierarchy."
+          },
+          {
+            "title": "Check and hand over",
+            "description": "Review key user journeys and train the team on content updates."
+          }
+        ],
+        "engagements": [
+          "Accessible website redesign",
+          "New local-business sites",
+          "Content and booking setup"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "4–7 weeks for a small business website.",
+        "pricingSummary": "Sample projects from $2,200; formal third-party accessibility audits are separately scoped.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Restaurant menu accessibility",
+            "organization": "Willow Kitchen",
+            "period": "2026",
+            "summary": "Delivered keyboard-accessible navigation, responsive menus, and reservation integration.",
+            "projectIds": [
+              "willow-kitchen"
+            ]
+          },
+          {
+            "title": "Wellness studio information design",
+            "organization": "Stillwater Yoga",
+            "period": "2025",
+            "summary": "Organized class and studio information in a calm visual website.",
+            "projectIds": [
+              "stillwater-yoga"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Accessibility work is described by the agreed checks, not a blanket certification.",
+          "Specialist booking-system customization needs separate review."
+        ]
+      },
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims."
     },
     {
       "id": "daybreak-design",
@@ -267,7 +834,7 @@
       "website": "daybreakdesign.example",
       "color": "#f3e0dc",
       "sample": true,
-      "seedVersion": 2,
+      "seedVersion": 4,
       "deliveryModes": [
         "remote"
       ],
@@ -289,12 +856,12 @@
       ],
       "minimumProjectCents": 400000,
       "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
-      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
       "researchFixtures": [
         {
           "url": "https://daybreakdesign.example/services",
           "title": "Daybreak Design Co. — sample services",
-          "excerpt": "Image-led hospitality websites with premium visual storytelling and table reservations. Sample minimum project budget: $4000. Remote delivery available.",
+          "excerpt": "A small design practice creating visual portfolios and service websites for architects, interior designers, and creative businesses. We give completed work space to speak for itself. Sample projects from $4,000; new photography and expanded integrations are additional.",
           "capabilities": [
             "responsive website",
             "restaurant menus",
@@ -302,19 +869,90 @@
             "photography"
           ],
           "retrievedAt": null,
-          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
         }
       ],
       "achievements": [
         {
-          "id": "daybreak-design-handover",
+          "id": "daybreak-design-ember-dining-delivery",
           "title": "Image-led menu and reservation experience delivered",
           "projectId": "ember-dining",
           "sourceUrl": "/project/ember-dining",
           "provenance": "sample",
           "description": "An image-led hospitality website pairing large food photography with responsive menus and an integrated reservation service."
         }
-      ]
+      ],
+      "profile": {
+        "foundedYear": 2017,
+        "teamSize": "4 creative specialists",
+        "lead": {
+          "name": "Camille Reyes",
+          "title": "Founder & art director",
+          "bio": "Camille works with strong photography and careful page rhythm to help visual businesses show their work."
+        },
+        "overview": "Daybreak Design Co. is a fictional design practice for architecture, interiors, and hospitality. Its websites bring photography to the foreground while keeping the details people need to browse a portfolio, find a menu, or make a reservation close at hand.",
+        "idealClients": [
+          "Architects and interior designers",
+          "Destination restaurants",
+          "Creative service firms"
+        ],
+        "specialties": [
+          "Image-led websites",
+          "Portfolio storytelling",
+          "Hospitality menus",
+          "Photography direction"
+        ],
+        "process": [
+          {
+            "title": "Set the visual direction",
+            "description": "Review the brand, reference work, image library, and page goals."
+          },
+          {
+            "title": "Build the experience",
+            "description": "Design responsive pages around selected photography and useful content."
+          },
+          {
+            "title": "Polish the launch",
+            "description": "Check image performance, device layouts, and agreed inquiry or reservation flows."
+          }
+        ],
+        "engagements": [
+          "Portfolio websites",
+          "Hospitality launches",
+          "Creative direction and web design"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "6–8 weeks with an approved image library.",
+        "pricingSummary": "Sample projects from $4,000; new photography and expanded integrations are additional.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Hospitality image direction",
+            "organization": "Ember Dining",
+            "period": "2026",
+            "summary": "Paired large food photography with responsive menus and reservation service integration.",
+            "projectIds": [
+              "ember-dining"
+            ]
+          },
+          {
+            "title": "Architecture portfolio",
+            "organization": "Cornerstone Spaces",
+            "period": "2025",
+            "summary": "Created space for completed architecture work and clear project narratives.",
+            "projectIds": [
+              "cornerstone-spaces"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Photography production is confirmed separately from art direction.",
+          "Complex commerce and custom application features need separate scoping."
+        ]
+      },
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims."
     },
     {
       "id": "studio-north",
@@ -332,7 +970,7 @@
       "website": "studionorth.example",
       "color": "#e8e8ff",
       "sample": true,
-      "seedVersion": 2,
+      "seedVersion": 4,
       "deliveryModes": [
         "remote"
       ],
@@ -355,12 +993,12 @@
       ],
       "minimumProjectCents": 350000,
       "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
-      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
       "researchFixtures": [
         {
           "url": "https://studionorth.example/services",
           "title": "Studio North — sample services",
-          "excerpt": "Editorial restaurant websites with reservation integrations and accessible navigation. Sample minimum project budget: $3500. Remote delivery available.",
+          "excerpt": "An independent design studio building distinctive, easy-to-use websites for restaurants, shops, and service businesses. We bring strategy, design, and development together under one roof. Sample projects from $3,500; expanded branding, copy, and integrations change scope.",
           "capabilities": [
             "responsive website",
             "restaurant menus",
@@ -369,19 +1007,90 @@
             "accessibility"
           ],
           "retrievedAt": null,
-          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
         }
       ],
       "achievements": [
         {
-          "id": "studio-north-handover",
+          "id": "studio-north-olive-website-delivery",
           "title": "Reservation journey and content handover delivered",
           "projectId": "olive-website",
           "sourceUrl": "/project/olive-website",
           "provenance": "sample",
           "description": "An editorial restaurant website with seasonal menus, mobile navigation, a content management handover, and an integrated reservation service."
         }
-      ]
+      ],
+      "profile": {
+        "foundedYear": 2014,
+        "teamSize": "6 strategy, design, and engineering specialists",
+        "lead": {
+          "name": "Owen Fraser",
+          "title": "Partner & design lead",
+          "bio": "Owen connects brand strategy with practical website systems for growing local businesses."
+        },
+        "overview": "Studio North is a fictional Austin design studio with strategy, design, and development under one roof. The team combines editorial layouts with accessible navigation and a careful handover so hospitality and service clients can own their day-to-day content.",
+        "idealClients": [
+          "Independent restaurants",
+          "Architecture practices",
+          "Established local businesses"
+        ],
+        "specialties": [
+          "Editorial restaurant sites",
+          "Brand-led web design",
+          "Content management",
+          "Accessible booking journeys"
+        ],
+        "process": [
+          {
+            "title": "Agree the priorities",
+            "description": "Turn business goals and customer questions into a content and page plan."
+          },
+          {
+            "title": "Design and engineer",
+            "description": "Build the visual system, responsive pages, and required integrations together."
+          },
+          {
+            "title": "Launch with ownership",
+            "description": "Test the reservation and inquiry paths and hand over editing documentation."
+          }
+        ],
+        "engagements": [
+          "Website strategy and build",
+          "Brand and web refresh",
+          "Ongoing site care"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "5–8 weeks for a focused website engagement.",
+        "pricingSummary": "Sample projects from $3,500; expanded branding, copy, and integrations change scope.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Restaurant website handover",
+            "organization": "Olive & Table",
+            "period": "2026",
+            "summary": "Delivered seasonal menus, mobile navigation, content management training, and reservation integration.",
+            "projectIds": [
+              "olive-website"
+            ]
+          },
+          {
+            "title": "Practice portfolio",
+            "organization": "Fieldwork Architecture",
+            "period": "2025",
+            "summary": "Organized an architecture practice around completed projects and service information.",
+            "projectIds": [
+              "fieldwork"
+            ]
+          }
+        ],
+        "boundaries": [
+          "A website engagement does not include an ongoing marketing retainer.",
+          "Third-party subscriptions are paid directly by the client."
+        ]
+      },
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims."
     },
     {
       "id": "form-function",
@@ -399,7 +1108,115 @@
       "website": "formfunction.example",
       "color": "#e7eedf",
       "sample": true,
-      "seedVersion": 2
+      "seedVersion": 4,
+      "profile": {
+        "foundedYear": 2020,
+        "teamSize": "3 designers and developers",
+        "lead": {
+          "name": "Priya Shah",
+          "title": "Founder & product designer",
+          "bio": "Priya designs digital stores around useful details, clear choices, and straightforward maintenance."
+        },
+        "overview": "Form & Function is a fictional Chicago studio for independent product businesses. It combines an understated visual approach with clear product organization and a practical commerce handover for small teams.",
+        "idealClients": [
+          "Home and design shops",
+          "Independent makers",
+          "Small retail teams"
+        ],
+        "specialties": [
+          "Responsive storefronts",
+          "Product information design",
+          "E-commerce setup",
+          "Catalog editing"
+        ],
+        "process": [
+          {
+            "title": "Understand the range",
+            "description": "Review products, customer questions, and current shopping friction."
+          },
+          {
+            "title": "Design the details",
+            "description": "Create collection pages and product layouts with a clear path to purchase."
+          },
+          {
+            "title": "Test and teach",
+            "description": "Check responsive browsing and show the team how to maintain the catalog."
+          }
+        ],
+        "engagements": [
+          "Small-store launches",
+          "Product-page redesign",
+          "Commerce refresh"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "4–7 weeks for a focused store build.",
+        "pricingSummary": "Sample projects from $2,600; content entry volume and commerce platform fees are additional.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Homeware store launch",
+            "organization": "Forma Home",
+            "period": "2025–2026",
+            "summary": "Organized a homeware collection into a considered digital shopping experience.",
+            "projectIds": [
+              "forma-home"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Restaurant reservations and event production are outside the core offering.",
+          "Inventory operations and fulfillment stay with the client."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "minimumProjectCents": 260000,
+      "deliveryModes": [
+        "remote"
+      ],
+      "capabilities": [
+        "responsive website",
+        "e-commerce",
+        "content management"
+      ],
+      "styleTags": [
+        "minimal",
+        "refined"
+      ],
+      "unsupportedCapabilities": [
+        "reservation integration"
+      ],
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [
+        "https://formfunction.example/services",
+        "https://formfunction.example/work"
+      ],
+      "researchFixtures": [
+        {
+          "url": "https://formfunction.example/services",
+          "title": "Form & Function — sample services",
+          "excerpt": "A small digital studio focused on considered design and straightforward web experiences for independent businesses. Sample projects from $2,600; content entry volume and commerce platform fees are additional.",
+          "capabilities": [
+            "responsive website",
+            "e-commerce",
+            "content management"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "form-function-forma-home-delivery",
+          "title": "24% higher conversion rate",
+          "projectId": "forma-home",
+          "sourceUrl": "/project/forma-home",
+          "provenance": "sample",
+          "description": "A clean, editorial storefront for a collection of considered objects. Product storytelling and simple navigation help visitors find their next favorite piece."
+        }
+      ]
     },
     {
       "id": "good-people",
@@ -417,7 +1234,7 @@
       "website": "goodpeople.example",
       "color": "#f9e7d8",
       "sample": true,
-      "seedVersion": 2,
+      "seedVersion": 4,
       "deliveryModes": [
         "remote"
       ],
@@ -439,12 +1256,12 @@
       ],
       "minimumProjectCents": 280000,
       "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
-      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
       "researchFixtures": [
         {
           "url": "https://goodpeople.example/services",
           "title": "Good People Studio — sample services",
-          "excerpt": "Expressive neighborhood restaurant websites with bilingual menus and reservations. Sample minimum project budget: $2800. Remote delivery available.",
+          "excerpt": "We create expressive websites for hospitality, lifestyle, and neighborhood brands. Sample projects from $2,800; original translation and photography are quoted separately.",
           "capabilities": [
             "responsive website",
             "restaurant menus",
@@ -452,17 +1269,797 @@
             "bilingual content"
           ],
           "retrievedAt": null,
-          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
         }
       ],
       "achievements": [
         {
-          "id": "good-people-handover",
+          "id": "good-people-casa-sun-delivery",
           "title": "English and Spanish menus and reservations delivered",
           "projectId": "casa-sun",
           "sourceUrl": "/project/casa-sun",
           "provenance": "sample",
           "description": "A playful bilingual restaurant website with English and Spanish menus, responsive layouts, and an integrated reservation service."
+        }
+      ],
+      "profile": {
+        "foundedYear": 2018,
+        "teamSize": "5 brand and web specialists",
+        "lead": {
+          "name": "Lucía Torres",
+          "title": "Co-founder & creative director",
+          "bio": "Lucía pairs expressive visual identities with welcoming content in English and Spanish."
+        },
+        "overview": "Good People Studio is a fictional Brooklyn team for hospitality, lifestyle, and neighborhood brands. Playful design is supported by clear menus, bilingual content structures, and booking journeys that are easy to use on a phone.",
+        "idealClients": [
+          "Neighborhood restaurants",
+          "Lifestyle businesses",
+          "Community wellness brands"
+        ],
+        "specialties": [
+          "Expressive brand websites",
+          "English and Spanish content",
+          "Mobile menus",
+          "Reservation connections"
+        ],
+        "process": [
+          {
+            "title": "Meet the people",
+            "description": "Understand the business story, customers, voice, and language needs."
+          },
+          {
+            "title": "Create and build",
+            "description": "Develop visual identity, responsive pages, and agreed bilingual content layouts."
+          },
+          {
+            "title": "Launch together",
+            "description": "Review both language versions and show the team how to update menus and links."
+          }
+        ],
+        "engagements": [
+          "Brand and website launch",
+          "Bilingual restaurant sites",
+          "Website refresh"
+        ],
+        "languages": [
+          "English",
+          "Spanish"
+        ],
+        "typicalTimeline": "5–7 weeks once both language versions are approved.",
+        "pricingSummary": "Sample projects from $2,800; original translation and photography are quoted separately.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Bilingual hospitality website",
+            "organization": "Casa Sun",
+            "period": "2026",
+            "summary": "Delivered English and Spanish menus, responsive pages, and integrated reservations.",
+            "projectIds": [
+              "casa-sun"
+            ]
+          },
+          {
+            "title": "Neighborhood wellness identity",
+            "organization": "Bloom Wellness",
+            "period": "2025",
+            "summary": "Connected a warm visual identity with clear wellness service information.",
+            "projectIds": [
+              "bloom-wellness"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Client approval is required for translated menus and service claims.",
+          "Booking platform subscriptions are not included."
+        ]
+      },
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims."
+    },
+    {
+      "id": "signal-deck",
+      "name": "Signal Deck Studio",
+      "initials": "sd",
+      "location": "New York, NY",
+      "tagline": "Clarity for the room that matters.",
+      "description": "A fictional presentation studio creating pitch narratives, investor decks, and enterprise proposal presentations. The team turns approved material into clear slides and rehearsal-ready speaker notes for consequential business pitches.",
+      "services": [
+        "Presentation design",
+        "Pitch narrative",
+        "Speaker notes"
+      ],
+      "color": "#ece6fb",
+      "capabilities": [
+        "presentation design",
+        "pitch narrative",
+        "speaker coaching"
+      ],
+      "styleTags": [
+        "clear",
+        "editorial",
+        "confident"
+      ],
+      "minimumProjectCents": 250000,
+      "unsupportedCapabilities": [
+        "campaign speechwriting",
+        "election campaign experience",
+        "platform development"
+      ],
+      "sample": true,
+      "seedVersion": 4,
+      "email": "hello@signaldeck.example",
+      "website": "signaldeck.example",
+      "deliveryModes": [
+        "remote"
+      ],
+      "profile": {
+        "foundedYear": 2018,
+        "teamSize": "6 narrative, design, and presentation specialists",
+        "lead": {
+          "name": "Nora Patel",
+          "title": "Founder & presentation director",
+          "bio": "Nora specializes in editing complex business material into clear slide sequences and usable speaker notes."
+        },
+        "overview": "Signal Deck Studio is a fictional presentation firm for founders and teams preparing large business pitches. The studio works from approved business facts, builds a visual argument that is easy to follow, and rehearses the handoff between speakers. Its sample cases demonstrate presentation craft, not election campaign speechwriting.",
+        "idealClients": [
+          "Founders preparing investor meetings",
+          "Enterprise sales teams",
+          "Executives presenting major proposals"
+        ],
+        "specialties": [
+          "Pitch narrative",
+          "Investor presentation design",
+          "Data visualization",
+          "Rehearsal and speaker notes"
+        ],
+        "process": [
+          {
+            "title": "Clarify the meeting",
+            "description": "Agree who is in the room, the decision being discussed, and the approved source material."
+          },
+          {
+            "title": "Build the deck",
+            "description": "Edit the narrative, design the slides, and prepare an appendix for questions."
+          },
+          {
+            "title": "Rehearse the handoff",
+            "description": "Refine the speaking notes, transitions, and timing with the presenting team."
+          }
+        ],
+        "engagements": [
+          "Full pitch deck",
+          "Existing deck redesign",
+          "Presentation rehearsal package"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "2–4 weeks for a 15–25 slide presentation.",
+        "pricingSummary": "Sample engagements from $2,500; research, complex charts, and rush delivery are scoped separately.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Investor presentation system",
+            "organization": "Aperture Systems",
+            "period": "2026",
+            "summary": "Turned technical product material into an editable investor deck, appendix, and rehearsal notes.",
+            "projectIds": [
+              "aperture-pitch"
+            ]
+          },
+          {
+            "title": "Enterprise proposal presentation",
+            "organization": "Summit Logistics",
+            "period": "2026",
+            "summary": "Created a consistent proposal deck and a practiced handoff for a multi-speaker pitch.",
+            "projectIds": [
+              "summit-enterprise-deck"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Investment outcomes and procurement wins are not guaranteed or claimed.",
+          "The studio does not offer election campaign speechwriting."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [
+        "https://signaldeck.example/services",
+        "https://signaldeck.example/work"
+      ],
+      "researchFixtures": [
+        {
+          "url": "https://signaldeck.example/services",
+          "title": "Signal Deck Studio — sample services",
+          "excerpt": "A fictional presentation studio creating pitch narratives, investor decks, and enterprise proposal presentations. The team turns approved material into clear slides and rehearsal-ready speaker notes for consequential business pitches. Sample engagements from $2,500; research, complex charts, and rush delivery are scoped separately.",
+          "capabilities": [
+            "presentation design",
+            "pitch narrative",
+            "speaker coaching"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "signal-deck-aperture-pitch-delivery",
+          "title": "An editable investor deck, data appendix, and rehearsal notes delivered",
+          "projectId": "aperture-pitch",
+          "sourceUrl": "/project/aperture-pitch",
+          "provenance": "sample",
+          "description": "A fictional enterprise software team brought technical product material to Signal Deck for a major investor presentation. The studio organized the pitch narrative, designed an editable slide deck and appendix, and added speaker notes for rehearsal."
+        },
+        {
+          "id": "signal-deck-summit-enterprise-deck-delivery",
+          "title": "A proposal deck and coordinated three-speaker presentation handover delivered",
+          "projectId": "summit-enterprise-deck",
+          "sourceUrl": "/project/summit-enterprise-deck",
+          "provenance": "sample",
+          "description": "Signal Deck turned a fictional logistics proposal into a structured presentation for a major enterprise pitch. The work included a consistent slide system, approved service diagrams, a question appendix, and rehearsed transitions between three presenters."
+        }
+      ]
+    },
+    {
+      "id": "civic-stack",
+      "name": "Civic Stack Digital",
+      "initials": "cs",
+      "location": "Harbor Vale · fictional demo location",
+      "tagline": "Public-facing websites, built for everyday use.",
+      "description": "A fictional web studio building websites and public information platforms for political candidates and elected offices. Its work covers accessible pages, editable updates, event information, and technical handover; it does not provide speechwriting.",
+      "services": [
+        "Website development",
+        "Platform development",
+        "Content management"
+      ],
+      "color": "#dfeaf3",
+      "capabilities": [
+        "responsive website",
+        "accessibility",
+        "content management",
+        "platform development"
+      ],
+      "styleTags": [
+        "accessible",
+        "clear",
+        "civic"
+      ],
+      "minimumProjectCents": 420000,
+      "unsupportedCapabilities": [
+        "speechwriting",
+        "campaign speechwriting",
+        "keynote delivery"
+      ],
+      "sample": true,
+      "seedVersion": 4,
+      "email": "hello@civicstack.example",
+      "website": "civicstack.example",
+      "deliveryModes": [
+        "remote"
+      ],
+      "profile": {
+        "foundedYear": 2019,
+        "teamSize": "5 designers and engineers",
+        "lead": {
+          "name": "Theo Alvarez",
+          "title": "Founder & technical director",
+          "bio": "Theo builds maintainable public websites and content tools for teams with frequent updates and small staffs."
+        },
+        "overview": "Civic Stack Digital is a fictional studio serving candidates and elected offices. Its core work is technical: accessible websites, public event pages, editor workflows, and practical handover. Political context in its portfolio describes the client setting, not speechwriting expertise.",
+        "idealClients": [
+          "Candidate office teams",
+          "Elected representatives",
+          "Public-facing civic organizations"
+        ],
+        "specialties": [
+          "Political websites",
+          "Accessible content systems",
+          "Public information platforms",
+          "Editor training"
+        ],
+        "process": [
+          {
+            "title": "Map the public tasks",
+            "description": "List the information visitors need and who will maintain each page."
+          },
+          {
+            "title": "Build the site and tools",
+            "description": "Develop responsive pages, accessible navigation, and the agreed editor workflow."
+          },
+          {
+            "title": "Test and transfer",
+            "description": "Check key journeys, train staff, and document maintenance responsibilities."
+          }
+        ],
+        "engagements": [
+          "Campaign website build",
+          "Elected-office website refresh",
+          "Public information platform"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "5–8 weeks for a website; 8–12 weeks for a larger platform.",
+        "pricingSummary": "Sample projects from $4,200; hosting and third-party services are separately itemized.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Candidate website delivery",
+            "organization": "Harbor Vale Assembly Campaign",
+            "period": "2026",
+            "summary": "Delivered editable biography and public event pages with accessible navigation.",
+            "projectIds": [
+              "harbor-campaign-web"
+            ]
+          },
+          {
+            "title": "Constituent information platform",
+            "organization": "Office of Councillor Rowan Hale",
+            "period": "2026",
+            "summary": "Built an organized public information site and an editor approval workflow.",
+            "projectIds": [
+              "civic-office-platform"
+            ]
+          }
+        ],
+        "boundaries": [
+          "Speechwriting, campaign strategy, and political advertising are outside scope.",
+          "Content is supplied and approved by the client office."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [
+        "https://civicstack.example/services",
+        "https://civicstack.example/work"
+      ],
+      "researchFixtures": [
+        {
+          "url": "https://civicstack.example/services",
+          "title": "Civic Stack Digital — sample services",
+          "excerpt": "A fictional web studio building websites and public information platforms for political candidates and elected offices. Its work covers accessible pages, editable updates, event information, and technical handover; it does not provide speechwriting. Sample projects from $4,200; hosting and third-party services are separately itemized.",
+          "capabilities": [
+            "responsive website",
+            "accessibility",
+            "content management",
+            "platform development"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "civic-stack-harbor-campaign-web-delivery",
+          "title": "An accessible candidate website and content editor handover completed",
+          "projectId": "harbor-campaign-web",
+          "sourceUrl": "/project/harbor-campaign-web",
+          "provenance": "sample",
+          "description": "Civic Stack built a responsive website for a fictional legislative candidate, with accessible navigation, editable biography and public event pages, and a content-management handover. The studio supplied website development; client staff supplied and approved all political content."
+        },
+        {
+          "id": "civic-stack-civic-office-platform-delivery",
+          "title": "A public information platform and office editing workflow completed",
+          "projectId": "civic-office-platform",
+          "sourceUrl": "/project/civic-office-platform",
+          "provenance": "sample",
+          "description": "Civic Stack created a public information platform for a fictional elected office, organizing service contacts, public notices, and meeting information. Staff received an editor approval workflow, responsive templates, and training to maintain the information."
+        }
+      ]
+    },
+    {
+      "id": "fieldline-labs",
+      "name": "Fieldline Labs",
+      "initials": "fl",
+      "location": "Northbridge · fictional demo location",
+      "tagline": "Make campaign operations easier to run.",
+      "description": "A fictional software studio developing internal campaign operations platforms: volunteer schedules, event logistics, task ownership, and staff dashboards. Fieldline designs the systems behind a campaign, with no speechwriting or voter persuasion service.",
+      "services": [
+        "Platform development",
+        "Campaign operations software",
+        "Workflow design"
+      ],
+      "color": "#e4eddf",
+      "capabilities": [
+        "platform development",
+        "campaign operations",
+        "accessibility"
+      ],
+      "styleTags": [
+        "functional",
+        "clear",
+        "calm"
+      ],
+      "minimumProjectCents": 800000,
+      "unsupportedCapabilities": [
+        "speechwriting",
+        "campaign speechwriting",
+        "keynote delivery"
+      ],
+      "sample": true,
+      "seedVersion": 4,
+      "email": "hello@fieldlinelabs.example",
+      "website": "fieldlinelabs.example",
+      "deliveryModes": [
+        "remote"
+      ],
+      "profile": {
+        "foundedYear": 2020,
+        "teamSize": "7 product designers and software engineers",
+        "lead": {
+          "name": "Samira Okafor",
+          "title": "Co-founder & product lead",
+          "bio": "Samira turns complex internal coordination into clear roles, useful dashboards, and manageable daily workflows."
+        },
+        "overview": "Fieldline Labs is a fictional software studio for campaign administration. Its tools coordinate staff, volunteers, events, and task ownership using the information an organization supplies. The portfolio demonstrates software delivery and operations experience, with no speechwriting service.",
+        "idealClients": [
+          "Campaign operations teams",
+          "Volunteer coordinators",
+          "Civic event organizers"
+        ],
+        "specialties": [
+          "Internal operations platforms",
+          "Volunteer scheduling",
+          "Role-based workflows",
+          "Event logistics dashboards"
+        ],
+        "process": [
+          {
+            "title": "Map the operation",
+            "description": "Understand staff roles, recurring tasks, permissions, and existing spreadsheets."
+          },
+          {
+            "title": "Build a usable pilot",
+            "description": "Design the core workflows and test them with the team using sample data."
+          },
+          {
+            "title": "Roll out and support",
+            "description": "Migrate agreed data, train coordinators, and document support and access controls."
+          }
+        ],
+        "engagements": [
+          "Operations platform build",
+          "Volunteer scheduling tools",
+          "Workflow discovery sprint"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "8–12 weeks for a focused operations platform.",
+        "pricingSummary": "Sample builds from $8,000; ongoing hosting, support, and additional workflows are separate.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Campaign administration platform",
+            "organization": "Bellwether Regional Campaign Office",
+            "period": "2026",
+            "summary": "Delivered an internal task dashboard, event logistics calendar, and role-based access.",
+            "projectIds": [
+              "fieldline-operations"
+            ]
+          },
+          {
+            "title": "Volunteer scheduling hub",
+            "organization": "Harbor Vale Civic Events Team",
+            "period": "2026",
+            "summary": "Built shift signup, coordinator review, and attendance export workflows.",
+            "projectIds": [
+              "volunteer-shift-hub"
+            ]
+          }
+        ],
+        "boundaries": [
+          "No voter profiling, targeting, political advertising, or speechwriting service.",
+          "Client data and retention rules are agreed during discovery."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [
+        "https://fieldlinelabs.example/services",
+        "https://fieldlinelabs.example/work"
+      ],
+      "researchFixtures": [
+        {
+          "url": "https://fieldlinelabs.example/services",
+          "title": "Fieldline Labs — sample services",
+          "excerpt": "A fictional software studio developing internal campaign operations platforms: volunteer schedules, event logistics, task ownership, and staff dashboards. Fieldline designs the systems behind a campaign, with no speechwriting or voter persuasion service. Sample builds from $8,000; ongoing hosting, support, and additional workflows are separate.",
+          "capabilities": [
+            "platform development",
+            "campaign operations",
+            "accessibility"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "fieldline-labs-fieldline-operations-delivery",
+          "title": "An internal task and event platform with staff training delivered",
+          "projectId": "fieldline-operations",
+          "sourceUrl": "/project/fieldline-operations",
+          "provenance": "sample",
+          "description": "Fieldline Labs developed an internal campaign operations platform for staff task ownership, event logistics, and coordinator dashboards. The fictional project included role-based access, workflow testing, and a documented handover; it did not include voter targeting, messaging, or speechwriting."
+        },
+        {
+          "id": "fieldline-labs-volunteer-shift-hub-delivery",
+          "title": "A volunteer shift hub, coordinator workflow, and attendance export delivered",
+          "projectId": "volunteer-shift-hub",
+          "sourceUrl": "/project/volunteer-shift-hub",
+          "provenance": "sample",
+          "description": "Fieldline built a scheduling hub for a fictional civic events team, with volunteer shift signup, coordinator review, event capacity, and attendance exports. The project focused on internal logistics and software usability, without political messaging or speechwriting."
+        }
+      ]
+    },
+    {
+      "id": "civic-script",
+      "name": "Civic Script",
+      "initials": "cs",
+      "location": "Harbor Vale · fictional demo location",
+      "tagline": "Clear words for the work of public office.",
+      "description": "A fictional speechwriting practice led by Elena Brooks, who writes short announcements and official remarks for Mayor Lena Hart of Harbor Vale. Her completed work demonstrates speech research, concise government communications, revisions, and speaker coaching; no election campaign assignment is claimed.",
+      "services": [
+        "Speechwriting",
+        "Government communications",
+        "Short announcements",
+        "Speaker coaching"
+      ],
+      "color": "#e9e7de",
+      "capabilities": [
+        "speechwriting",
+        "government communications",
+        "short announcements",
+        "speaker coaching",
+        "speech research",
+        "speech revisions"
+      ],
+      "styleTags": [
+        "clear",
+        "measured",
+        "plain language"
+      ],
+      "minimumProjectCents": 120000,
+      "unsupportedCapabilities": [
+        "campaign speechwriting",
+        "election campaign experience",
+        "keynote delivery"
+      ],
+      "sample": true,
+      "seedVersion": 4,
+      "email": "hello@civicscript.example",
+      "website": "",
+      "deliveryModes": [
+        "remote"
+      ],
+      "profile": {
+        "foundedYear": 2017,
+        "teamSize": "Independent writer with a research editor",
+        "lead": {
+          "name": "Elena Brooks",
+          "title": "Founder & municipal speechwriter",
+          "bio": "Elena is the fictional writer behind Mayor Lena Hart’s short office announcements and service briefings in Harbor Vale."
+        },
+        "overview": "Civic Script specializes in the everyday language of public office: short announcements, ceremonial remarks, and clear service briefings. Elena interviews staff, checks dates and operational details with the office, and revises aloud with the speaker. Her sample record is strong in mayoral communications; it does not include an election campaign.",
+        "idealClients": [
+          "Mayoral offices",
+          "Municipal departments",
+          "Public-service leaders"
+        ],
+        "specialties": [
+          "Short official announcements",
+          "Municipal speech research",
+          "Plain-language editing",
+          "Spoken revision and rehearsal"
+        ],
+        "process": [
+          {
+            "title": "Confirm the facts",
+            "description": "Gather the office brief, approved source material, purpose, length, and speaker preferences."
+          },
+          {
+            "title": "Draft for the speaker",
+            "description": "Write a concise structure and mark details that need office confirmation."
+          },
+          {
+            "title": "Review and rehearse",
+            "description": "Incorporate approvals, revise aloud, and provide a clean final version with delivery notes."
+          }
+        ],
+        "engagements": [
+          "Individual short speech",
+          "Monthly office announcement package",
+          "Briefing and rehearsal support"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "3–5 working days for a short announcement; 2–3 weeks for a briefing package.",
+        "pricingSummary": "Sample projects from $1,200; ongoing office support is quoted as a defined monthly scope.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Mayor’s office speechwriter",
+            "organization": "Office of Mayor Lena Hart, Harbor Vale",
+            "period": "2024–2026",
+            "summary": "Completed a package of short official announcements and recurring municipal remarks.",
+            "projectIds": [
+              "mayor-announcements"
+            ]
+          },
+          {
+            "title": "Public-service briefing writer",
+            "organization": "Harbor Vale Municipal Services Office",
+            "period": "2026",
+            "summary": "Created clear spoken briefings from approved service information and coordinated staff review.",
+            "projectIds": [
+              "city-service-briefings"
+            ]
+          }
+        ],
+        "boundaries": [
+          "No election campaign experience or campaign speechwriting is claimed in the completed portfolio.",
+          "Client staff approve all factual and operational information before delivery."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [],
+      "researchFixtures": [],
+      "achievements": [
+        {
+          "id": "civic-script-mayor-announcements-delivery",
+          "title": "A reviewed package of short mayoral announcements and delivery notes completed",
+          "projectId": "mayor-announcements",
+          "sourceUrl": "/project/mayor-announcements",
+          "provenance": "sample",
+          "description": "Elena Brooks wrote short official announcements and ceremonial remarks for Mayor Lena Hart of fictional Harbor Vale. Each piece translated approved office information into concise spoken language, with speech research, staff review, revisions, and speaker coaching. This completed municipal assignment was public-office work, not an election campaign."
+        },
+        {
+          "id": "civic-script-city-service-briefings-delivery",
+          "title": "A municipal briefing pack with reviewed scripts and rehearsal notes delivered",
+          "projectId": "city-service-briefings",
+          "sourceUrl": "/project/city-service-briefings",
+          "provenance": "sample",
+          "description": "Civic Script prepared a series of short public-service briefings from approved municipal information. Elena organized the facts, wrote concise spoken scripts, coordinated office revisions, and provided rehearsal notes. The completed work demonstrates government communications and short announcements without election campaign experience."
+        }
+      ]
+    },
+    {
+      "id": "campaign-voice",
+      "name": "Campaign Voice",
+      "initials": "cv",
+      "location": "Bellwether Commonwealth · fictional demo location",
+      "tagline": "A practiced writing process for campaign deadlines.",
+      "description": "A fictional speechwriting practice led by Adrian Cole, the speechwriter on Mara Voss’s winning 2025 governor campaign in the fictional Bellwether Commonwealth. Completed campaign work includes speech research, drafting, revisions, approval coordination, and rehearsal. The campaign won the latest governor election in this demo setting; no claim is made that the speeches caused the result.",
+      "services": [
+        "Speechwriting",
+        "Campaign speechwriting",
+        "Speech research",
+        "Speaker coaching"
+      ],
+      "color": "#e8e3d6",
+      "capabilities": [
+        "speechwriting",
+        "campaign speechwriting",
+        "election campaign experience",
+        "speaker coaching",
+        "speech research",
+        "speech revisions"
+      ],
+      "styleTags": [
+        "clear",
+        "conversational",
+        "measured"
+      ],
+      "minimumProjectCents": 180000,
+      "unsupportedCapabilities": [
+        "keynote delivery",
+        "platform development"
+      ],
+      "sample": true,
+      "seedVersion": 4,
+      "email": "hello@campaignvoice.example",
+      "website": "",
+      "deliveryModes": [
+        "remote"
+      ],
+      "profile": {
+        "foundedYear": 2016,
+        "teamSize": "Lead writer with a research and editing associate",
+        "lead": {
+          "name": "Adrian Cole",
+          "title": "Founder & campaign speechwriter",
+          "bio": "Adrian served as speechwriter for fictional candidate Mara Voss during the completed 2025 Bellwether governor campaign, including drafting, revision, and rehearsal."
+        },
+        "overview": "Campaign Voice is a fictional speechwriting practice with direct election campaign experience. Adrian worked through the 2025 governor campaign calendar, managing draft versions, source checks, approvals, and speaker rehearsals. Mara Voss won that fictional election. This is relevant prior campaign work for a legislative speechwriting brief, without attributing the election result to the writing.",
+        "idealClients": [
+          "Legislative campaign teams",
+          "Candidates needing an experienced writer",
+          "Campaign communications leads"
+        ],
+        "specialties": [
+          "Election campaign speechwriting",
+          "Speech research and source checks",
+          "Draft and approval coordination",
+          "Speaker rehearsal"
+        ],
+        "process": [
+          {
+            "title": "Set the writing brief",
+            "description": "Agree speech length, the candidate’s voice, source material, deadlines, and review owners."
+          },
+          {
+            "title": "Draft and verify",
+            "description": "Prepare a structured draft, log sources, and flag material needing client confirmation."
+          },
+          {
+            "title": "Revise and rehearse",
+            "description": "Coordinate revisions and approvals, then test timing and delivery with the speaker."
+          }
+        ],
+        "engagements": [
+          "Single campaign speech package",
+          "Defined campaign writing retainer",
+          "Speech revision and rehearsal"
+        ],
+        "languages": [
+          "English"
+        ],
+        "typicalTimeline": "7–10 working days for a researched speech package; retainers follow an agreed calendar.",
+        "pricingSummary": "Sample projects from $1,800; research depth, number of speeches, and revision windows determine the quote.",
+        "availabilityNote": "Sample availability only. Confirm dates, scope, and capacity with the provider before booking.",
+        "experience": [
+          {
+            "title": "Governor campaign speechwriter",
+            "organization": "Mara Voss for Governor, Bellwether Commonwealth",
+            "period": "January–November 2025",
+            "summary": "Wrote and revised speeches through a completed governor election campaign, with source checks, approvals, and rehearsal. Voss won the fictional 2025 election; the result is context, not an attributed writing outcome.",
+            "projectIds": [
+              "governor-campaign"
+            ]
+          },
+          {
+            "title": "Campaign drafting and rehearsal workflow",
+            "organization": "Mara Voss Campaign Communications Team",
+            "period": "2025",
+            "summary": "Organized draft versions, source notes, review deadlines, and rehearsal handoffs for the same campaign.",
+            "projectIds": [
+              "campaign-speech-workflow"
+            ]
+          }
+        ],
+        "boundaries": [
+          "All people, offices, places, and election results in this profile are fictional demo data.",
+          "Prior campaign work is relevant experience, not a guarantee of future election results.",
+          "The service covers writing and rehearsal; the client approves all factual claims."
+        ]
+      },
+      "evidenceUpdatedAt": "2026-10-11T12:00:00Z",
+      "sampleNotice": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "researchUrls": [],
+      "researchFixtures": [],
+      "achievements": [
+        {
+          "id": "campaign-voice-governor-campaign-delivery",
+          "title": "Campaign speech package, source notes, and rehearsals delivered for the 2025 governor campaign",
+          "projectId": "governor-campaign",
+          "sourceUrl": "/project/governor-campaign",
+          "provenance": "sample",
+          "description": "Adrian Cole researched, wrote, and revised campaign speeches for Mara Voss during the fictional Bellwether Commonwealth governor election in 2025. The completed assignment included source notes, scheduled approvals, and speaker rehearsal. Voss won the latest governor election in this demo setting; the portfolio does not attribute that result to the speeches."
+        },
+        {
+          "id": "campaign-voice-campaign-speech-workflow-delivery",
+          "title": "A source log, versioned drafts, and rehearsal workflow completed",
+          "projectId": "campaign-speech-workflow",
+          "sourceUrl": "/project/campaign-speech-workflow",
+          "provenance": "sample",
+          "description": "For the same completed fictional 2025 governor campaign, Campaign Voice organized speech research, versioned drafts, approval deadlines, revisions, and candidate rehearsal handoffs. This companion case documents the writing process behind the governor-campaign assignment, not a second election or an additional campaign win."
         }
       ]
     }
@@ -485,17 +2082,41 @@
       "color": "#ede7db",
       "featured": true,
       "createdAt": "2026-10-10T16:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "Fresh vegetables and dressings arranged on a wooden buffet table",
       "imagePosition": "50% 50%",
       "imageCredit": {
         "photographer": "Isaac Pérez",
         "sourceUrl": "https://www.pexels.com/photo/variety-of-food-on-the-table-17811675/",
         "source": "Pexels"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-10T16:00:00Z",
+      "capabilities": [
+        "catering",
+        "menu planning",
+        "buffet service",
+        "dietary accommodations"
+      ],
+      "styleTags": [
+        "warm",
+        "seasonal"
+      ],
+      "caseStudy": {
+        "challenge": "Harvest House Dinner needed a cohesive approach to catering, menu planning, with clear scope and an organized handover.",
+        "approach": "A seasonal buffet and shared-table dinner for a company celebration, with a coordinated menu and welcoming food service.",
+        "deliverables": [
+          "Catering",
+          "Menu planning",
+          "Scope review and client handover"
+        ],
+        "outcome": "A relaxed dinner with a cohesive seasonal menu"
       }
     },
     {
@@ -515,17 +2136,40 @@
       "color": "#f1e3df",
       "featured": false,
       "createdAt": "2026-10-10T15:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "Pastel roses and pink table runners in a garden conservatory",
       "imagePosition": "50% 60%",
       "imageCredit": {
         "photographer": "Kimy Moto",
         "sourceUrl": "https://www.pexels.com/photo/elegant-garden-wedding-table-setting-with-florals-37393654/",
         "source": "Pexels"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-10T15:00:00Z",
+      "capabilities": [
+        "floral installations",
+        "table styling",
+        "event decorations"
+      ],
+      "styleTags": [
+        "seasonal",
+        "cohesive"
+      ],
+      "caseStudy": {
+        "challenge": "The Garden Celebration needed a cohesive approach to floral installations, table styling, with clear scope and an organized handover.",
+        "approach": "A blank event space transformed with a floral entrance, layered tablescapes, and soft colors carried through every detail.",
+        "deliverables": [
+          "Floral installations",
+          "Table styling",
+          "Scope review and client handover"
+        ],
+        "outcome": "One cohesive look from entrance to table"
       }
     },
     {
@@ -545,11 +2189,11 @@
       "color": "#ece9df",
       "featured": false,
       "createdAt": "2026-10-10T14:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "warm",
         "colorful",
@@ -567,6 +2211,20 @@
         "photographer": "Adrien Olichon",
         "sourceUrl": "https://unsplash.com/photos/restaurant-interior-with-mirrored-wall-and-booth-seating-f25_bNsKV00",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-10T14:00:00Z",
+      "caseStudy": {
+        "challenge": "Poppy & Salt needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "A warm, colorful neighborhood bistro website with responsive seasonal menus, an editable content management system, and an integration with an existing reservation service.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "A simpler path from menu to reservation"
       }
     },
     {
@@ -574,11 +2232,13 @@
       "businessId": "maya-bennett",
       "title": "Big ideas for teams moving forward",
       "client": "Lead Together Summit",
-      "description": "A keynote on creative collaboration and leading through change, paired with an audience Q&A to connect the ideas to everyday work.",
+      "description": "A keynote on creative collaboration and leading through change, paired with an audience Q&A to connect the ideas to everyday work. Maya researched, wrote, and revised the original speech and rehearsed its delivery. This completed corporate keynote demonstrates speaking and writing craft, with no election campaign assignment.",
       "category": "Keynote speaking",
       "services": [
         "Keynote speaking",
-        "Audience Q&A"
+        "Audience Q&A",
+        "Speechwriting",
+        "Speaker coaching"
       ],
       "result": "Shared ideas to take back to the team",
       "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
@@ -586,17 +2246,44 @@
       "color": "#e7e5f0",
       "featured": false,
       "createdAt": "2026-10-10T13:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "A conference participant speaking into a microphone during a discussion",
       "imagePosition": "50% 40%",
       "imageCredit": {
         "photographer": "Wonderlane",
         "sourceUrl": "https://unsplash.com/photos/woman-holding-microphone-w1s5H_3Zn48",
         "source": "Unsplash"
+      },
+      "capabilities": [
+        "speechwriting",
+        "speech research",
+        "speech revisions",
+        "speaker coaching",
+        "keynote delivery"
+      ],
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-10T13:00:00Z",
+      "styleTags": [
+        "clear",
+        "conversational"
+      ],
+      "caseStudy": {
+        "challenge": "Lead Together Summit needed a cohesive approach to keynote speaking, audience q&a, speechwriting, speaker coaching, with clear scope and an organized handover.",
+        "approach": "A keynote on creative collaboration and leading through change, paired with an audience Q&A to connect the ideas to everyday work. Maya researched, wrote, and revised the original speech and rehearsed its delivery. This completed corporate keynote demonstrates speaking and writing craft, with no election campaign assignment.",
+        "deliverables": [
+          "Keynote speaking",
+          "Audience Q&A",
+          "Speechwriting",
+          "Speaker coaching",
+          "Scope review and client handover"
+        ],
+        "outcome": "Shared ideas to take back to the team"
       }
     },
     {
@@ -616,17 +2303,41 @@
       "color": "#f1e4cf",
       "featured": false,
       "createdAt": "2026-10-09T12:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "Fruit, pastries, and sandwiches on a sunny outdoor buffet",
       "imagePosition": "50% 50%",
       "imageCredit": {
         "photographer": "fu zhichao",
         "sourceUrl": "https://www.pexels.com/photo/various-desserts-on-a-table-covered-with-baby-blue-cover-587741/",
         "source": "Pexels"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-09T12:00:00Z",
+      "capabilities": [
+        "catering",
+        "menu planning",
+        "buffet service",
+        "dietary accommodations"
+      ],
+      "styleTags": [
+        "warm",
+        "seasonal"
+      ],
+      "caseStudy": {
+        "challenge": "Terrace Brunch needed a cohesive approach to catering, buffet service, with clear scope and an organized handover.",
+        "approach": "A relaxed company brunch with seasonal buffet dishes and a menu designed for sharing, brought together with coordinated on-site food service.",
+        "deliverables": [
+          "Catering",
+          "Buffet service",
+          "Scope review and client handover"
+        ],
+        "outcome": "A welcoming brunch with easy buffet service"
       }
     },
     {
@@ -646,17 +2357,40 @@
       "color": "#e8d5c0",
       "featured": false,
       "createdAt": "2026-10-08T12:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "Orange flowers, candles, and woven place settings at a warm reception",
       "imagePosition": "50% 55%",
       "imageCredit": {
         "photographer": "Jonathan Borba",
         "sourceUrl": "https://www.pexels.com/photo/elegant-outdoor-wedding-table-setup-with-floral-centerpiece-37958082/",
         "source": "Pexels"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-08T12:00:00Z",
+      "capabilities": [
+        "floral installations",
+        "table styling",
+        "event decorations"
+      ],
+      "styleTags": [
+        "seasonal",
+        "cohesive"
+      ],
+      "caseStudy": {
+        "challenge": "Amber House Reception needed a cohesive approach to floral installations, table styling, with clear scope and an organized handover.",
+        "approach": "Warm floral installations and layered table styling give an evening reception a cohesive autumn palette, from the entrance to the last place setting.",
+        "deliverables": [
+          "Floral installations",
+          "Table styling",
+          "Scope review and client handover"
+        ],
+        "outcome": "A warm, coordinated setting for the reception"
       }
     },
     {
@@ -676,11 +2410,11 @@
       "color": "#efede8",
       "featured": false,
       "createdAt": "2026-10-07T12:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "minimal",
         "editorial",
@@ -697,6 +2431,20 @@
         "photographer": "Brooke Lark",
         "sourceUrl": "https://unsplash.com/photos/assorted-color-ceramic-bowls-and-saucers-lot-on-white-wooden-shelves-KyUmKlXrhAM",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-07T12:00:00Z",
+      "caseStudy": {
+        "challenge": "Alder Goods needed a cohesive approach to website design, e-commerce, with clear scope and an organized handover.",
+        "approach": "A homeware storefront with clear collections, detailed product pages, and an editorial layout that gives independent makers room to tell their stories.",
+        "deliverables": [
+          "Website design",
+          "E-commerce",
+          "Scope review and client handover"
+        ],
+        "outcome": "Clearer collections and easier product discovery"
       }
     },
     {
@@ -704,11 +2452,13 @@
       "businessId": "maya-bennett",
       "title": "A fresh perspective on creative leadership",
       "client": "Creative Futures Forum",
-      "description": "A tailored leadership keynote explores how teams can make room for new ideas during change, followed by an audience Q&A about collaboration at work.",
+      "description": "A tailored leadership keynote explores how teams can make room for new ideas during change, followed by an audience Q&A about collaboration at work. Maya researched, wrote, and revised the original speech and rehearsed its delivery. This completed corporate keynote demonstrates speaking and writing craft, with no election campaign assignment.",
       "category": "Keynote speaking",
       "services": [
         "Leadership talks",
-        "Audience Q&A"
+        "Audience Q&A",
+        "Speechwriting",
+        "Speaker coaching"
       ],
       "result": "Practical discussion around leading creative teams",
       "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
@@ -716,17 +2466,44 @@
       "color": "#dce5e3",
       "featured": false,
       "createdAt": "2026-10-06T12:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "A keynote speaker presenting to an audience at a professional conference",
       "imagePosition": "50% 40%",
       "imageCredit": {
         "photographer": "Product School",
         "sourceUrl": "https://unsplash.com/photos/woman-holding-microphone-standing-on-stage-D0rMhzEwiEA",
         "source": "Unsplash"
+      },
+      "capabilities": [
+        "speechwriting",
+        "speech research",
+        "speech revisions",
+        "speaker coaching",
+        "keynote delivery"
+      ],
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-06T12:00:00Z",
+      "styleTags": [
+        "clear",
+        "conversational"
+      ],
+      "caseStudy": {
+        "challenge": "Creative Futures Forum needed a cohesive approach to leadership talks, audience q&a, speechwriting, speaker coaching, with clear scope and an organized handover.",
+        "approach": "A tailored leadership keynote explores how teams can make room for new ideas during change, followed by an audience Q&A about collaboration at work. Maya researched, wrote, and revised the original speech and rehearsed its delivery. This completed corporate keynote demonstrates speaking and writing craft, with no election campaign assignment.",
+        "deliverables": [
+          "Leadership talks",
+          "Audience Q&A",
+          "Speechwriting",
+          "Speaker coaching",
+          "Scope review and client handover"
+        ],
+        "outcome": "Practical discussion around leading creative teams"
       }
     },
     {
@@ -746,17 +2523,41 @@
       "color": "#e2e6d6",
       "featured": false,
       "createdAt": "2026-10-05T12:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "Guests sharing dishes around a communal dinner table",
       "imagePosition": "50% 55%",
       "imageCredit": {
         "photographer": "Gül Işık",
         "sourceUrl": "https://www.pexels.com/photo/food-on-a-table-20488508/",
         "source": "Pexels"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-05T12:00:00Z",
+      "capabilities": [
+        "catering",
+        "menu planning",
+        "buffet service",
+        "dietary accommodations"
+      ],
+      "styleTags": [
+        "warm",
+        "seasonal"
+      ],
+      "caseStudy": {
+        "challenge": "Community Supper needed a cohesive approach to menu planning, buffet service, with clear scope and an organized handover.",
+        "approach": "A shared community supper built around a seasonal buffet, a coordinated menu, and friendly on-site food service that keeps the gathering relaxed.",
+        "deliverables": [
+          "Menu planning",
+          "Buffet service",
+          "Scope review and client handover"
+        ],
+        "outcome": "A shared meal with a clear service plan"
       }
     },
     {
@@ -776,17 +2577,40 @@
       "color": "#dde4ee",
       "featured": false,
       "createdAt": "2026-10-04T12:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "Blue linen napkins and cream flowers on an elegant white table",
       "imagePosition": "50% 55%",
       "imageCredit": {
         "photographer": "Jonathan Borba",
         "sourceUrl": "https://www.pexels.com/photo/elegant-wedding-table-setting-with-floral-arrangement-29040921/",
         "source": "Pexels"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-04T12:00:00Z",
+      "capabilities": [
+        "floral installations",
+        "table styling",
+        "event decorations"
+      ],
+      "styleTags": [
+        "seasonal",
+        "cohesive"
+      ],
+      "caseStudy": {
+        "challenge": "Blue Hour Celebration needed a cohesive approach to event decorations, table styling, with clear scope and an organized handover.",
+        "approach": "A blue-and-cream floral concept connects the entrance installation and table styling, turning a simple venue into an intimate celebration space.",
+        "deliverables": [
+          "Event decorations",
+          "Table styling",
+          "Scope review and client handover"
+        ],
+        "outcome": "A consistent floral palette across the venue"
       }
     },
     {
@@ -807,11 +2631,11 @@
       "featured": true,
       "createdAt": "2026-10-10T12:00:00Z",
       "archived": true,
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "warm",
         "colorful",
@@ -823,6 +2647,26 @@
         "photographer": "Adrien Olichon",
         "sourceUrl": "https://unsplash.com/photos/restaurant-interior-with-mirrored-wall-and-booth-seating-f25_bNsKV00",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-10T12:00:00Z",
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "content management"
+      ],
+      "caseStudy": {
+        "challenge": "Poppy & Salt needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "A colorful neighborhood bistro gets a warm digital home, with seasonal menus, the people behind the food, and an easy route to reservations.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "A simpler path from menu to reservation"
       }
     },
     {
@@ -843,11 +2687,11 @@
       "featured": false,
       "createdAt": "2026-10-09T12:00:00Z",
       "archived": true,
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "minimal",
         "editorial",
@@ -859,6 +2703,25 @@
         "photographer": "Brooke Lark",
         "sourceUrl": "https://unsplash.com/photos/assorted-color-ceramic-bowls-and-saucers-lot-on-white-wooden-shelves-KyUmKlXrhAM",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-09T12:00:00Z",
+      "capabilities": [
+        "responsive website",
+        "e-commerce",
+        "content management"
+      ],
+      "caseStudy": {
+        "challenge": "Alder Goods needed a cohesive approach to website design, e-commerce, with clear scope and an organized handover.",
+        "approach": "An editorial e-commerce website for an independent homeware shop. Clear collections and thoughtful product details bring its makers and materials into focus.",
+        "deliverables": [
+          "Website design",
+          "E-commerce",
+          "Scope review and client handover"
+        ],
+        "outcome": "Product stories, made easier to explore"
       }
     },
     {
@@ -879,11 +2742,11 @@
       "featured": false,
       "createdAt": "2026-10-08T12:00:00Z",
       "archived": true,
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "calm",
         "accessible",
@@ -895,6 +2758,27 @@
         "photographer": "Christian Harb",
         "sourceUrl": "https://unsplash.com/photos/people-practicing-yoga-in-a-studio-OV3PU7FD6Fc",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-08T12:00:00Z",
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "accessibility",
+        "content management"
+      ],
+      "caseStudy": {
+        "challenge": "Stillwater Yoga needed a cohesive approach to website design, brand identity, with clear scope and an organized handover.",
+        "approach": "A welcoming website for a community yoga studio, bringing classes, instructor introductions, and first-visit information together in one calm experience.",
+        "deliverables": [
+          "Website design",
+          "Brand identity",
+          "Scope review and client handover"
+        ],
+        "outcome": "Clearer class information for new students"
       }
     },
     {
@@ -915,11 +2799,11 @@
       "featured": false,
       "createdAt": "2026-10-07T12:00:00Z",
       "archived": true,
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "bold",
         "visual",
@@ -931,6 +2815,26 @@
         "photographer": "Nike Ossler",
         "sourceUrl": "https://www.pexels.com/photo/geometric-modern-house-19541342/",
         "source": "Pexels"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-07T12:00:00Z",
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "photography"
+      ],
+      "caseStudy": {
+        "challenge": "Cornerstone Spaces needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "A project-led portfolio for an architecture practice, pairing generous imagery with the story, materials, and approach behind each completed space.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "A clearer introduction to the practice"
       }
     },
     {
@@ -951,11 +2855,11 @@
       "featured": true,
       "createdAt": "2026-10-09T12:00:00Z",
       "archived": true,
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "warm",
         "editorial",
@@ -967,6 +2871,27 @@
         "photographer": "Toa Heftiba",
         "sourceUrl": "https://unsplash.com/photos/restaurant-interior-during-daytime-doZQmog8A5w",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-09T12:00:00Z",
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "content management",
+        "accessibility"
+      ],
+      "caseStudy": {
+        "challenge": "Olive & Table needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "A warm, welcoming website that brings a neighborhood restaurant to life. Built around seasonal menus, the story behind the food, and a simpler path to reservations.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "32% more online reservations"
       }
     },
     {
@@ -975,7 +2900,7 @@
       "title": "Making room for a better shopping experience",
       "client": "Forma Home",
       "description": "A clean, editorial storefront for a collection of considered objects. Product storytelling and simple navigation help visitors find their next favorite piece.",
-      "category": "E-commerce",
+      "category": "Website development",
       "services": [
         "Website design",
         "E-commerce"
@@ -986,18 +2911,41 @@
       "color": "#efede8",
       "featured": false,
       "createdAt": "2026-10-08T12:00:00Z",
-      "archived": true,
-      "seedVersion": 3,
+      "archived": false,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "imageAlt": "A considered collection of ceramic bowls and vessels on wooden shelves",
       "imagePosition": "50% 50%",
       "imageCredit": {
         "photographer": "Vladimir Gladkov",
         "sourceUrl": "https://unsplash.com/photos/white-ceramic-bowls-on-white-wooden-shelf-ZAK-azW7-Kk",
         "source": "Unsplash"
+      },
+      "capabilities": [
+        "responsive website",
+        "e-commerce",
+        "content management"
+      ],
+      "styleTags": [
+        "minimal",
+        "refined"
+      ],
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-08T12:00:00Z",
+      "caseStudy": {
+        "challenge": "Forma Home needed a cohesive approach to website design, e-commerce, with clear scope and an organized handover.",
+        "approach": "A clean, editorial storefront for a collection of considered objects. Product storytelling and simple navigation help visitors find their next favorite piece.",
+        "deliverables": [
+          "Website design",
+          "E-commerce",
+          "Scope review and client handover"
+        ],
+        "outcome": "24% higher conversion rate"
       }
     },
     {
@@ -1018,11 +2966,11 @@
       "featured": false,
       "createdAt": "2026-10-07T12:00:00Z",
       "archived": true,
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "playful",
         "colorful",
@@ -1034,6 +2982,26 @@
         "photographer": "Alex Shaw",
         "sourceUrl": "https://unsplash.com/photos/2-women-sitting-on-purple-yoga-mat-_K7RBVSKyCY",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-07T12:00:00Z",
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "bilingual content"
+      ],
+      "caseStudy": {
+        "challenge": "Bloom Wellness needed a cohesive approach to website design, brand identity, with clear scope and an organized handover.",
+        "approach": "An approachable website for a neighborhood wellness studio, with clear class information, instructor stories, and a mobile-friendly schedule.",
+        "deliverables": [
+          "Website design",
+          "Brand identity",
+          "Scope review and client handover"
+        ],
+        "outcome": "41% more class inquiries"
       }
     },
     {
@@ -1054,11 +3022,11 @@
       "featured": false,
       "createdAt": "2026-10-06T12:00:00Z",
       "archived": true,
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "warm",
         "editorial",
@@ -1070,6 +3038,27 @@
         "photographer": "Talha Resitoglu",
         "sourceUrl": "https://www.pexels.com/photo/modern-house-with-lush-greenery-in-suburban-setting-30242717/",
         "source": "Pexels"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-06T12:00:00Z",
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "content management",
+        "accessibility"
+      ],
+      "caseStudy": {
+        "challenge": "Fieldwork Architecture needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "A visual portfolio that gives an architecture practice’s completed projects room to speak. Clear services and project details support new client inquiries.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "A clearer path to project inquiries"
       }
     },
     {
@@ -1089,11 +3078,11 @@
       "color": "#e5eedc",
       "featured": false,
       "createdAt": "2026-10-11T08:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "warm",
         "editorial",
@@ -1112,6 +3101,20 @@
         "photographer": "Toa Heftiba",
         "sourceUrl": "https://unsplash.com/photos/restaurant-interior-during-daytime-doZQmog8A5w",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-11T08:00:00Z",
+      "caseStudy": {
+        "challenge": "Olive & Table needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "An editorial restaurant website with seasonal menus, mobile navigation, a content management handover, and an integrated reservation service.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "Reservation journey and content handover delivered"
       }
     },
     {
@@ -1131,11 +3134,11 @@
       "color": "#e5eedc",
       "featured": false,
       "createdAt": "2026-10-11T08:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "calm",
         "accessible",
@@ -1154,6 +3157,20 @@
         "photographer": "Polina Kuzovkova",
         "sourceUrl": "https://unsplash.com/photos/a-restaurant-with-tables-and-chairs-with-plants-on-the-wall-F86IbrHHee0",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-11T08:00:00Z",
+      "caseStudy": {
+        "challenge": "Willow Kitchen needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "A calm restaurant website with keyboard-accessible navigation, responsive menus, an editable menu system, and a reservation service integration.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "Keyboard navigation and responsive menus delivered"
       }
     },
     {
@@ -1173,11 +3190,11 @@
       "color": "#e5eedc",
       "featured": false,
       "createdAt": "2026-10-11T08:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "bold",
         "visual",
@@ -1195,6 +3212,20 @@
         "photographer": "Alex Munsell",
         "sourceUrl": "https://unsplash.com/photos/close-up-photo-of-cooked-food-on-square-white-plate-auIbTAcSH6E",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-11T08:00:00Z",
+      "caseStudy": {
+        "challenge": "Ember Dining needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "An image-led hospitality website pairing large food photography with responsive menus and an integrated reservation service.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "Image-led menu and reservation experience delivered"
       }
     },
     {
@@ -1214,11 +3245,11 @@
       "color": "#e5eedc",
       "featured": false,
       "createdAt": "2026-10-11T08:00:00Z",
-      "seedVersion": 3,
+      "seedVersion": 4,
       "sample": true,
       "status": "completed",
       "visibility": "public",
-      "evidenceVersion": 2,
+      "evidenceVersion": 3,
       "styleTags": [
         "playful",
         "colorful",
@@ -1236,6 +3267,593 @@
         "photographer": "Odiseo Castrejon",
         "sourceUrl": "https://unsplash.com/photos/assorted-tacos-on-wooden-plate-J04BD4ysoh8",
         "source": "Unsplash"
+      },
+      "completed": true,
+      "publicShareable": true,
+      "provenance": "sample",
+      "completedAt": "2026-10-11T08:00:00Z",
+      "caseStudy": {
+        "challenge": "Casa Sun needed a cohesive approach to website design, web development, with clear scope and an organized handover.",
+        "approach": "A playful bilingual restaurant website with English and Spanish menus, responsive layouts, and an integrated reservation service.",
+        "deliverables": [
+          "Website design",
+          "Web development",
+          "Scope review and client handover"
+        ],
+        "outcome": "English and Spanish menus and reservations delivered"
+      }
+    },
+    {
+      "id": "governor-campaign",
+      "businessId": "campaign-voice",
+      "title": "Speechwriting for a winning governor campaign",
+      "client": "Mara Voss for Governor · fictional 2025 election",
+      "description": "Adrian Cole researched, wrote, and revised campaign speeches for Mara Voss during the fictional Bellwether Commonwealth governor election in 2025. The completed assignment included source notes, scheduled approvals, and speaker rehearsal. Voss won the latest governor election in this demo setting; the portfolio does not attribute that result to the speeches.",
+      "category": "Speechwriting",
+      "services": [
+        "Speechwriting",
+        "Campaign speechwriting",
+        "Speech research"
+      ],
+      "result": "Campaign speech package, source notes, and rehearsals delivered for the 2025 governor campaign",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/governor-campaign.jpg",
+      "imageAlt": "A black microphone ready for a speech in an empty meeting hall",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Borta",
+        "sourceUrl": "https://www.pexels.com/photo/black-microphone-in-light-conference-hall-4331578/",
+        "source": "Pexels"
+      },
+      "color": "#e8e3d6",
+      "featured": true,
+      "createdAt": "2026-10-11T11:00:00Z",
+      "completedAt": "2025-11-15T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "speechwriting",
+        "campaign speechwriting",
+        "election campaign experience",
+        "speech research",
+        "speech revisions",
+        "speaker coaching"
+      ],
+      "styleTags": [
+        "clear",
+        "conversational",
+        "measured"
+      ],
+      "caseStudy": {
+        "challenge": "The campaign needed a writer who could work across a changing election calendar with consistent review and approval.",
+        "approach": "Adrian worked from approved source material, coordinated review owners, revised drafts, and rehearsed timing with the candidate.",
+        "deliverables": [
+          "Researched campaign speech drafts",
+          "Source and factual-review notes",
+          "Approved final versions with revision history",
+          "Speaker rehearsal and delivery notes"
+        ],
+        "outcome": "Campaign speech package, source notes, and rehearsals delivered for the 2025 governor campaign"
+      }
+    },
+    {
+      "id": "mayor-announcements",
+      "businessId": "civic-script",
+      "title": "Clear announcements for the mayor’s office",
+      "client": "Office of Mayor Lena Hart · fictional Harbor Vale",
+      "description": "Elena Brooks wrote short official announcements and ceremonial remarks for Mayor Lena Hart of fictional Harbor Vale. Each piece translated approved office information into concise spoken language, with speech research, staff review, revisions, and speaker coaching. This completed municipal assignment was public-office work, not an election campaign.",
+      "category": "Speechwriting",
+      "services": [
+        "Speechwriting",
+        "Government communications",
+        "Short announcements"
+      ],
+      "result": "A reviewed package of short mayoral announcements and delivery notes completed",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/mayor-announcements.jpg",
+      "imageAlt": "Rows of desks and microphones in an empty council chamber",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Héctor Berganza",
+        "sourceUrl": "https://www.pexels.com/photo/empty-government-chamber-with-desk-rows-and-microphones-32266781/",
+        "source": "Pexels"
+      },
+      "color": "#e9e7de",
+      "featured": false,
+      "createdAt": "2026-10-11T10:00:00Z",
+      "completedAt": "2026-07-20T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "speechwriting",
+        "government communications",
+        "short announcements",
+        "speech research",
+        "speech revisions",
+        "speaker coaching"
+      ],
+      "styleTags": [
+        "clear",
+        "measured",
+        "plain language"
+      ],
+      "caseStudy": {
+        "challenge": "The mayor’s office needed concise spoken updates that staff could review quickly and the mayor could deliver naturally.",
+        "approach": "Elena interviewed office staff, checked operational details, drafted short scripts, and refined them through read-aloud reviews.",
+        "deliverables": [
+          "Short official announcement scripts",
+          "Office factual-review checklist",
+          "Revised final copy",
+          "Read-aloud and delivery notes"
+        ],
+        "outcome": "A reviewed package of short mayoral announcements and delivery notes completed"
+      }
+    },
+    {
+      "id": "aperture-pitch",
+      "businessId": "signal-deck",
+      "title": "A clearer story for a major investor pitch",
+      "client": "Aperture Systems",
+      "description": "A fictional enterprise software team brought technical product material to Signal Deck for a major investor presentation. The studio organized the pitch narrative, designed an editable slide deck and appendix, and added speaker notes for rehearsal.",
+      "category": "Presentation design",
+      "services": [
+        "Presentation design",
+        "Pitch narrative",
+        "Speaker notes"
+      ],
+      "result": "An editable investor deck, data appendix, and rehearsal notes delivered",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/aperture-pitch.jpg",
+      "imageAlt": "Charts on a laptop and printed notes being reviewed for a business presentation",
+      "imagePosition": "40% 50%",
+      "imageCredit": {
+        "photographer": "Kampus Production",
+        "sourceUrl": "https://www.pexels.com/photo/laptop-and-papers-of-employees-during-a-meeting-7857566/",
+        "source": "Pexels"
+      },
+      "color": "#ece6fb",
+      "featured": false,
+      "createdAt": "2026-10-11T09:00:00Z",
+      "completedAt": "2026-08-22T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "presentation design",
+        "pitch narrative",
+        "speaker coaching"
+      ],
+      "styleTags": [
+        "clear",
+        "editorial",
+        "confident"
+      ],
+      "caseStudy": {
+        "challenge": "The founders had extensive product detail but needed a coherent presentation for a time-limited investor meeting.",
+        "approach": "The team edited the sequence, visualized approved business information, and rehearsed slide transitions with the founders.",
+        "deliverables": [
+          "20-slide editable presentation",
+          "Supporting data appendix",
+          "Speaker notes",
+          "Two rehearsal sessions"
+        ],
+        "outcome": "An editable investor deck, data appendix, and rehearsal notes delivered"
+      }
+    },
+    {
+      "id": "harbor-campaign-web",
+      "businessId": "civic-stack",
+      "title": "A candidate website the campaign team can maintain",
+      "client": "Harbor Vale Assembly Campaign · fictional client",
+      "description": "Civic Stack built a responsive website for a fictional legislative candidate, with accessible navigation, editable biography and public event pages, and a content-management handover. The studio supplied website development; client staff supplied and approved all political content.",
+      "category": "Website development",
+      "services": [
+        "Website development",
+        "Platform development",
+        "Content management"
+      ],
+      "result": "An accessible candidate website and content editor handover completed",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/harbor-campaign-web.jpg",
+      "imageAlt": "A laptop showing website code beside a notebook on a wooden desk",
+      "imagePosition": "60% 50%",
+      "imageCredit": {
+        "photographer": "Lukas Blazek",
+        "sourceUrl": "https://www.pexels.com/photo/turned-on-laptop-computer-574073/",
+        "source": "Pexels"
+      },
+      "color": "#dfeaf3",
+      "featured": false,
+      "createdAt": "2026-10-11T08:00:00Z",
+      "completedAt": "2026-06-10T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "responsive website",
+        "accessibility",
+        "content management"
+      ],
+      "styleTags": [
+        "accessible",
+        "clear",
+        "civic"
+      ],
+      "caseStudy": {
+        "challenge": "A small campaign team needed to publish accurate event and office information without relying on a developer for every update.",
+        "approach": "The studio mapped common public tasks, built reusable page templates, tested keyboard navigation, and trained the editors.",
+        "deliverables": [
+          "Responsive candidate website",
+          "Editable biography and event pages",
+          "Accessible navigation checks",
+          "Editor guide and handover session"
+        ],
+        "outcome": "An accessible candidate website and content editor handover completed"
+      }
+    },
+    {
+      "id": "fieldline-operations",
+      "businessId": "fieldline-labs",
+      "title": "One workspace for campaign operations",
+      "client": "Bellwether Regional Campaign Office · fictional client",
+      "description": "Fieldline Labs developed an internal campaign operations platform for staff task ownership, event logistics, and coordinator dashboards. The fictional project included role-based access, workflow testing, and a documented handover; it did not include voter targeting, messaging, or speechwriting.",
+      "category": "Platform development",
+      "services": [
+        "Platform development",
+        "Campaign operations software",
+        "Workflow design"
+      ],
+      "result": "An internal task and event platform with staff training delivered",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/fieldline-operations.jpg",
+      "imageAlt": "Two software developers reviewing code on a laptop in an office",
+      "imagePosition": "50% 58%",
+      "imageCredit": {
+        "photographer": "Mizuno K",
+        "sourceUrl": "https://www.pexels.com/photo/discussion-about-software-development-in-office-12899191/",
+        "source": "Pexels"
+      },
+      "color": "#e4eddf",
+      "featured": false,
+      "createdAt": "2026-10-11T07:00:00Z",
+      "completedAt": "2026-05-28T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "platform development",
+        "campaign operations",
+        "accessibility"
+      ],
+      "styleTags": [
+        "functional",
+        "clear",
+        "calm"
+      ],
+      "caseStudy": {
+        "challenge": "Campaign administrators were coordinating internal tasks and event logistics across disconnected spreadsheets.",
+        "approach": "The team mapped roles, prototyped a shared task board and calendar, and tested coordinator workflows using sample records.",
+        "deliverables": [
+          "Role-based operations dashboard",
+          "Task ownership and event calendar",
+          "Workflow acceptance checks",
+          "Staff training and maintenance documentation"
+        ],
+        "outcome": "An internal task and event platform with staff training delivered"
+      }
+    },
+    {
+      "id": "campaign-speech-workflow",
+      "businessId": "campaign-voice",
+      "title": "A reliable drafting rhythm through election season",
+      "client": "Mara Voss Campaign Communications Team · fictional client",
+      "description": "For the same completed fictional 2025 governor campaign, Campaign Voice organized speech research, versioned drafts, approval deadlines, revisions, and candidate rehearsal handoffs. This companion case documents the writing process behind the governor-campaign assignment, not a second election or an additional campaign win.",
+      "category": "Speechwriting",
+      "services": [
+        "Speechwriting",
+        "Campaign speechwriting",
+        "Speech research"
+      ],
+      "result": "A source log, versioned drafts, and rehearsal workflow completed",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/campaign-speech-workflow.jpg",
+      "imageAlt": "A writer taking handwritten notes in an open notebook",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Artem Podrez",
+        "sourceUrl": "https://www.pexels.com/photo/person-writing-on-a-notebook-with-a-pen-8518990/",
+        "source": "Pexels"
+      },
+      "color": "#e8e3d6",
+      "featured": false,
+      "createdAt": "2026-10-11T06:00:00Z",
+      "completedAt": "2025-11-15T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "speechwriting",
+        "campaign speechwriting",
+        "election campaign experience",
+        "speech research",
+        "speech revisions",
+        "speaker coaching"
+      ],
+      "styleTags": [
+        "clear",
+        "conversational",
+        "measured"
+      ],
+      "caseStudy": {
+        "challenge": "A busy campaign calendar needed a dependable way to move each speech from source material to a final version ready for rehearsal.",
+        "approach": "Adrian used one source log and a clear revision history, agreed review deadlines, and folded spoken feedback into the next draft.",
+        "deliverables": [
+          "Speech research source log",
+          "Versioned drafts and approval tracker",
+          "Timed rehearsal notes",
+          "Final delivery copy handoffs"
+        ],
+        "outcome": "A source log, versioned drafts, and rehearsal workflow completed"
+      }
+    },
+    {
+      "id": "city-service-briefings",
+      "businessId": "civic-script",
+      "title": "Turning office detail into clear spoken briefings",
+      "client": "Harbor Vale Municipal Services Office · fictional client",
+      "description": "Civic Script prepared a series of short public-service briefings from approved municipal information. Elena organized the facts, wrote concise spoken scripts, coordinated office revisions, and provided rehearsal notes. The completed work demonstrates government communications and short announcements without election campaign experience.",
+      "category": "Speechwriting",
+      "services": [
+        "Speechwriting",
+        "Government communications",
+        "Short announcements"
+      ],
+      "result": "A municipal briefing pack with reviewed scripts and rehearsal notes delivered",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/city-service-briefings.jpg",
+      "imageAlt": "An open notebook filled with handwritten notes and a pen",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Max Grakov",
+        "sourceUrl": "https://www.pexels.com/photo/open-notebook-with-handwritten-notes-and-pen-34079281/",
+        "source": "Pexels"
+      },
+      "color": "#e9e7de",
+      "featured": false,
+      "createdAt": "2026-10-11T05:00:00Z",
+      "completedAt": "2026-04-16T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "speechwriting",
+        "government communications",
+        "short announcements",
+        "speech research",
+        "speech revisions",
+        "speaker coaching"
+      ],
+      "styleTags": [
+        "clear",
+        "measured",
+        "plain language"
+      ],
+      "caseStudy": {
+        "challenge": "Department staff needed consistent, understandable spoken summaries of routine service information.",
+        "approach": "Elena gathered source material, checked details with staff, shortened the spoken structure, and rehearsed the final scripts.",
+        "deliverables": [
+          "Public-service briefing scripts",
+          "Approved facts and source notes",
+          "Office review and revision record",
+          "Delivery notes for the spokesperson"
+        ],
+        "outcome": "A municipal briefing pack with reviewed scripts and rehearsal notes delivered"
+      }
+    },
+    {
+      "id": "summit-enterprise-deck",
+      "businessId": "signal-deck",
+      "title": "A coordinated presentation for a major enterprise proposal",
+      "client": "Summit Logistics",
+      "description": "Signal Deck turned a fictional logistics proposal into a structured presentation for a major enterprise pitch. The work included a consistent slide system, approved service diagrams, a question appendix, and rehearsed transitions between three presenters.",
+      "category": "Presentation design",
+      "services": [
+        "Presentation design",
+        "Pitch narrative",
+        "Speaker notes"
+      ],
+      "result": "A proposal deck and coordinated three-speaker presentation handover delivered",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/summit-enterprise-deck.jpg",
+      "imageAlt": "Colleagues reviewing a slide presentation on a laptop",
+      "imagePosition": "50% 55%",
+      "imageCredit": {
+        "photographer": "Mikael Blomkvist",
+        "sourceUrl": "https://www.pexels.com/photo/a-person-creating-marketing-plans-on-a-laptop-6476252/",
+        "source": "Pexels"
+      },
+      "color": "#ece6fb",
+      "featured": false,
+      "createdAt": "2026-10-11T04:00:00Z",
+      "completedAt": "2026-03-12T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "presentation design",
+        "pitch narrative",
+        "speaker coaching"
+      ],
+      "styleTags": [
+        "clear",
+        "editorial",
+        "confident"
+      ],
+      "caseStudy": {
+        "challenge": "Three subject-matter experts needed to present one cohesive proposal within a fixed meeting slot.",
+        "approach": "The studio established a shared structure, simplified service diagrams, and rehearsed the timing and handoffs.",
+        "deliverables": [
+          "Editable enterprise proposal deck",
+          "Service diagrams and Q&A appendix",
+          "Three-presenter speaker notes",
+          "Timed rehearsal plan"
+        ],
+        "outcome": "A proposal deck and coordinated three-speaker presentation handover delivered"
+      }
+    },
+    {
+      "id": "civic-office-platform",
+      "businessId": "civic-stack",
+      "title": "A public information platform for an elected office",
+      "client": "Office of Councillor Rowan Hale · fictional client",
+      "description": "Civic Stack created a public information platform for a fictional elected office, organizing service contacts, public notices, and meeting information. Staff received an editor approval workflow, responsive templates, and training to maintain the information.",
+      "category": "Platform development",
+      "services": [
+        "Website development",
+        "Platform development",
+        "Content management"
+      ],
+      "result": "A public information platform and office editing workflow completed",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/civic-office-platform.jpg",
+      "imageAlt": "A laptop on a light wooden desk in a bright office",
+      "imagePosition": "50% 55%",
+      "imageCredit": {
+        "photographer": "Polina Zimmerman",
+        "sourceUrl": "https://www.pexels.com/photo/black-laptop-computer-on-table-3747070/",
+        "source": "Pexels"
+      },
+      "color": "#dfeaf3",
+      "featured": false,
+      "createdAt": "2026-10-11T03:00:00Z",
+      "completedAt": "2026-02-25T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "responsive website",
+        "platform development",
+        "accessibility",
+        "content management"
+      ],
+      "styleTags": [
+        "accessible",
+        "clear",
+        "civic"
+      ],
+      "caseStudy": {
+        "challenge": "The office needed one maintained source for public notices, meeting details, and service contacts.",
+        "approach": "The studio organized the information, built reusable accessible templates, and tested the editor approval process with staff.",
+        "deliverables": [
+          "Public information website",
+          "Notices and meeting templates",
+          "Editor review workflow",
+          "Staff documentation and training"
+        ],
+        "outcome": "A public information platform and office editing workflow completed"
+      }
+    },
+    {
+      "id": "volunteer-shift-hub",
+      "businessId": "fieldline-labs",
+      "title": "An easier way to coordinate volunteer shifts",
+      "client": "Harbor Vale Civic Events Team · fictional client",
+      "description": "Fieldline built a scheduling hub for a fictional civic events team, with volunteer shift signup, coordinator review, event capacity, and attendance exports. The project focused on internal logistics and software usability, without political messaging or speechwriting.",
+      "category": "Platform development",
+      "services": [
+        "Platform development",
+        "Campaign operations software",
+        "Workflow design"
+      ],
+      "result": "A volunteer shift hub, coordinator workflow, and attendance export delivered",
+      "resultNote": "Fictional demo case study; names, experience, fees, and outcomes are illustrative, not verified business claims.",
+      "image": "/projects/photos/volunteer-shift-hub.jpg",
+      "imageAlt": "A laptop on a meeting table in front of a weekly planning whiteboard",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Walls.io",
+        "sourceUrl": "https://www.pexels.com/photo/laptop-on-conference-table-15505438/",
+        "source": "Pexels"
+      },
+      "color": "#e4eddf",
+      "featured": false,
+      "createdAt": "2026-10-11T02:00:00Z",
+      "completedAt": "2026-02-02T12:00:00Z",
+      "seedVersion": 4,
+      "sample": true,
+      "completed": true,
+      "publicShareable": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 3,
+      "provenance": "sample",
+      "capabilities": [
+        "platform development",
+        "campaign operations",
+        "accessibility"
+      ],
+      "styleTags": [
+        "functional",
+        "clear",
+        "calm"
+      ],
+      "caseStudy": {
+        "challenge": "Coordinators needed to see available shifts and avoid maintaining competing copies of the same schedule.",
+        "approach": "The team prototyped signup and review flows, tested permissions, and trained coordinators using fictional volunteer data.",
+        "deliverables": [
+          "Shift signup and event capacity views",
+          "Coordinator review tools",
+          "Attendance export",
+          "Access-control checks and training"
+        ],
+        "outcome": "A volunteer shift hub, coordinator workflow, and attendance export delivered"
       }
     }
   ]
