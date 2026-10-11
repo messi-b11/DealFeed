@@ -1,0 +1,139 @@
+name: Test and deploy to Akamai
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  checks:
+    name: Build and test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_API_URL: /api
+      AI_MODE: rehearsal
+      DEMO_AUTH_ENABLED: "true"
+      DATABASE_PATH: ${{ runner.temp }}/dealfeed-ci.sqlite
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements.lock.txt
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Install backend dependencies
+        run: python -m pip install -r backend/requirements.lock.txt
+
+      - name: Build frontend
+        run: npm run build
+
+      - name: Test backend
+        run: python -m pytest backend/tests -q
+
+      - name: Test application gateway
+        run: node scripts/test-site-proxy.mjs
+
+      - name: Test deployment validation and rollback
+        run: |
+          bash -n scripts/deploy-release.sh scripts/activate-release.sh
+          python -m unittest discover -s scripts/tests -v
+
+      # Fork pull requests only build and test. They never receive production secrets.
+      - name: Package tested release
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+        run: |
+          tar --exclude='backend/tests' \
+            --exclude='*/__pycache__' --exclude='*.pyc' \
+            --exclude='*/.env*' --exclude='*.sqlite*' --exclude='*.db' \
+            --exclude='*/.git' --exclude='*/.pytest_cache' \
+            -czf "$RUNNER_TEMP/$GITHUB_SHA.tar.gz" \
+            backend scripts/serve_app.py out
+
+      - name: Upload tested release
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: dealfeed-release-${{ github.sha }}
+          path: ${{ runner.temp }}/${{ github.sha }}.tar.gz
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
+
+  deploy:
+    name: Deploy production
+    needs: checks
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://dealfeed-work-to-work.jocundbrook.chatgpt.site/
+    concurrency:
+      group: dealfeed-production
+      cancel-in-progress: false
+    steps:
+      - name: Check out deployment client
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Refuse to deploy an outdated commit
+        run: |
+          current_main=$(git ls-remote origin refs/heads/main | cut -f1)
+          if [[ "$current_main" != "$GITHUB_SHA" ]]; then
+            echo "::error::A newer commit is on main. Deploy its workflow run instead."
+            exit 1
+          fi
+
+      - name: Download tested release
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: dealfeed-release-${{ github.sha }}
+          path: ${{ runner.temp }}/release
+          digest-mismatch: error
+
+      - name: Deploy and verify health
+        env:
+          AKAMAI_HOST: ${{ vars.AKAMAI_HOST }}
+          AKAMAI_DEPLOY_KEY: ${{ secrets.AKAMAI_DEPLOY_KEY }}
+          AKAMAI_KNOWN_HOSTS: ${{ secrets.AKAMAI_KNOWN_HOSTS }}
+        run: |
+          if [[ -z "$AKAMAI_HOST" || -z "$AKAMAI_DEPLOY_KEY" || -z "$AKAMAI_KNOWN_HOSTS" ]]; then
+            echo "::error::Configure AKAMAI_HOST, AKAMAI_DEPLOY_KEY, and AKAMAI_KNOWN_HOSTS in the production environment."
+            exit 1
+          fi
+          umask 077
+          ssh_dir=$(mktemp -d "$RUNNER_TEMP/dealfeed-ssh.XXXXXX")
+          trap 'rm -rf "$ssh_dir"' EXIT
+          printf '%s\n' "$AKAMAI_DEPLOY_KEY" > "$ssh_dir/key"
+          printf '%s\n' "$AKAMAI_KNOWN_HOSTS" > "$ssh_dir/known_hosts"
+          unset AKAMAI_DEPLOY_KEY AKAMAI_KNOWN_HOSTS
+          bash scripts/deploy-release.sh \
+            "$AKAMAI_HOST" "$RUNNER_TEMP/release/$GITHUB_SHA.tar.gz" \
+            "$GITHUB_SHA" "$ssh_dir/key" "$ssh_dir/known_hosts"

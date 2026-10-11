@@ -1,5 +1,57 @@
 # Deployment
 
+## GitHub Actions → Akamai
+
+`.github/workflows/deploy.yml` runs the production frontend build, backend tests,
+gateway tests, and release-script tests for pull requests to `main`. A push to
+`main` deploys only after those checks pass. The workflow can also be started
+manually on `main` from GitHub's Actions page. Production deployments run one at
+a time, and a queued run refuses to deploy if its commit is no longer current.
+
+The `production` GitHub environment is restricted to the `main` branch. It holds
+the `AKAMAI_HOST` variable and the `AKAMAI_DEPLOY_KEY` and `AKAMAI_KNOWN_HOSTS`
+secrets. The SSH key is dedicated to the `dealfeed-deploy` account; it cannot log
+in as root. Host keys are pinned, and the account can invoke only the
+root-installed release activator through sudo. Application secrets, the Caddy
+configuration, and the live SQLite database remain on the server.
+
+The workflow packages `backend/`, `scripts/serve_app.py`, and the tested `out/`
+build. `scripts/deploy-release.sh` uploads that artifact and calls
+`/usr/local/sbin/dealfeed-release`, installed from `scripts/activate-release.sh`.
+The activator checks the artifact, installs locked Python dependencies without
+root privileges, backs up SQLite, switches the release, and restarts the app.
+It verifies API health and the served homepage against the release artifact.
+A failed activation restores the previous application release automatically.
+
+Rollback restores application code, **not database changes**. Backups are kept
+under `/var/lib/dealfeed/backups/` for an operator to restore deliberately.
+Future schema changes must remain compatible with the preceding application
+version or include a separately reviewed migration plan. Releases and backups
+are retained; periodically review disk usage and retention. A service restart
+can briefly interrupt requests and in-progress AI jobs.
+
+The existing `chatgpt.site` gateway forwards requests to the Akamai app. Ordinary
+frontend and backend releases therefore do not require republishing the gateway.
+Gateway code or secret changes still use the separate Sites publishing flow.
+
+To run or inspect the pipeline:
+
+```sh
+gh workflow run deploy.yml --ref main --repo messi-b11/DealFeed
+gh run list --workflow deploy.yml --repo messi-b11/DealFeed
+gh run watch RUN_ID --exit-status --repo messi-b11/DealFeed
+```
+
+The root-owned activator is deliberately **not** replaced by a workflow run.
+When its source changes, an administrator must review it, install it at
+`/usr/local/sbin/dealfeed-release` as `root:root` with mode `0755`, and run
+`bash -n` before enabling the corresponding workflow changes. Its sudo rule is
+limited to that entry point, which accepts exactly one full commit SHA. Use
+`scripts/deploy-vm.sh` only for deliberate server provisioning, not routine CI
+releases.
+
+## VM setup and manual provisioning
+
 The recommended preview runs the exported Next.js frontend and the connected API on one Ubuntu 24.04 VM. `scripts/serve_app.py` mounts the API at `/api` and serves `out/` at `/`. Build the frontend with `NEXT_PUBLIC_API_URL=/api`. Caddy provides HTTPS and a password gate; uvicorn listens only on `127.0.0.1:8080` with one worker. SQLite data stays outside application releases in `/var/lib/dealfeed`.
 
 The preview uses selectable sample buyer/provider identities. Keep the entire VM application behind the HTTPS gate. An owner-private Sites worker may proxy the VM and attach the gate credentials from its server-side secret environment; neither those credentials nor inference keys belong in browser code. A private Sites frontend alone does not protect an otherwise public API.
