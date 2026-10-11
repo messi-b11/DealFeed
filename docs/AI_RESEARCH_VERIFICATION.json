@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "purpose": "Public-documentation fetch only, not business verification",
+  "url": "https://docs.python.org/3/library/html.parser.html",
+  "title": "html.parser \u2014 Simple HTML and XHTML parser \u2014 Python 3.15.0 documentation",
+  "excerpt": "html.parser \u2014 Simple HTML and XHTML parser \u2014 Python 3.15.0 documentation Theme Auto Light Dark Table of Contents html.parser \u2014 Simple HTML and XHTML parser Example HTML Parser Application HTMLParser Methods Examples Previous topic html \u2014 HyperText Markup Language support Next topic html.entities \u2014 Definitions of HTML general entities This page Report a bug Improve this page Show source Navigation index modules | next | previous | Python \u00bb 3.15.0 Documentation \u00bb The Python standard library \u00bb Structured Markup Processing Tools \u00bb html.parser \u2014 Simple HTML and XHTML parser | Theme Auto Light Dark | html.parser \u2014 Simple HTML and XHTML parser \u00b6 Source code: Lib/html/parser.py This module defines a class HTMLParser which serves as the basis for parsing text files formatted in HTML (HyperText Mark-up Language) and XHTML. class html.parser. HTMLParser ( * , convert_charrefs = True , scripting = False ) \u00b6 Create a parser instance able to parse invalid markup. If convert_charrefs is true (the default), all character references (except the ones in elements like script and style ) are automatically converted to the corresponding Unicode characters. If scripting is false (the default), the content of the noscript element is parsed normally; if it\u2019s true, it\u2019s returned as is without being parsed. An HTMLParser instance is fed HTML data and calls handler methods when start tags, end tags, text",
+  "retrievedAt": "2026-10-11T08:31:27.877928Z",
+  "contentHash": "6d38d3d55e85a88fca4d2bb2b6374e22e5aaf910c21c6776f4f56301d50f2281",
+  "truncated": false
+}

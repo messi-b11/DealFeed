@@ -1,0 +1,208 @@
+{
+  "notice": "Illustrative stock photography for fictional sample projects; photos do not depict work performed by the mock businesses. Archived copies of the same mock project reuse its photo.",
+  "checkedAt": "2026-10-11",
+  "licenses": {
+    "Unsplash": "https://unsplash.com/license",
+    "Pexels": "https://www.pexels.com/license/"
+  },
+  "projects": {
+    "harvest-dinner": {
+      "image": "/projects/photos/harvest-dinner.jpg",
+      "imageAlt": "Fresh vegetables and dressings arranged on a wooden buffet table",
+      "imageCredit": {
+        "photographer": "Isaac Pérez",
+        "sourceUrl": "https://www.pexels.com/photo/variety-of-food-on-the-table-17811675/",
+        "source": "Pexels"
+      }
+    },
+    "garden-celebration": {
+      "image": "/projects/photos/garden-celebration.jpg",
+      "imageAlt": "Pastel roses and pink table runners in a garden conservatory",
+      "imageCredit": {
+        "photographer": "Kimy Moto",
+        "sourceUrl": "https://www.pexels.com/photo/elegant-garden-wedding-table-setting-with-florals-37393654/",
+        "source": "Pexels"
+      }
+    },
+    "poppy-web": {
+      "image": "/projects/photos/poppy-web.jpg",
+      "imageAlt": "Warm wood paneling, mirrored walls, and colorful flowers in a neighborhood bistro",
+      "imageCredit": {
+        "photographer": "Adrien Olichon",
+        "sourceUrl": "https://unsplash.com/photos/restaurant-interior-with-mirrored-wall-and-booth-seating-f25_bNsKV00",
+        "source": "Unsplash"
+      }
+    },
+    "lead-together": {
+      "image": "/projects/photos/lead-together.jpg",
+      "imageAlt": "A conference participant speaking into a microphone during a discussion",
+      "imageCredit": {
+        "photographer": "Wonderlane",
+        "sourceUrl": "https://unsplash.com/photos/woman-holding-microphone-w1s5H_3Zn48",
+        "source": "Unsplash"
+      }
+    },
+    "terrace-brunch": {
+      "image": "/projects/photos/terrace-brunch.jpg",
+      "imageAlt": "Fruit, pastries, and sandwiches on a sunny outdoor buffet",
+      "imageCredit": {
+        "photographer": "fu zhichao",
+        "sourceUrl": "https://www.pexels.com/photo/various-desserts-on-a-table-covered-with-baby-blue-cover-587741/",
+        "source": "Pexels"
+      }
+    },
+    "amber-evening": {
+      "image": "/projects/photos/amber-evening.jpg",
+      "imageAlt": "Orange flowers, candles, and woven place settings at a warm reception",
+      "imageCredit": {
+        "photographer": "Jonathan Borba",
+        "sourceUrl": "https://www.pexels.com/photo/elegant-outdoor-wedding-table-setup-with-floral-centerpiece-37958082/",
+        "source": "Pexels"
+      }
+    },
+    "alder-storefront": {
+      "image": "/projects/photos/alder-storefront.jpg",
+      "imageAlt": "A curated collection of ceramic bowls and plates on white shelves",
+      "imageCredit": {
+        "photographer": "Brooke Lark",
+        "sourceUrl": "https://unsplash.com/photos/assorted-color-ceramic-bowls-and-saucers-lot-on-white-wooden-shelves-KyUmKlXrhAM",
+        "source": "Unsplash"
+      }
+    },
+    "creative-futures": {
+      "image": "/projects/photos/creative-futures.jpg",
+      "imageAlt": "A keynote speaker presenting to an audience at a professional conference",
+      "imageCredit": {
+        "photographer": "Product School",
+        "sourceUrl": "https://unsplash.com/photos/woman-holding-microphone-standing-on-stage-D0rMhzEwiEA",
+        "source": "Unsplash"
+      }
+    },
+    "community-supper": {
+      "image": "/projects/photos/community-supper.jpg",
+      "imageAlt": "Guests sharing dishes around a communal dinner table",
+      "imageCredit": {
+        "photographer": "Gül Işık",
+        "sourceUrl": "https://www.pexels.com/photo/food-on-a-table-20488508/",
+        "source": "Pexels"
+      }
+    },
+    "blue-hour": {
+      "image": "/projects/photos/blue-hour.jpg",
+      "imageAlt": "Blue linen napkins and cream flowers on an elegant white table",
+      "imageCredit": {
+        "photographer": "Jonathan Borba",
+        "sourceUrl": "https://www.pexels.com/photo/elegant-wedding-table-setting-with-floral-arrangement-29040921/",
+        "source": "Pexels"
+      }
+    },
+    "poppy-salt": {
+      "image": "/projects/photos/poppy-web.jpg",
+      "imageAlt": "Warm wood paneling, mirrored walls, and colorful flowers in a neighborhood bistro",
+      "imageCredit": {
+        "photographer": "Adrien Olichon",
+        "sourceUrl": "https://unsplash.com/photos/restaurant-interior-with-mirrored-wall-and-booth-seating-f25_bNsKV00",
+        "source": "Unsplash"
+      }
+    },
+    "alder-goods": {
+      "image": "/projects/photos/alder-storefront.jpg",
+      "imageAlt": "A curated collection of ceramic bowls and plates on white shelves",
+      "imageCredit": {
+        "photographer": "Brooke Lark",
+        "sourceUrl": "https://unsplash.com/photos/assorted-color-ceramic-bowls-and-saucers-lot-on-white-wooden-shelves-KyUmKlXrhAM",
+        "source": "Unsplash"
+      }
+    },
+    "stillwater-yoga": {
+      "image": "/projects/photos/stillwater-yoga.jpg",
+      "imageAlt": "People practicing yoga together in a bright studio",
+      "imageCredit": {
+        "photographer": "Christian Harb",
+        "sourceUrl": "https://unsplash.com/photos/people-practicing-yoga-in-a-studio-OV3PU7FD6Fc",
+        "source": "Unsplash"
+      }
+    },
+    "cornerstone-spaces": {
+      "image": "/projects/photos/cornerstone-spaces.jpg",
+      "imageAlt": "A modern house with clean geometric forms and generous windows",
+      "imageCredit": {
+        "photographer": "Nike Ossler",
+        "sourceUrl": "https://www.pexels.com/photo/geometric-modern-house-19541342/",
+        "source": "Pexels"
+      }
+    },
+    "olive-table": {
+      "image": "/projects/photos/olive-website.jpg",
+      "imageAlt": "Rustic wooden restaurant tables with warm pendant lighting",
+      "imageCredit": {
+        "photographer": "Toa Heftiba",
+        "sourceUrl": "https://unsplash.com/photos/restaurant-interior-during-daytime-doZQmog8A5w",
+        "source": "Unsplash"
+      }
+    },
+    "forma-home": {
+      "image": "/projects/photos/forma-home.jpg",
+      "imageAlt": "A considered collection of ceramic bowls and vessels on wooden shelves",
+      "imageCredit": {
+        "photographer": "Vladimir Gladkov",
+        "sourceUrl": "https://unsplash.com/photos/white-ceramic-bowls-on-white-wooden-shelf-ZAK-azW7-Kk",
+        "source": "Unsplash"
+      }
+    },
+    "bloom-wellness": {
+      "image": "/projects/photos/bloom-wellness.jpg",
+      "imageAlt": "Two people seated on yoga mats during a calm wellness session",
+      "imageCredit": {
+        "photographer": "Alex Shaw",
+        "sourceUrl": "https://unsplash.com/photos/2-women-sitting-on-purple-yoga-mat-_K7RBVSKyCY",
+        "source": "Unsplash"
+      }
+    },
+    "fieldwork": {
+      "image": "/projects/photos/fieldwork.jpg",
+      "imageAlt": "A contemporary home framed by lush greenery",
+      "imageCredit": {
+        "photographer": "Talha Resitoglu",
+        "sourceUrl": "https://www.pexels.com/photo/modern-house-with-lush-greenery-in-suburban-setting-30242717/",
+        "source": "Pexels"
+      }
+    },
+    "olive-website": {
+      "image": "/projects/photos/olive-website.jpg",
+      "imageAlt": "Rustic wooden restaurant tables with warm pendant lighting",
+      "imageCredit": {
+        "photographer": "Toa Heftiba",
+        "sourceUrl": "https://unsplash.com/photos/restaurant-interior-during-daytime-doZQmog8A5w",
+        "source": "Unsplash"
+      }
+    },
+    "willow-kitchen": {
+      "image": "/projects/photos/willow-kitchen.jpg",
+      "imageAlt": "A calm restaurant with sage tables, wooden chairs, and a wall of plants",
+      "imageCredit": {
+        "photographer": "Polina Kuzovkova",
+        "sourceUrl": "https://unsplash.com/photos/a-restaurant-with-tables-and-chairs-with-plants-on-the-wall-F86IbrHHee0",
+        "source": "Unsplash"
+      }
+    },
+    "ember-dining": {
+      "image": "/projects/photos/ember-dining.jpg",
+      "imageAlt": "A plated steak dinner with seasonal vegetables and a rich sauce",
+      "imageCredit": {
+        "photographer": "Alex Munsell",
+        "sourceUrl": "https://unsplash.com/photos/close-up-photo-of-cooked-food-on-square-white-plate-auIbTAcSH6E",
+        "source": "Unsplash"
+      }
+    },
+    "casa-sun": {
+      "image": "/projects/photos/casa-sun.jpg",
+      "imageAlt": "Colorful avocado tacos with corn and salsa on a wooden serving board",
+      "imageCredit": {
+        "photographer": "Odiseo Castrejon",
+        "sourceUrl": "https://unsplash.com/photos/assorted-tacos-on-wooden-plate-J04BD4ysoh8",
+        "source": "Unsplash"
+      }
+    }
+  }
+}

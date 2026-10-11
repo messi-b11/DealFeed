@@ -1,40 +1,90 @@
 # Three-minute DealFeed demo
 
-**Before starting:** use the same browser/origin throughout. Verify the inference configuration and mode. If live credentials are unavailable, say “This is the rehearsal template; the live sponsor integration is not connected.” Do not present the sample trace as live AI.
+## Prepare before presenting
 
-**0:00–0:25 — Discover**
+Use the private [DealFeed preview](https://dealfeed-work-to-work.jocundbrook.chatgpt.site) after deployment is confirmed in `VERIFICATION.md`. For local development, start the connected stack with `npm run dev:connected`, then open [http://127.0.0.1:3001](http://127.0.0.1:3001). The frontend talks to the API through same-origin `/api`; use one origin and browser throughout so the same buyer identity is recovered.
 
-“I own a neighborhood restaurant. I see Studio North’s completed website for Olive & Table and want something with the same warmth.” Open the project, show the sample result, then select **Request something similar**.
+Confirm the actual mode before the timer starts. The launcher's `AI_MODE` comes from the loaded environment. The starter environment selects rehearsal; a live demonstration requires it to be set to live with the server-side Akamai configuration. Show **Live AI · Akamai + Strands** only when the returned analysis carries that mode. **Rehearsal analysis · No live AI** means deterministic sample analysis, even though the API, persistence, and invitations work.
 
-**0:25–1:10 — Describe**
+Rehearse the full journey once. Live analysis is asynchronous with a 120-second inference deadline; a slow call cannot fit comfortably inside a three-minute pitch. Prepare one completed match and a separate comparison deal before presenting. Show a fresh analysis if it finishes within the slot; otherwise identify the prepared result or use a clearly labeled recording. Never describe a prepared result as a new live run.
 
-- Business: The Sunday Table
-- Email: owner@example.com (sample)
-- Budget: $3,000–$5,000
-- Location: Austin, TX
-- Deadline: a date about two months ahead
-- Requirements: “A warm five-page restaurant website with a seasonal menu, our story, a gallery, and a link to our existing reservation platform. We will provide the copy and photos.”
+Prepare the separate comparison deal in this same browser, using the description prefix **Prepared sample comparison** so it is distinguishable from the new deal. Invite three businesses and submit fictional provider-authored responses through their respective provider workspaces. Do not put automatic or fabricated provider submissions into the new deal.
 
-Generate the brief. In live mode, open “How this brief came together” to show Strands retrieving the exact project and provider, then Akamai generating the structured brief. Explain that the budget and deadline are buyer preferences, not provider commitments.
+| Prepared response | Quote and timeline | Deliberate scope difference |
+| --- | --- | --- |
+| Business A | $4,200; six weeks after content is supplied | Includes responsive site and editable menu; explicitly excludes reservation integration in both coverage and scope |
+| Business B | $4,800; six weeks after content is supplied | Includes responsive site, editable menu, and reservation integration |
+| Business C | $5,800; four weeks after content is supplied | Includes all three deliverables but exceeds the $5,000 target |
 
-**1:10–1:40 — Review and approve**
+These are presentation samples, not actual commercial offers. Keep the fit statements, approach, and exclusions consistent with each response. Link each provider's own comparable completed project and achievement when available. Mark omitted details **Not stated** instead of inventing coverage. Keep the prepared deal open in a second tab, ready to run or show its comparison.
 
-Edit the summary: “Please include a private dining inquiry section.” Tick approval and send the request. Show its saved status in **My requests**.
+## Timed walkthrough
 
-**1:40–2:25 — Respond**
+### 0:00–0:20 — Start with work
 
-Open **Provider workspace**, choose **Studio North**, and open The Sunday Table’s request. Show the original project reference and buyer details. Enter:
+“I’m opening a neighborhood restaurant. I can describe a budget, but it’s much easier to show the standard I want.”
 
-- Price: $4,500
-- Timeline: Four weeks after kickoff and receipt of content.
-- Scope: Five-page responsive website, seasonal menu, reservation link, private dining inquiry section, two design revisions, and a handover session. Buyer supplies copy and photography.
+Open Poppy & Salt or Olive & Table in the discovery feed. Identify it as completed sample work. Choose **Request something similar**. One project is enough; saving additional inspiration is optional.
 
-Send the proposal.
+### 0:20–0:50 — Make the requirements explicit
 
-**2:25–3:00 — Close the loop**
+Choose **Use restaurant demo requirements**. Show the $5,000 budget target, responsive restaurant website, editable menu, and required reservation integration. Review the desired standard and keywords; edit them if needed. Confirm the visible preferences and select **Find suitable businesses**.
 
-Return to **My requests**. Reveal the provider-written proposal. Refresh to show persistence. “One complete path: completed work becomes a grounded request, then a real provider-authored proposal.”
+“My requirements control the match. The style suggestion is editable sample metadata, and explicit edits override it.”
 
-If time permits, use **Post completed work** in the provider workspace to publish another sample project. It should appear in the feed with that provider attached.
+If inference is still running, explain that the result is asynchronous and move to the clearly identified prepared analysis. Do not imply the pending run has completed.
 
-Do not demonstrate payments, chat, scheduling, recommendations, or invoices. They are outside this build.
+### 0:50–1:20 — Inspect five businesses and evidence
+
+Show the five distinct candidates. Their ordering can vary with the confirmed requirements and live analysis. Open **Requirement alignment & questions** on one card, then **Supporting sources**.
+
+“These are evidence-based suggestions. Supported requirements, partial coverage, and unknowns are separate. The .example website findings are labeled fixtures; live AI does not turn sample business claims into verified facts.”
+
+For a live result, show the **AI inference** excerpt and **Analysis tools & sources** trace. Select **Explore business**, inspect the completed portfolio, then return to the shortlist. Point out **Just exploring. No request is sent.**
+
+### 1:20–1:45 — Invite only selected businesses
+
+Select three recipients and choose **Review invitation**. Show their exact names and the frozen shared requirements. Tick the explicit approval and send the request.
+
+“The customer chooses one, several, or all five. Every selected business receives this same brief, exactly once on a retry.”
+
+Show **My deals** with invited, responded, and outstanding counts. Keep this new deal distinct from the prepared comparison deal.
+
+### 1:45–2:15 — Let a provider explain its fit
+
+Open the selected sample **Provider workspace**. Show that its inbox contains only its own invitations. On the prepared request, review the fit statement, approach, comparable work, deliverable coverage, quote, and timeline. If a response was prefilled before the presentation, review and explicitly send it now; otherwise show its already submitted response as prepared sample data.
+
+“The business authors its own approach and commercial terms. Competitors cannot read this private response.”
+
+### 2:15–2:45 — Compare the offer and the evidence
+
+Open the **Prepared sample comparison** deal. Choose **Analyze responses**, or identify the already completed comparison if timing requires it. Use the provider selector to inspect Business A's excluded reservation integration, Business B's full stated coverage, and Business C's above-budget price.
+
+“The lowest quote leaves out a must-have. The comparison cites the response and portfolio evidence. Price differences are calculated in code; unstated terms remain unknown.”
+
+### 2:45–3:00 — Make the customer decision
+
+Inspect Business B, choose it as the preferred provider, and select **Confirm my preferred provider**. Refresh the deal to show the choice persists.
+
+“AI helps me evaluate the fit and tradeoffs. I make the final decision. This records my preference; it does not pay anyone or accept a contract.”
+
+## Copy for one complete sample provider response
+
+Use this only as explicitly fictional provider-authored demo content, adapting coverage and terms to the intended prepared response:
+
+- **Why we fit:** “Our completed restaurant portfolio demonstrates mobile menus, an editorial visual style, and a reservation journey relevant to this brief. This is a prepared sample response.”
+- **Proposed approach:** “Confirm the content and reservation service, design mobile layouts, build the approved pages, test keyboard and mobile navigation, and hand over editing access.”
+- **Full scope & quote basis:** “A fixed sample quote of $4,800 for a responsive restaurant website, editable menu pages, and integration with the customer's existing reservation service. Includes two design revision rounds and one handover session. Customer supplies copy and photography. Third-party subscription fees are excluded. Taxes are not specified.”
+- **Timeline:** “Six weeks after receiving approved content and access to the reservation service.”
+- **Assumptions:** “Customer supplies copy and photography.”
+- **Clarifications:** “Confirm the reservation platform and account access.”
+
+Mark each requested deliverable **Included** for this full-scope offer and attach relevant evidence from the responding business's own portfolio. Submit with the provider review checkbox. A submitted proposal is immutable in this demo.
+
+## If something fails
+
+Requirements and provider drafts are retained locally; approved deals and submitted proposals are persisted by the API. Retry after a recoverable error, or use **Refresh** to recover the current deal. Do not repeatedly approve with altered recipients while a submission is pending. Changing requirements after approval starts a new match and deal.
+
+If using `npm run dev:local`, say explicitly: “This is the connected rehearsal, with deterministic analysis rather than live AI.” Browser-only rehearsal supports the legacy single-provider flow and does not provide five-business matching.
+
+Live public-site fetching, cloud deployment, and authentication readiness are separate claims from a local live inference demonstration. Use the exact verification record in [VERIFICATION.md](VERIFICATION.md). Do not describe sample websites as fetched, company claims as independently verified, or the demo identity switch as production authentication.

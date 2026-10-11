@@ -1,0 +1,10 @@
+import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+const root = new URL('../', import.meta.url);
+const manifest = JSON.parse(await readFile(new URL('.openai/hosting.json', root), 'utf8'));
+if (manifest.static) throw new Error('The private proxy manifest must omit static hosting.');
+await mkdir(new URL('dist/server/', root), { recursive: true });
+await mkdir(new URL('dist/.openai/', root), { recursive: true });
+await copyFile(new URL('worker/index.mjs', root), new URL('dist/server/index.js', root));
+await writeFile(new URL('dist/.openai/hosting.json', root), JSON.stringify(manifest, null, 2) + '\n');
+console.log('Built private Sites gateway:', fileURLToPath(new URL('dist/', root)));

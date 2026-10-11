@@ -1,0 +1,99 @@
+{
+  "sampleSize": {
+    "matching": 2,
+    "comparison": 1
+  },
+  "startedAt": "2026-10-11T09:00:39.228697+00:00",
+  "mode": "live",
+  "configuration": "Typed compact evidence-ID insights; no model-authored emphasis mapping or copied quotes; three model calls maximum; 120s total bound; no model retries; stop after validation",
+  "steps": [
+    {
+      "stage": "matching",
+      "status": "passed",
+      "seconds": 11.79,
+      "mode": "akamai+strands",
+      "tools": [
+        "retrieve_inspiration_projects",
+        "find_candidate_businesses",
+        "retrieve_completed_projects",
+        "research_approved_websites",
+        "retrieve_achievement_evidence",
+        "produce_validated_match_analysis"
+      ],
+      "count": 5,
+      "semanticInsightCount": 3
+    },
+    {
+      "stage": "comparison",
+      "status": "passed",
+      "seconds": 12.5,
+      "mode": "akamai+strands",
+      "tools": [
+        "analyze_submitted_proposals",
+        "produce_validated_comparison"
+      ],
+      "count": 2,
+      "semanticInsightCount": 2
+    }
+  ],
+  "matchingLatencySeconds": [
+    10.67,
+    11.79
+  ],
+  "comparisonLatencySeconds": [
+    12.5
+  ],
+  "matchingValidationRepairs": [
+    0,
+    0
+  ],
+  "comparisonValidationRepairs": [
+    0
+  ],
+  "diagnosis": "Exact browser criteria reproduced the old schema problem:8 input-validation errors, then two failures because emphasis referenced an unselected business. Typed compact insights and removal of model-authored emphasis mapping eliminate this cause. The server now attaches exact source excerpts and derives business ownership from validated evidence IDs.",
+  "earlierDevelopmentProbes": [
+    {
+      "stage": "matching",
+      "status": "passed",
+      "seconds": 110.52,
+      "configuration": "Before concise insight prompt and early validated stop"
+    },
+    {
+      "stage": "matching",
+      "status": "timed_out",
+      "seconds": 120.03,
+      "configuration": "Older verbose insight prompt with total deadline"
+    },
+    {
+      "stage": "comparison",
+      "status": "passed",
+      "seconds": 30.48,
+      "configuration": "Older verbose insight prompt"
+    },
+    {
+      "stage": "matching",
+      "status": "passed",
+      "seconds": 36.86,
+      "configuration": "Previous verbose untyped insights; superseded"
+    },
+    {
+      "stage": "comparison",
+      "status": "passed",
+      "seconds": 9.64,
+      "configuration": "Previous verbose untyped insights; superseded"
+    },
+    {
+      "stage": "browser_matching",
+      "status": "timed_out",
+      "seconds": 120,
+      "configuration": "Previous untyped schema, before this fix"
+    },
+    {
+      "stage": "same_browser_criteria_diagnosis",
+      "status": "passed_after_three_repairs",
+      "seconds": 48.27,
+      "configuration": "Previous untyped schema, before this fix"
+    }
+  ],
+  "notice": "Final typed configuration:two matching runs on the exact previously failed browser criteria and one comparison run; all passed with no validation repairs. Earlier development probes are retained and do not measure final-config reliability. Provider records/proposals are fictional; inference and Strands tool execution were live. One evidence-read model call plus one validated-output model call succeeded; at most one repair is permitted."
+}

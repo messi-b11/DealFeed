@@ -1,4 +1,5 @@
 import catalog from "@/backend/catalog.json";
+import { serviceFor } from "./services";
 import type { Business, Project, BuyerInput, Brief, Draft, Request, ProposalInput, Proposal } from "./types";
 
 const API = (process.env.NEXT_PUBLIC_API_URL || "").replace(/\/$/, "");
@@ -13,7 +14,7 @@ let sessions:Record<string,string>={};
 async function token(role:string,businessId?:string) {
   const key=role+":"+(businessId||buyerId());
   if (!sessions[key]) {
-    const res=await fetch(API+"/sessions",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({role,...(role==="buyer"?{buyerId:buyerId()}:{businessId})})});
+    const res=await fetch(API+"/sessions",{method:"POST",credentials:"same-origin",headers:{"Content-Type":"application/json"},body:JSON.stringify({role,...(role==="buyer"?{buyerId:buyerId()}:{businessId})})});
     const body=await res.json(); if(!res.ok) throw new ApiError(body.error?.message||"Could not start a session.");
     sessions[key]=body.token;
   }
@@ -23,12 +24,18 @@ async function call(path:string,body?:unknown,role="buyer",businessId?:string,re
   const auth=path==="/projects"&&!body||path==="/health"?undefined:await token(role,businessId);
   const controller=new AbortController(); const timeout=setTimeout(()=>controller.abort(),85000);
   try {
-    const res=await fetch(API+path,{method:body?"POST":"GET",headers:{"Content-Type":"application/json",...(auth?{Authorization:`Bearer ${auth}`}:{})},...(body?{body:JSON.stringify(body)}:{}),signal:controller.signal});
-    const result=await res.json();
+    const res=await fetch(API+path,{method:body===undefined?"GET":"POST",credentials:"same-origin",headers:{"Content-Type":"application/json",...(auth?{"X-DealFeed-Authorization":`Bearer ${auth}`}:{})},...(body===undefined?{}:{body:JSON.stringify(body)}),signal:controller.signal});
+    let result;
+    try { result=await res.json(); } catch { throw new ApiError("The service returned an unreadable response. Your details are saved; please retry.",{},"invalid_response"); }
     if(res.status===401&&retry) {sessions={};return call(path,body,role,businessId,false);}
     if(!res.ok) throw new ApiError(result.error?.message||"The request could not be completed.",result.error?.fields,result.error?.code);
     return result;
-  } catch(error) { if(error instanceof ApiError) throw error; throw new ApiError("We couldn’t reach the service. Your details are still here. Please try again."); }
+  } catch(error) {
+    if(error instanceof ApiError) throw error;
+    if(process.env.NODE_ENV!=="production") console.error("DealFeed transport failure",{path,name:error instanceof Error?error.name:"UnknownError",message:error instanceof Error?error.message:"Request failed"});
+    if(error instanceof Error&&error.name==="AbortError") throw new ApiError("The analysis took longer than expected. Your details are still here. Please try again.",{},"request_timeout");
+    throw new ApiError("We couldn’t reach the service. Your details are still here. Please try again.",{},"network_error");
+  }
   finally {clearTimeout(timeout);}
 }
 export function validateInput(input:BuyerInput) {
@@ -59,7 +66,8 @@ export async function generateBrief(input:BuyerInput):Promise<Draft> {
   const {projects,businesses}=await getCatalog(); const project=projects.find(p=>p.id===input.projectId); if(!project) throw new ApiError("Selected project not found.");
   const business=businesses.find(b=>b.id===project.businessId)!;
   await new Promise(resolve=>setTimeout(resolve,700));
-  const brief:Brief={title:`A new website for ${input.name}`,summary:`Create a website inspired by ${project.client} by ${business.name}. Buyer requirements: ${input.requirements}`,deliverables:["Website design tailored to your requirements","Responsive layouts for mobile and desktop","Review of final scope with the provider"],questions:[],constraints:[`Buyer budget target: ${input.budget} (not a quote)`,`Requested deadline: ${input.deadline} (subject to provider confirmation)`,`Location: ${input.location}`,"Availability and final pricing must be confirmed by the provider."],reference:project.title};
+  const service=serviceFor(project.category);
+  const brief:Brief={title:`${service.category} for ${input.name}`.slice(0,180),summary:`Plan ${service.category.toLowerCase()} inspired by ${project.client} by ${business.name}. Buyer requirements: ${input.requirements}`,deliverables:service.deliverables,questions:[],constraints:[`Buyer budget target: ${input.budget} (not a quote)`,`Requested deadline: ${input.deadline} (subject to provider confirmation)`,`Location: ${input.location}`,"Availability and final pricing must be confirmed by the provider."],reference:project.title};
   const draft:Draft={id:crypto.randomUUID(),projectId:project.id,businessId:business.id,buyerId:buyerId(),input,brief,mode:"rehearsal",createdAt:new Date().toISOString(),trace:[{tool:"get_project",status:"complete",detail:project.title},{tool:"get_business",status:"complete",detail:business.name},{tool:"sample_template",status:"complete",detail:"Rehearsal template — no AI inference used"}]};
   const state=db();state.drafts.push(draft);save(state);return draft;
 }
@@ -81,10 +89,15 @@ export async function submitProposal(id:string,data:ProposalInput,businessId:str
 }
 export async function postProject(input:Pick<Project,"title"|"client"|"description"|"category"|"result"|"image">,businessId:string):Promise<Project> {
   if(API)return call("/projects",input,"provider",businessId);
-  const project:Project={...input,id:crypto.randomUUID(),businessId,services:["Website design"],resultNote:"Provider-supplied result for this sample business.",color:"#ece9df",featured:false,createdAt:new Date().toISOString()};const state=db();state.projects.unshift(project);save(state);return project;
+  const project:Project={...input,id:crypto.randomUUID(),businessId,services:[input.category],resultNote:"Provider-supplied result for this sample business.",color:"#ece9df",featured:false,createdAt:new Date().toISOString()};const state=db();state.projects.unshift(project);save(state);return project;
 }
 export async function uploadImage(file:File,businessId:string):Promise<string> {
   if(!["image/png","image/jpeg","image/webp"].includes(file.type)||file.size>2000000)throw new ApiError("Choose a PNG, JPG, or WebP image under 2 MB.");
   if(API) {const health=await getHealth();if(health.storage==="dynamodb") {const upload=await call("/uploads",{contentType:file.type},"provider",businessId);const res=await fetch(upload.url,{method:"PUT",headers:{"Content-Type":file.type},body:file});if(!res.ok)throw new ApiError("Image upload failed. Please retry.");return upload.key;}}
   return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(new ApiError("Could not read this image."));reader.readAsDataURL(file);});
+}
+
+export async function connectedCall(path:string,body?:unknown):Promise<any> {
+  if(!API)throw new ApiError("Business matching requires the connected demo API. Your inspiration is saved; the single-provider rehearsal remains available.");
+  return call(path,body);
 }

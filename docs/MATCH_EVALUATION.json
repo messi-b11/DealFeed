@@ -1,0 +1,154 @@
+{
+  "mode": "deterministic_rehearsal",
+  "sampleSize": 10,
+  "notice": "Internal fixed fictional-fixture evaluation. Not live AI validation or market accuracy. Unknown capabilities may qualify with unresolved labels.",
+  "topOneCorrect": 9,
+  "qualifiedTopFive": 34,
+  "baselineQualifiedTopFive": 28,
+  "hardConstraintViolations": 0,
+  "unsupportedEvidenceReferences": 0,
+  "results": [
+    {
+      "intent": "Warm editorial restaurant",
+      "results": [
+        "studio-north",
+        "good-people",
+        "juniper-digital",
+        "common-ground-web",
+        "daybreak-design"
+      ],
+      "expectedTopOne": "studio-north",
+      "topOneCorrect": true,
+      "qualifiedTopFive": 5,
+      "baselineQualifiedTopFive": 4,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "Bold premium hospitality",
+      "results": [
+        "daybreak-design",
+        "common-ground-web",
+        "good-people",
+        "juniper-digital",
+        "studio-north"
+      ],
+      "expectedTopOne": "daybreak-design",
+      "topOneCorrect": true,
+      "qualifiedTopFive": 5,
+      "baselineQualifiedTopFive": 4,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "Accessible calm community cafe",
+      "results": [
+        "common-ground-web",
+        "daybreak-design",
+        "good-people",
+        "juniper-digital",
+        "studio-north"
+      ],
+      "expectedTopOne": "common-ground-web",
+      "topOneCorrect": true,
+      "qualifiedTopFive": 5,
+      "baselineQualifiedTopFive": 4,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "Playful bilingual cafe",
+      "results": [
+        "good-people",
+        "juniper-digital",
+        "common-ground-web",
+        "daybreak-design",
+        "studio-north"
+      ],
+      "expectedTopOne": "good-people",
+      "topOneCorrect": true,
+      "qualifiedTopFive": 5,
+      "baselineQualifiedTopFive": 4,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "Budget ceiling $2,400",
+      "results": [
+        "common-ground-web"
+      ],
+      "expectedTopOne": "common-ground-web",
+      "topOneCorrect": true,
+      "qualifiedTopFive": 1,
+      "baselineQualifiedTopFive": 1,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "Budget ceiling $3,000",
+      "results": [
+        "good-people",
+        "juniper-digital",
+        "common-ground-web"
+      ],
+      "expectedTopOne": "juniper-digital",
+      "topOneCorrect": false,
+      "qualifiedTopFive": 3,
+      "baselineQualifiedTopFive": 3,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "Budget ceiling below every sample minimum",
+      "results": [],
+      "expectedTopOne": null,
+      "topOneCorrect": true,
+      "qualifiedTopFive": 0,
+      "baselineQualifiedTopFive": 0,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "On-site work required",
+      "results": [],
+      "expectedTopOne": null,
+      "topOneCorrect": true,
+      "qualifiedTopFive": 0,
+      "baselineQualifiedTopFive": 0,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "Unknown budget remains open",
+      "results": [
+        "studio-north",
+        "good-people",
+        "juniper-digital",
+        "common-ground-web",
+        "daybreak-design"
+      ],
+      "expectedTopOne": "studio-north",
+      "topOneCorrect": true,
+      "qualifiedTopFive": 5,
+      "baselineQualifiedTopFive": 4,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    },
+    {
+      "intent": "Repeated marketing words cannot rescue reservation conflict",
+      "results": [
+        "studio-north",
+        "good-people",
+        "juniper-digital",
+        "common-ground-web",
+        "daybreak-design"
+      ],
+      "expectedTopOne": "studio-north",
+      "topOneCorrect": true,
+      "qualifiedTopFive": 5,
+      "baselineQualifiedTopFive": 4,
+      "hardConstraintViolations": 0,
+      "unsupportedEvidenceReferences": 0
+    }
+  ]
+}

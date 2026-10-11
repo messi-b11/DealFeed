@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "api": "http://127.0.0.1:3001/api",
+  "health": {
+    "status": "ok",
+    "mode": "live",
+    "storage": "sqlite",
+    "akamaiConfigured": true,
+    "strandsMode": "direct",
+    "asyncAnalysis": true
+  },
+  "mode": "akamai+strands",
+  "businessCount": 5,
+  "proposalCount": 5,
+  "dealId": "9cc37491-9f26-41bb-b56e-7740482fd8c6",
+  "checks": [
+    "five distinct matches",
+    "analysis/exploration sends no invitations",
+    "atomic idempotent approval",
+    "five independent provider submissions",
+    "cross-buyer and provider isolation",
+    "duplicate proposal rejection",
+    "comparison persistence",
+    "explicit persisted preference"
+  ],
+  "comparisonMode": "akamai+strands",
+  "elapsedSeconds": 62.49
+}

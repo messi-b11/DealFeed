@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Catering",
+    "image": "/projects/catering.svg",
+    "prompt": "We need a buffet dinner for 60 guests at our Austin venue. Include vegetarian options and food service. We like the seasonal menu in this project. Dietary restrictions and kitchen access: \u2026",
+    "deliverables": [
+      "A proposed catering menu based on the buyer\u2019s requirements",
+      "A food-service plan for provider review",
+      "Confirmation of guest count, dietary needs, and venue facilities"
+    ]
+  },
+  {
+    "category": "Event decorations",
+    "image": "/projects/decorations.svg",
+    "prompt": "We\u2019re planning a celebration for 80 guests. We need floral installations and table styling in soft pink and green, including setup and takedown. Our venue, table count, and access times are \u2026",
+    "deliverables": [
+      "An event decoration concept based on the buyer\u2019s requirements",
+      "A proposed floral and table-styling scope",
+      "Confirmation of venue access, setup, and takedown arrangements"
+    ]
+  },
+  {
+    "category": "Website development",
+    "image": "/projects/poppy.svg",
+    "prompt": "We\u2019re a restaurant looking for a warm, modern website with a seasonal menu, our story, and a reservation link. We\u2019ll provide copy and photos. We like the feel of Poppy & Salt.",
+    "deliverables": [
+      "Website design and development scoped to the buyer\u2019s requirements",
+      "A proposed page and content plan",
+      "Confirmation of content, integrations, and handover requirements"
+    ]
+  },
+  {
+    "category": "Keynote speaking",
+    "image": "/projects/keynote.svg",
+    "prompt": "We\u2019d like a 45-minute keynote on leading through change for 150 team leaders, followed by 15 minutes of Q&A. The audience, event format, venue, and intended takeaways are \u2026",
+    "deliverables": [
+      "A proposed keynote outline tailored to the audience",
+      "An agreed topic, talk duration, and Q&A format",
+      "Confirmation of event logistics and presentation requirements"
+    ]
+  }
+]

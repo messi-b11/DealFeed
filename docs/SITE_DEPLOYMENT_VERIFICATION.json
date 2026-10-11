@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "url": "https://dealfeed-work-to-work.jocundbrook.chatgpt.site",
+  "health": {
+    "status": "ok",
+    "mode": "live",
+    "storage": "sqlite",
+    "akamaiConfigured": true,
+    "strandsMode": "direct",
+    "asyncAnalysis": true
+  },
+  "checks": [
+    "private Sites gateway",
+    "HTML served",
+    "buyer identity",
+    "API proxy"
+  ],
+  "deploymentId": "appgdep_6acb55222d948191b1a257d5a12018df",
+  "sourceCommit": "f2f3274e684c76b14d15f0c90654b6eecb476bad",
+  "publishedAt": "2026-10-11T09:21:42.207558+00:00"
+}

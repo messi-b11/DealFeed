@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "url": "https://45-79-8-94.sslip.io",
+  "health": {
+    "status": "ok",
+    "mode": "live",
+    "storage": "sqlite",
+    "akamaiConfigured": true,
+    "strandsMode": "direct",
+    "asyncAnalysis": true
+  },
+  "checks": [
+    "HTTPS certificate",
+    "anonymous access denied",
+    "authenticated API",
+    "buyer session"
+  ]
+}

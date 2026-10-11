@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "api": "http://127.0.0.1:8080/api",
+  "health": {
+    "status": "ok",
+    "mode": "live",
+    "storage": "sqlite",
+    "akamaiConfigured": true,
+    "strandsMode": "direct",
+    "asyncAnalysis": true
+  },
+  "mode": "akamai+strands",
+  "businessCount": 5,
+  "proposalCount": 5,
+  "dealId": "536de6eb-debb-4366-bb87-f088a4890591",
+  "checks": [
+    "five distinct matches",
+    "analysis/exploration sends no invitations",
+    "atomic idempotent approval",
+    "five independent provider submissions",
+    "cross-buyer and provider isolation",
+    "duplicate proposal rejection",
+    "comparison persistence",
+    "explicit persisted preference"
+  ],
+  "comparisonMode": "akamai+strands",
+  "elapsedSeconds": 77.5,
+  "verifiedAt": "2026-10-11T09:22:05.772499+00:00",
+  "deploymentHost": "45.79.8.94",
+  "execution": "Ran on the deployed Ubuntu VM against its local HTTP API; external HTTPS authentication is verified separately."
+}

@@ -1,13 +1,1242 @@
 {
   "businesses": [
-    {"id":"studio-north","name":"Studio North","initials":"sn","location":"Austin, TX","tagline":"Thoughtful websites for ambitious local businesses.","description":"An independent design studio building distinctive, easy-to-use websites for restaurants, shops, and service businesses. We bring strategy, design, and development together under one roof.","services":["Website design","Web development","Brand identity"],"email":"hello@studionorth.example","website":"studionorth.example","color":"#e8e8ff","sample":true},
-    {"id":"form-function","name":"Form & Function","initials":"f.","location":"Chicago, IL","tagline":"Digital experiences with a human touch.","description":"A small digital studio focused on considered design and straightforward web experiences for independent businesses.","services":["Website design","Web development","E-commerce"],"email":"hello@formfunction.example","website":"formfunction.example","color":"#e7eedf","sample":true},
-    {"id":"good-people","name":"Good People Studio","initials":"gp","location":"Brooklyn, NY","tagline":"Good design. Great connections.","description":"We create expressive websites for hospitality, lifestyle, and neighborhood brands.","services":["Website design","Brand identity","Web development"],"email":"hello@goodpeople.example","website":"goodpeople.example","color":"#f9e7d8","sample":true}
+    {
+      "id": "gather-table",
+      "name": "Gather & Table Catering",
+      "initials": "gt",
+      "location": "Austin, TX",
+      "tagline": "Good food. Great company.",
+      "description": "A sample catering team creating seasonal menus for company dinners, celebrations, and community gatherings. Services include menu planning, buffet catering, and on-site food service.",
+      "services": [
+        "Catering",
+        "Menu planning",
+        "Buffet service"
+      ],
+      "email": "hello@gathertable.example",
+      "website": "gathertable.example",
+      "color": "#f2e6d9",
+      "sample": true,
+      "seedVersion": 2
+    },
+    {
+      "id": "petal-occasion",
+      "name": "Petal & Occasion",
+      "initials": "po",
+      "location": "Chicago, IL",
+      "tagline": "Make the room feel like the occasion.",
+      "description": "A sample event decoration studio bringing celebrations to life through floral installations, table styling, and venue decoration. We plan a cohesive look and handle decoration setup and takedown.",
+      "services": [
+        "Event decorations",
+        "Floral installations",
+        "Table styling"
+      ],
+      "email": "hello@petaloccasion.example",
+      "website": "petaloccasion.example",
+      "color": "#f3e0dc",
+      "sample": true,
+      "seedVersion": 2
+    },
+    {
+      "id": "juniper-digital",
+      "name": "Juniper Digital",
+      "initials": "jd",
+      "location": "Portland, OR",
+      "tagline": "Websites with a little more personality.",
+      "description": "An independent web studio helping restaurants and neighborhood businesses tell their story online. We design and build responsive websites around clear content and easy-to-find information.",
+      "services": [
+        "Website design",
+        "Web development",
+        "Brand identity"
+      ],
+      "email": "hello@juniperdigital.example",
+      "website": "juniperdigital.example",
+      "color": "#e5eedc",
+      "sample": true,
+      "seedVersion": 2,
+      "deliveryModes": [
+        "remote"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "content management"
+      ],
+      "styleTags": [
+        "warm",
+        "colorful",
+        "approachable"
+      ],
+      "unsupportedCapabilities": [],
+      "researchUrls": [
+        "https://juniperdigital.example/services",
+        "https://juniperdigital.example/work"
+      ],
+      "minimumProjectCents": 250000,
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "researchFixtures": [
+        {
+          "url": "https://juniperdigital.example/services",
+          "title": "Juniper Digital — sample services",
+          "excerpt": "Warm, colorful restaurant sites with editable menus and reservation integrations. Sample minimum project budget: $2500. Remote delivery available.",
+          "capabilities": [
+            "responsive website",
+            "restaurant menus",
+            "reservation integration",
+            "content management"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "juniper-digital-handover",
+          "title": "A simpler path from menu to reservation",
+          "projectId": "poppy-web",
+          "sourceUrl": "/project/poppy-web",
+          "provenance": "sample",
+          "description": "A warm, colorful neighborhood bistro website with responsive seasonal menus, an editable content management system, and an integration with an existing reservation service."
+        }
+      ]
+    },
+    {
+      "id": "maya-bennett",
+      "name": "Maya Bennett Speaking",
+      "initials": "mb",
+      "location": "Denver, CO",
+      "tagline": "Ideas that stay with the room.",
+      "description": "A sample keynote speaker covering leadership, creative collaboration, and navigating change. Talks are tailored to an event’s audience and can include a moderated question-and-answer session.",
+      "services": [
+        "Keynote speaking",
+        "Leadership talks",
+        "Audience Q&A"
+      ],
+      "email": "hello@mayabennett.example",
+      "website": "mayabennett.example",
+      "color": "#e5e6f4",
+      "sample": true,
+      "seedVersion": 2
+    },
+    {
+      "id": "morrow-studio",
+      "name": "Morrow Studio",
+      "initials": "m.",
+      "location": "Denver, CO",
+      "tagline": "Considered design for independent brands.",
+      "description": "A digital studio creating thoughtful storefronts for home, lifestyle, and retail brands. Our work pairs product storytelling with straightforward browsing and shopping experiences.",
+      "services": [
+        "Website design",
+        "Web development",
+        "E-commerce"
+      ],
+      "email": "hello@morrowstudio.example",
+      "website": "morrowstudio.example",
+      "color": "#f2e6d9",
+      "sample": true,
+      "seedVersion": 2,
+      "deliveryModes": [
+        "remote"
+      ],
+      "capabilities": [
+        "responsive website",
+        "e-commerce",
+        "content management"
+      ],
+      "styleTags": [
+        "minimal",
+        "editorial",
+        "refined"
+      ],
+      "unsupportedCapabilities": [
+        "reservation integration"
+      ],
+      "researchUrls": [
+        "https://morrowstudio.example/services",
+        "https://morrowstudio.example/work"
+      ],
+      "minimumProjectCents": 300000,
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "researchFixtures": [
+        {
+          "url": "https://morrowstudio.example/services",
+          "title": "Morrow Studio — sample services",
+          "excerpt": "Editorial retail storefronts and commerce integrations. Does not offer restaurant reservation integration. Sample minimum project budget: $3000. Remote delivery available.",
+          "capabilities": [
+            "responsive website",
+            "e-commerce",
+            "content management"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "morrow-studio-handover",
+          "title": "Clearer collections and easier product discovery",
+          "projectId": "alder-storefront",
+          "sourceUrl": "/project/alder-storefront",
+          "provenance": "sample",
+          "description": "A homeware storefront with clear collections, detailed product pages, and an editorial layout that gives independent makers room to tell their stories."
+        }
+      ]
+    },
+    {
+      "id": "common-ground-web",
+      "name": "Common Ground Web",
+      "initials": "cg",
+      "location": "Minneapolis, MN",
+      "tagline": "Helping community businesses feel at home online.",
+      "description": "We build approachable websites for wellness studios and local service businesses, with accessible layouts, clear service information, and a welcoming visual identity.",
+      "services": [
+        "Website design",
+        "Brand identity",
+        "Web development"
+      ],
+      "email": "hello@commongroundweb.example",
+      "website": "commongroundweb.example",
+      "color": "#e5e6f4",
+      "sample": true,
+      "seedVersion": 2,
+      "deliveryModes": [
+        "remote"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "accessibility",
+        "content management"
+      ],
+      "styleTags": [
+        "calm",
+        "accessible",
+        "minimal"
+      ],
+      "unsupportedCapabilities": [],
+      "researchUrls": [
+        "https://commongroundweb.example/services",
+        "https://commongroundweb.example/work"
+      ],
+      "minimumProjectCents": 220000,
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "researchFixtures": [
+        {
+          "url": "https://commongroundweb.example/services",
+          "title": "Common Ground Web — sample services",
+          "excerpt": "Accessible neighborhood restaurant websites with straightforward menus and booking. Sample minimum project budget: $2200. Remote delivery available.",
+          "capabilities": [
+            "responsive website",
+            "restaurant menus",
+            "reservation integration",
+            "accessibility",
+            "content management"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "common-ground-web-handover",
+          "title": "Keyboard navigation and responsive menus delivered",
+          "projectId": "willow-kitchen",
+          "sourceUrl": "/project/willow-kitchen",
+          "provenance": "sample",
+          "description": "A calm restaurant website with keyboard-accessible navigation, responsive menus, an editable menu system, and a reservation service integration."
+        }
+      ]
+    },
+    {
+      "id": "daybreak-design",
+      "name": "Daybreak Design Co.",
+      "initials": "dd",
+      "location": "Charleston, SC",
+      "tagline": "Distinctive websites for people who make things.",
+      "description": "A small design practice creating visual portfolios and service websites for architects, interior designers, and creative businesses. We give completed work space to speak for itself.",
+      "services": [
+        "Website design",
+        "Web development",
+        "Brand identity"
+      ],
+      "email": "hello@daybreakdesign.example",
+      "website": "daybreakdesign.example",
+      "color": "#f3e0dc",
+      "sample": true,
+      "seedVersion": 2,
+      "deliveryModes": [
+        "remote"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "photography"
+      ],
+      "styleTags": [
+        "bold",
+        "visual",
+        "luxury"
+      ],
+      "unsupportedCapabilities": [],
+      "researchUrls": [
+        "https://daybreakdesign.example/services",
+        "https://daybreakdesign.example/work"
+      ],
+      "minimumProjectCents": 400000,
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "researchFixtures": [
+        {
+          "url": "https://daybreakdesign.example/services",
+          "title": "Daybreak Design Co. — sample services",
+          "excerpt": "Image-led hospitality websites with premium visual storytelling and table reservations. Sample minimum project budget: $4000. Remote delivery available.",
+          "capabilities": [
+            "responsive website",
+            "restaurant menus",
+            "reservation integration",
+            "photography"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "daybreak-design-handover",
+          "title": "Image-led menu and reservation experience delivered",
+          "projectId": "ember-dining",
+          "sourceUrl": "/project/ember-dining",
+          "provenance": "sample",
+          "description": "An image-led hospitality website pairing large food photography with responsive menus and an integrated reservation service."
+        }
+      ]
+    },
+    {
+      "id": "studio-north",
+      "name": "Studio North",
+      "initials": "sn",
+      "location": "Austin, TX",
+      "tagline": "Thoughtful websites for ambitious local businesses.",
+      "description": "An independent design studio building distinctive, easy-to-use websites for restaurants, shops, and service businesses. We bring strategy, design, and development together under one roof.",
+      "services": [
+        "Website design",
+        "Web development",
+        "Brand identity"
+      ],
+      "email": "hello@studionorth.example",
+      "website": "studionorth.example",
+      "color": "#e8e8ff",
+      "sample": true,
+      "seedVersion": 2,
+      "deliveryModes": [
+        "remote"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "content management",
+        "accessibility"
+      ],
+      "styleTags": [
+        "warm",
+        "editorial",
+        "refined"
+      ],
+      "unsupportedCapabilities": [],
+      "researchUrls": [
+        "https://studionorth.example/services",
+        "https://studionorth.example/work"
+      ],
+      "minimumProjectCents": 350000,
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "researchFixtures": [
+        {
+          "url": "https://studionorth.example/services",
+          "title": "Studio North — sample services",
+          "excerpt": "Editorial restaurant websites with reservation integrations and accessible navigation. Sample minimum project budget: $3500. Remote delivery available.",
+          "capabilities": [
+            "responsive website",
+            "restaurant menus",
+            "reservation integration",
+            "content management",
+            "accessibility"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "studio-north-handover",
+          "title": "Reservation journey and content handover delivered",
+          "projectId": "olive-website",
+          "sourceUrl": "/project/olive-website",
+          "provenance": "sample",
+          "description": "An editorial restaurant website with seasonal menus, mobile navigation, a content management handover, and an integrated reservation service."
+        }
+      ]
+    },
+    {
+      "id": "form-function",
+      "name": "Form & Function",
+      "initials": "f.",
+      "location": "Chicago, IL",
+      "tagline": "Digital experiences with a human touch.",
+      "description": "A small digital studio focused on considered design and straightforward web experiences for independent businesses.",
+      "services": [
+        "Website design",
+        "Web development",
+        "E-commerce"
+      ],
+      "email": "hello@formfunction.example",
+      "website": "formfunction.example",
+      "color": "#e7eedf",
+      "sample": true,
+      "seedVersion": 2
+    },
+    {
+      "id": "good-people",
+      "name": "Good People Studio",
+      "initials": "gp",
+      "location": "Brooklyn, NY",
+      "tagline": "Good design. Great connections.",
+      "description": "We create expressive websites for hospitality, lifestyle, and neighborhood brands.",
+      "services": [
+        "Website design",
+        "Brand identity",
+        "Web development"
+      ],
+      "email": "hello@goodpeople.example",
+      "website": "goodpeople.example",
+      "color": "#f9e7d8",
+      "sample": true,
+      "seedVersion": 2,
+      "deliveryModes": [
+        "remote"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "bilingual content"
+      ],
+      "styleTags": [
+        "playful",
+        "colorful",
+        "warm"
+      ],
+      "unsupportedCapabilities": [],
+      "researchUrls": [
+        "https://goodpeople.example/services",
+        "https://goodpeople.example/work"
+      ],
+      "minimumProjectCents": 280000,
+      "pricingBasis": "Fictional sample minimum project budget; illustrative provider statement, not a quote.",
+      "evidenceUpdatedAt": "2026-10-11T08:00:00Z",
+      "researchFixtures": [
+        {
+          "url": "https://goodpeople.example/services",
+          "title": "Good People Studio — sample services",
+          "excerpt": "Expressive neighborhood restaurant websites with bilingual menus and reservations. Sample minimum project budget: $2800. Remote delivery available.",
+          "capabilities": [
+            "responsive website",
+            "restaurant menus",
+            "reservation integration",
+            "bilingual content"
+          ],
+          "retrievedAt": null,
+          "fixtureCreatedAt": "2026-10-11T08:00:00Z"
+        }
+      ],
+      "achievements": [
+        {
+          "id": "good-people-handover",
+          "title": "English and Spanish menus and reservations delivered",
+          "projectId": "casa-sun",
+          "sourceUrl": "/project/casa-sun",
+          "provenance": "sample",
+          "description": "A playful bilingual restaurant website with English and Spanish menus, responsive layouts, and an integrated reservation service."
+        }
+      ]
+    }
   ],
   "projects": [
-    {"id":"olive-table","businessId":"studio-north","title":"A fresh digital home for Olive & Table","client":"Olive & Table","description":"A warm, welcoming website that brings a neighborhood restaurant to life. Built around seasonal menus, the story behind the food, and a simpler path to reservations.","category":"Restaurant","services":["Website design","Web development"],"result":"32% more online reservations","resultNote":"Illustrative result for this sample project; not a verified business claim.","image":"/projects/olive.svg","color":"#ece9df","featured":true,"createdAt":"2026-10-09T12:00:00Z"},
-    {"id":"forma-home","businessId":"form-function","title":"Making room for a better shopping experience","client":"Forma Home","description":"A clean, editorial storefront for a collection of considered objects. Product storytelling and simple navigation help visitors find their next favorite piece.","category":"E-commerce","services":["Website design","E-commerce"],"result":"24% higher conversion rate","resultNote":"Illustrative result for this sample project; not a verified business claim.","image":"/projects/forma.svg","color":"#efede8","featured":false,"createdAt":"2026-10-08T12:00:00Z"},
-    {"id":"bloom-wellness","businessId":"good-people","title":"A calmer way to find your balance","client":"Bloom Wellness","description":"An approachable website for a neighborhood wellness studio, with clear class information, instructor stories, and a mobile-friendly schedule.","category":"Wellness","services":["Website design","Brand identity"],"result":"41% more class inquiries","resultNote":"Illustrative result for this sample project; not a verified business claim.","image":"/projects/bloom.svg","color":"#e2e7dd","featured":false,"createdAt":"2026-10-07T12:00:00Z"},
-    {"id":"fieldwork","businessId":"studio-north","title":"A website as considered as the spaces","client":"Fieldwork Architecture","description":"A visual portfolio that gives an architecture practice’s completed projects room to speak. Clear services and project details support new client inquiries.","category":"Professional services","services":["Website design","Web development"],"result":"A clearer path to project inquiries","resultNote":"Illustrative outcome for this sample project.","image":"/projects/fieldwork.svg","color":"#e9e4df","featured":false,"createdAt":"2026-10-06T12:00:00Z"}
+    {
+      "id": "harvest-dinner",
+      "businessId": "gather-table",
+      "title": "A seasonal feast, made for gathering",
+      "client": "Harvest House Dinner",
+      "description": "A seasonal buffet and shared-table dinner for a company celebration, with a coordinated menu and welcoming food service.",
+      "category": "Catering",
+      "services": [
+        "Catering",
+        "Menu planning"
+      ],
+      "result": "A relaxed dinner with a cohesive seasonal menu",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/harvest-dinner.jpg",
+      "color": "#ede7db",
+      "featured": true,
+      "createdAt": "2026-10-10T16:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "Fresh vegetables and dressings arranged on a wooden buffet table",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Isaac Pérez",
+        "sourceUrl": "https://www.pexels.com/photo/variety-of-food-on-the-table-17811675/",
+        "source": "Pexels"
+      }
+    },
+    {
+      "id": "garden-celebration",
+      "businessId": "petal-occasion",
+      "title": "A garden celebration in full bloom",
+      "client": "The Garden Celebration",
+      "description": "A blank event space transformed with a floral entrance, layered tablescapes, and soft colors carried through every detail.",
+      "category": "Event decorations",
+      "services": [
+        "Floral installations",
+        "Table styling"
+      ],
+      "result": "One cohesive look from entrance to table",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/garden-celebration.jpg",
+      "color": "#f1e3df",
+      "featured": false,
+      "createdAt": "2026-10-10T15:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "Pastel roses and pink table runners in a garden conservatory",
+      "imagePosition": "50% 60%",
+      "imageCredit": {
+        "photographer": "Kimy Moto",
+        "sourceUrl": "https://www.pexels.com/photo/elegant-garden-wedding-table-setting-with-florals-37393654/",
+        "source": "Pexels"
+      }
+    },
+    {
+      "id": "poppy-web",
+      "businessId": "juniper-digital",
+      "title": "A welcoming website for Poppy & Salt",
+      "client": "Poppy & Salt",
+      "description": "A warm, colorful neighborhood bistro website with responsive seasonal menus, an editable content management system, and an integration with an existing reservation service.",
+      "category": "Website development",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "A simpler path from menu to reservation",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/poppy-web.jpg",
+      "color": "#ece9df",
+      "featured": false,
+      "createdAt": "2026-10-10T14:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "warm",
+        "colorful",
+        "approachable"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "content management"
+      ],
+      "imageAlt": "Warm wood paneling, mirrored walls, and colorful flowers in a neighborhood bistro",
+      "imagePosition": "50% 70%",
+      "imageCredit": {
+        "photographer": "Adrien Olichon",
+        "sourceUrl": "https://unsplash.com/photos/restaurant-interior-with-mirrored-wall-and-booth-seating-f25_bNsKV00",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "lead-together",
+      "businessId": "maya-bennett",
+      "title": "Big ideas for teams moving forward",
+      "client": "Lead Together Summit",
+      "description": "A keynote on creative collaboration and leading through change, paired with an audience Q&A to connect the ideas to everyday work.",
+      "category": "Keynote speaking",
+      "services": [
+        "Keynote speaking",
+        "Audience Q&A"
+      ],
+      "result": "Shared ideas to take back to the team",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/lead-together.jpg",
+      "color": "#e7e5f0",
+      "featured": false,
+      "createdAt": "2026-10-10T13:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "A conference participant speaking into a microphone during a discussion",
+      "imagePosition": "50% 40%",
+      "imageCredit": {
+        "photographer": "Wonderlane",
+        "sourceUrl": "https://unsplash.com/photos/woman-holding-microphone-w1s5H_3Zn48",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "terrace-brunch",
+      "businessId": "gather-table",
+      "title": "A bright start to a team celebration",
+      "client": "Terrace Brunch",
+      "description": "A relaxed company brunch with seasonal buffet dishes and a menu designed for sharing, brought together with coordinated on-site food service.",
+      "category": "Catering",
+      "services": [
+        "Catering",
+        "Buffet service"
+      ],
+      "result": "A welcoming brunch with easy buffet service",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/terrace-brunch.jpg",
+      "color": "#f1e4cf",
+      "featured": false,
+      "createdAt": "2026-10-09T12:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "Fruit, pastries, and sandwiches on a sunny outdoor buffet",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "fu zhichao",
+        "sourceUrl": "https://www.pexels.com/photo/various-desserts-on-a-table-covered-with-baby-blue-cover-587741/",
+        "source": "Pexels"
+      }
+    },
+    {
+      "id": "amber-evening",
+      "businessId": "petal-occasion",
+      "title": "An evening dressed in warm amber",
+      "client": "Amber House Reception",
+      "description": "Warm floral installations and layered table styling give an evening reception a cohesive autumn palette, from the entrance to the last place setting.",
+      "category": "Event decorations",
+      "services": [
+        "Floral installations",
+        "Table styling"
+      ],
+      "result": "A warm, coordinated setting for the reception",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/amber-evening.jpg",
+      "color": "#e8d5c0",
+      "featured": false,
+      "createdAt": "2026-10-08T12:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "Orange flowers, candles, and woven place settings at a warm reception",
+      "imagePosition": "50% 55%",
+      "imageCredit": {
+        "photographer": "Jonathan Borba",
+        "sourceUrl": "https://www.pexels.com/photo/elegant-outdoor-wedding-table-setup-with-floral-centerpiece-37958082/",
+        "source": "Pexels"
+      }
+    },
+    {
+      "id": "alder-storefront",
+      "businessId": "morrow-studio",
+      "title": "Everyday objects, thoughtfully presented",
+      "client": "Alder Goods",
+      "description": "A homeware storefront with clear collections, detailed product pages, and an editorial layout that gives independent makers room to tell their stories.",
+      "category": "Website development",
+      "services": [
+        "Website design",
+        "E-commerce"
+      ],
+      "result": "Clearer collections and easier product discovery",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/alder-storefront.jpg",
+      "color": "#efede8",
+      "featured": false,
+      "createdAt": "2026-10-07T12:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "minimal",
+        "editorial",
+        "refined"
+      ],
+      "capabilities": [
+        "responsive website",
+        "e-commerce",
+        "content management"
+      ],
+      "imageAlt": "A curated collection of ceramic bowls and plates on white shelves",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Brooke Lark",
+        "sourceUrl": "https://unsplash.com/photos/assorted-color-ceramic-bowls-and-saucers-lot-on-white-wooden-shelves-KyUmKlXrhAM",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "creative-futures",
+      "businessId": "maya-bennett",
+      "title": "A fresh perspective on creative leadership",
+      "client": "Creative Futures Forum",
+      "description": "A tailored leadership keynote explores how teams can make room for new ideas during change, followed by an audience Q&A about collaboration at work.",
+      "category": "Keynote speaking",
+      "services": [
+        "Leadership talks",
+        "Audience Q&A"
+      ],
+      "result": "Practical discussion around leading creative teams",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/creative-futures.jpg",
+      "color": "#dce5e3",
+      "featured": false,
+      "createdAt": "2026-10-06T12:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "A keynote speaker presenting to an audience at a professional conference",
+      "imagePosition": "50% 40%",
+      "imageCredit": {
+        "photographer": "Product School",
+        "sourceUrl": "https://unsplash.com/photos/woman-holding-microphone-standing-on-stage-D0rMhzEwiEA",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "community-supper",
+      "businessId": "gather-table",
+      "title": "Bringing the neighborhood to the table",
+      "client": "Community Supper",
+      "description": "A shared community supper built around a seasonal buffet, a coordinated menu, and friendly on-site food service that keeps the gathering relaxed.",
+      "category": "Catering",
+      "services": [
+        "Menu planning",
+        "Buffet service"
+      ],
+      "result": "A shared meal with a clear service plan",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/community-supper.jpg",
+      "color": "#e2e6d6",
+      "featured": false,
+      "createdAt": "2026-10-05T12:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "Guests sharing dishes around a communal dinner table",
+      "imagePosition": "50% 55%",
+      "imageCredit": {
+        "photographer": "Gül Işık",
+        "sourceUrl": "https://www.pexels.com/photo/food-on-a-table-20488508/",
+        "source": "Pexels"
+      }
+    },
+    {
+      "id": "blue-hour",
+      "businessId": "petal-occasion",
+      "title": "Something blue, in every little detail",
+      "client": "Blue Hour Celebration",
+      "description": "A blue-and-cream floral concept connects the entrance installation and table styling, turning a simple venue into an intimate celebration space.",
+      "category": "Event decorations",
+      "services": [
+        "Event decorations",
+        "Table styling"
+      ],
+      "result": "A consistent floral palette across the venue",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/blue-hour.jpg",
+      "color": "#dde4ee",
+      "featured": false,
+      "createdAt": "2026-10-04T12:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "Blue linen napkins and cream flowers on an elegant white table",
+      "imagePosition": "50% 55%",
+      "imageCredit": {
+        "photographer": "Jonathan Borba",
+        "sourceUrl": "https://www.pexels.com/photo/elegant-wedding-table-setting-with-floral-arrangement-29040921/",
+        "source": "Pexels"
+      }
+    },
+    {
+      "id": "poppy-salt",
+      "businessId": "juniper-digital",
+      "title": "A welcoming website for Poppy & Salt",
+      "client": "Poppy & Salt",
+      "description": "A colorful neighborhood bistro gets a warm digital home, with seasonal menus, the people behind the food, and an easy route to reservations.",
+      "category": "Restaurant",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "A simpler path from menu to reservation",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/poppy-web.jpg",
+      "color": "#ece9df",
+      "featured": true,
+      "createdAt": "2026-10-10T12:00:00Z",
+      "archived": true,
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "warm",
+        "colorful",
+        "approachable"
+      ],
+      "imageAlt": "Warm wood paneling, mirrored walls, and colorful flowers in a neighborhood bistro",
+      "imagePosition": "50% 70%",
+      "imageCredit": {
+        "photographer": "Adrien Olichon",
+        "sourceUrl": "https://unsplash.com/photos/restaurant-interior-with-mirrored-wall-and-booth-seating-f25_bNsKV00",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "alder-goods",
+      "businessId": "morrow-studio",
+      "title": "A considered storefront for everyday essentials",
+      "client": "Alder Goods",
+      "description": "An editorial e-commerce website for an independent homeware shop. Clear collections and thoughtful product details bring its makers and materials into focus.",
+      "category": "E-commerce",
+      "services": [
+        "Website design",
+        "E-commerce"
+      ],
+      "result": "Product stories, made easier to explore",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/alder-storefront.jpg",
+      "color": "#efede8",
+      "featured": false,
+      "createdAt": "2026-10-09T12:00:00Z",
+      "archived": true,
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "minimal",
+        "editorial",
+        "refined"
+      ],
+      "imageAlt": "A curated collection of ceramic bowls and plates on white shelves",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Brooke Lark",
+        "sourceUrl": "https://unsplash.com/photos/assorted-color-ceramic-bowls-and-saucers-lot-on-white-wooden-shelves-KyUmKlXrhAM",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "stillwater-yoga",
+      "businessId": "common-ground-web",
+      "title": "A little space for Stillwater Yoga",
+      "client": "Stillwater Yoga",
+      "description": "A welcoming website for a community yoga studio, bringing classes, instructor introductions, and first-visit information together in one calm experience.",
+      "category": "Wellness",
+      "services": [
+        "Website design",
+        "Brand identity"
+      ],
+      "result": "Clearer class information for new students",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/stillwater-yoga.jpg",
+      "color": "#e2e7dd",
+      "featured": false,
+      "createdAt": "2026-10-08T12:00:00Z",
+      "archived": true,
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "calm",
+        "accessible",
+        "minimal"
+      ],
+      "imageAlt": "People practicing yoga together in a bright studio",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Christian Harb",
+        "sourceUrl": "https://unsplash.com/photos/people-practicing-yoga-in-a-studio-OV3PU7FD6Fc",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "cornerstone-spaces",
+      "businessId": "daybreak-design",
+      "title": "Putting Cornerstone’s work in the spotlight",
+      "client": "Cornerstone Spaces",
+      "description": "A project-led portfolio for an architecture practice, pairing generous imagery with the story, materials, and approach behind each completed space.",
+      "category": "Professional services",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "A clearer introduction to the practice",
+      "resultNote": "Illustrative outcome for this sample project; not a verified business claim.",
+      "image": "/projects/photos/cornerstone-spaces.jpg",
+      "color": "#e9e4df",
+      "featured": false,
+      "createdAt": "2026-10-07T12:00:00Z",
+      "archived": true,
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "bold",
+        "visual",
+        "luxury"
+      ],
+      "imageAlt": "A modern house with clean geometric forms and generous windows",
+      "imagePosition": "50% 55%",
+      "imageCredit": {
+        "photographer": "Nike Ossler",
+        "sourceUrl": "https://www.pexels.com/photo/geometric-modern-house-19541342/",
+        "source": "Pexels"
+      }
+    },
+    {
+      "id": "olive-table",
+      "businessId": "studio-north",
+      "title": "A fresh digital home for Olive & Table",
+      "client": "Olive & Table",
+      "description": "A warm, welcoming website that brings a neighborhood restaurant to life. Built around seasonal menus, the story behind the food, and a simpler path to reservations.",
+      "category": "Restaurant",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "32% more online reservations",
+      "resultNote": "Illustrative result for this sample project; not a verified business claim.",
+      "image": "/projects/photos/olive-website.jpg",
+      "color": "#ece9df",
+      "featured": true,
+      "createdAt": "2026-10-09T12:00:00Z",
+      "archived": true,
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "warm",
+        "editorial",
+        "refined"
+      ],
+      "imageAlt": "Rustic wooden restaurant tables with warm pendant lighting",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Toa Heftiba",
+        "sourceUrl": "https://unsplash.com/photos/restaurant-interior-during-daytime-doZQmog8A5w",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "forma-home",
+      "businessId": "form-function",
+      "title": "Making room for a better shopping experience",
+      "client": "Forma Home",
+      "description": "A clean, editorial storefront for a collection of considered objects. Product storytelling and simple navigation help visitors find their next favorite piece.",
+      "category": "E-commerce",
+      "services": [
+        "Website design",
+        "E-commerce"
+      ],
+      "result": "24% higher conversion rate",
+      "resultNote": "Illustrative result for this sample project; not a verified business claim.",
+      "image": "/projects/photos/forma-home.jpg",
+      "color": "#efede8",
+      "featured": false,
+      "createdAt": "2026-10-08T12:00:00Z",
+      "archived": true,
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "imageAlt": "A considered collection of ceramic bowls and vessels on wooden shelves",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Vladimir Gladkov",
+        "sourceUrl": "https://unsplash.com/photos/white-ceramic-bowls-on-white-wooden-shelf-ZAK-azW7-Kk",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "bloom-wellness",
+      "businessId": "good-people",
+      "title": "A calmer way to find your balance",
+      "client": "Bloom Wellness",
+      "description": "An approachable website for a neighborhood wellness studio, with clear class information, instructor stories, and a mobile-friendly schedule.",
+      "category": "Wellness",
+      "services": [
+        "Website design",
+        "Brand identity"
+      ],
+      "result": "41% more class inquiries",
+      "resultNote": "Illustrative result for this sample project; not a verified business claim.",
+      "image": "/projects/photos/bloom-wellness.jpg",
+      "color": "#e2e7dd",
+      "featured": false,
+      "createdAt": "2026-10-07T12:00:00Z",
+      "archived": true,
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "playful",
+        "colorful",
+        "warm"
+      ],
+      "imageAlt": "Two people seated on yoga mats during a calm wellness session",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Alex Shaw",
+        "sourceUrl": "https://unsplash.com/photos/2-women-sitting-on-purple-yoga-mat-_K7RBVSKyCY",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "fieldwork",
+      "businessId": "studio-north",
+      "title": "A website as considered as the spaces",
+      "client": "Fieldwork Architecture",
+      "description": "A visual portfolio that gives an architecture practice’s completed projects room to speak. Clear services and project details support new client inquiries.",
+      "category": "Professional services",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "A clearer path to project inquiries",
+      "resultNote": "Illustrative outcome for this sample project.",
+      "image": "/projects/photos/fieldwork.jpg",
+      "color": "#e9e4df",
+      "featured": false,
+      "createdAt": "2026-10-06T12:00:00Z",
+      "archived": true,
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "warm",
+        "editorial",
+        "refined"
+      ],
+      "imageAlt": "A contemporary home framed by lush greenery",
+      "imagePosition": "50% 55%",
+      "imageCredit": {
+        "photographer": "Talha Resitoglu",
+        "sourceUrl": "https://www.pexels.com/photo/modern-house-with-lush-greenery-in-suburban-setting-30242717/",
+        "source": "Pexels"
+      }
+    },
+    {
+      "id": "olive-website",
+      "businessId": "studio-north",
+      "title": "A fresh digital home for Olive & Table",
+      "client": "Olive & Table",
+      "description": "An editorial restaurant website with seasonal menus, mobile navigation, a content management handover, and an integrated reservation service.",
+      "category": "Website development",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "Reservation journey and content handover delivered",
+      "resultNote": "Fictional completed-work sample; not independently verified.",
+      "image": "/projects/photos/olive-website.jpg",
+      "color": "#e5eedc",
+      "featured": false,
+      "createdAt": "2026-10-11T08:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "warm",
+        "editorial",
+        "refined"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "content management",
+        "accessibility"
+      ],
+      "imageAlt": "Rustic wooden restaurant tables with warm pendant lighting",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Toa Heftiba",
+        "sourceUrl": "https://unsplash.com/photos/restaurant-interior-during-daytime-doZQmog8A5w",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "willow-kitchen",
+      "businessId": "common-ground-web",
+      "title": "Good food, within everyone’s reach",
+      "client": "Willow Kitchen",
+      "description": "A calm restaurant website with keyboard-accessible navigation, responsive menus, an editable menu system, and a reservation service integration.",
+      "category": "Website development",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "Keyboard navigation and responsive menus delivered",
+      "resultNote": "Fictional completed-work sample; not independently verified.",
+      "image": "/projects/photos/willow-kitchen.jpg",
+      "color": "#e5eedc",
+      "featured": false,
+      "createdAt": "2026-10-11T08:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "calm",
+        "accessible",
+        "minimal"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "accessibility",
+        "content management"
+      ],
+      "imageAlt": "A calm restaurant with sage tables, wooden chairs, and a wall of plants",
+      "imagePosition": "50% 70%",
+      "imageCredit": {
+        "photographer": "Polina Kuzovkova",
+        "sourceUrl": "https://unsplash.com/photos/a-restaurant-with-tables-and-chairs-with-plants-on-the-wall-F86IbrHHee0",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "ember-dining",
+      "businessId": "daybreak-design",
+      "title": "A bold first impression for Ember Dining",
+      "client": "Ember Dining",
+      "description": "An image-led hospitality website pairing large food photography with responsive menus and an integrated reservation service.",
+      "category": "Website development",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "Image-led menu and reservation experience delivered",
+      "resultNote": "Fictional completed-work sample; not independently verified.",
+      "image": "/projects/photos/ember-dining.jpg",
+      "color": "#e5eedc",
+      "featured": false,
+      "createdAt": "2026-10-11T08:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "bold",
+        "visual",
+        "luxury"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "photography"
+      ],
+      "imageAlt": "A plated steak dinner with seasonal vegetables and a rich sauce",
+      "imagePosition": "50% 55%",
+      "imageCredit": {
+        "photographer": "Alex Munsell",
+        "sourceUrl": "https://unsplash.com/photos/close-up-photo-of-cooked-food-on-square-white-plate-auIbTAcSH6E",
+        "source": "Unsplash"
+      }
+    },
+    {
+      "id": "casa-sun",
+      "businessId": "good-people",
+      "title": "A neighborhood table in two languages",
+      "client": "Casa Sun",
+      "description": "A playful bilingual restaurant website with English and Spanish menus, responsive layouts, and an integrated reservation service.",
+      "category": "Website development",
+      "services": [
+        "Website design",
+        "Web development"
+      ],
+      "result": "English and Spanish menus and reservations delivered",
+      "resultNote": "Fictional completed-work sample; not independently verified.",
+      "image": "/projects/photos/casa-sun.jpg",
+      "color": "#e5eedc",
+      "featured": false,
+      "createdAt": "2026-10-11T08:00:00Z",
+      "seedVersion": 3,
+      "sample": true,
+      "status": "completed",
+      "visibility": "public",
+      "evidenceVersion": 2,
+      "styleTags": [
+        "playful",
+        "colorful",
+        "warm"
+      ],
+      "capabilities": [
+        "responsive website",
+        "restaurant menus",
+        "reservation integration",
+        "bilingual content"
+      ],
+      "imageAlt": "Colorful avocado tacos with corn and salsa on a wooden serving board",
+      "imagePosition": "50% 50%",
+      "imageCredit": {
+        "photographer": "Odiseo Castrejon",
+        "sourceUrl": "https://unsplash.com/photos/assorted-tacos-on-wooden-plate-J04BD4ysoh8",
+        "source": "Unsplash"
+      }
+    }
   ]
 }

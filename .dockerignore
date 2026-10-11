@@ -1,0 +1,12 @@
+.git
+.local
+.next
+out
+node_modules
+.venv
+.env*
+__pycache__
+*.sqlite*
+.pytest_cache
+test-results
+playwright-report

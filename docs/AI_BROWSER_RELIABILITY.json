@@ -1,0 +1,36 @@
+{
+  "sampleSize": 1,
+  "startedAt": "2026-10-11T09:00:39.228697+00:00",
+  "mode": "live",
+  "configuration": "Typed compact evidence-ID insights; no model-authored emphasis mapping or copied quotes; three model calls maximum; 120s total bound; no model retries; stop after validation",
+  "steps": [
+    {
+      "stage": "matching",
+      "status": "passed",
+      "seconds": 11.79,
+      "mode": "akamai+strands",
+      "tools": [
+        "retrieve_inspiration_projects",
+        "find_candidate_businesses",
+        "retrieve_completed_projects",
+        "research_approved_websites",
+        "retrieve_achievement_evidence",
+        "produce_validated_match_analysis"
+      ],
+      "count": 5,
+      "semanticInsightCount": 3
+    },
+    {
+      "stage": "comparison",
+      "status": "passed",
+      "seconds": 12.5,
+      "mode": "akamai+strands",
+      "tools": [
+        "analyze_submitted_proposals",
+        "produce_validated_comparison"
+      ],
+      "count": 2,
+      "semanticInsightCount": 2
+    }
+  ]
+}

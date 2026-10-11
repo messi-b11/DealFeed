@@ -119,9 +119,12 @@ def test_live_mode_does_not_fall_back_to_sample(client,monkeypatch):
     assert response.status_code==503
     assert not module.store.list("draft")
 
-def test_provider_posts_completed_work_and_request_keeps_new_project(client):
+@pytest.mark.parametrize("include_image", [True, False])
+def test_provider_posts_completed_work_and_request_keeps_new_project(client, include_image):
     provider=session(client,"provider","form-function")
-    data={"title":"A fresh website for Harbor Cafe","client":"Harbor Cafe","description":"Completed a responsive website with a seasonal menu and a reservation link.","category":"Restaurant","result":"Simplified the reservation journey","image":"/projects/olive.svg"}
+    data={"title":"A fresh website for Harbor Cafe","client":"Harbor Cafe","description":"Completed a responsive website with a seasonal menu and a reservation link.","category":"Restaurant","result":"Simplified the reservation journey"}
+    if include_image:
+        data["image"]=module.store.get("project","forma-home")["image"]
     post=client.post("/projects",json=data,headers=provider)
     assert post.status_code==201,post.text
     project=post.json()
@@ -160,3 +163,28 @@ def test_async_job_ownership_completion_and_failure(client,monkeypatch):
     monkeypatch.setattr(module,"generate_draft",fail)
     module.handler({"_dealfeedBriefJob":d["id"]},None)
     assert client.get(f"/briefs/{d['id']}",headers=buyer).status_code==503
+
+@pytest.mark.parametrize('project_id,business_id,category,keyword', [
+    ('harvest-dinner', 'gather-table', 'Catering', 'menu'),
+    ('garden-celebration', 'petal-occasion', 'Event decorations', 'floral'),
+    ('poppy-web', 'juniper-digital', 'Website development', 'page'),
+    ('lead-together', 'maya-bennett', 'Keynote speaking', 'keynote'),
+])
+def test_service_request_reaches_matching_provider(client, project_id, business_id, category, keyword):
+    user = session(client)
+    body = buyer_input()
+    body.update(projectId=project_id, requirements=f'We need {category.lower()} inspired by this completed project. Please confirm the scope and logistics.')
+    response = client.post('/briefs', json=body, headers=user)
+    assert response.status_code == 201, response.text
+    d = response.json()
+    assert d['businessId'] == business_id
+    assert category in d['brief']['title']
+    assert keyword in ' '.join(d['brief']['deliverables']).lower()
+    if category != 'Website development':
+        assert 'website' not in str(d['brief']).lower()
+    assert submit(client, user, d).status_code == 201
+    provider = session(client, 'provider', business_id)
+    assert client.get('/requests', headers=provider).json()['requests'][0]['projectId'] == project_id
+    proposal = {'price': 2500, 'currency': 'USD', 'scope': f'{category} as described in the approved brief, with final logistics agreed with the buyer.', 'timeline': 'On the agreed event or completion date.'}
+    assert client.post(f"/requests/{d['id']}/proposal", json=proposal, headers=provider).status_code == 201
+    assert client.get('/requests', headers=user).json()['requests'][0]['proposal']['businessId'] == business_id
