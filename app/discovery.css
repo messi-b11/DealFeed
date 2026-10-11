@@ -5,16 +5,10 @@
   --accent: #456627;
   --accent-dark: #2f4c19;
   --line: #e6e8e2;
-  --paper: #cffed4;
+  --paper: #f5f6f3;
   --lime: #c4f58b;
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url('/backgrounds/light-green.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+body { font-family: Arial, Helvetica, sans-serif; }
 .skip-link { position: fixed; left: 16px; top: -60px; z-index: 200; padding: 12px; background: var(--lime); border-radius: 8px; }
 .skip-link:focus { top: 12px; }
 #main-content { margin-left: 232px; min-height: calc(100vh - 100px); }
